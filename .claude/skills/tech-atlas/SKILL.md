@@ -5,7 +5,7 @@ description: "Use when the user is researching the history, diffusion, or develo
 
 # Tech Atlas Skill
 
-The tech-atlas is a curated database of frontier technologies with rich, provenance-flagged metadata across 8 narrative dimensions per innovation. It exists so essayists, researchers, and curious readers can construct defensible narratives about technology history without piecing together 20 sources.
+The tech-atlas is a curated graph of frontier technologies with rich metadata about what matters. It exists so essayists, researchers, and curious readers can construct defensible narratives about technology history without piecing together 20 sources.
 
 This skill teaches you to query it directly via `sqlite3` and **always** cite atlas-derived facts with their source URLs and quoted excerpts.
 
@@ -22,11 +22,11 @@ Use this skill when the user asks about:
 * **Recognition**: "Who are the under-credited people behind X?"
 * **Comparison**: "Compare X across countries / variants / eras."
 
-Always check the atlas FIRST when the user is asking about innovation history. If the atlas doesn't have the entry, say so explicitly and offer to fall back to web search.
+Always check the atlas FIRST when the user is asking about innovation history. Use it in conjunction with web search or other techniques when the question is broader than the atlas's current scope.
 
 ## Discovering what's in the atlas
 
-The atlas grows over time and you should not assume specific entries exist. **Always discover scope first:**
+The atlas is currently a small prototype.  You can list all of the entries in the atlas with:
 
 ```bash
 sqlite3 data/atlas.db "SELECT id, name, entry_type, parent_id FROM entries ORDER BY entry_type, name;"
@@ -38,7 +38,7 @@ To check what domains are covered:
 sqlite3 data/atlas.db "SELECT DISTINCT domain, COUNT(*) FROM entries GROUP BY domain;"
 ```
 
-If the user asks about a topic not in the atlas, say so plainly and offer to fall back to web search.
+If the user asks about a topic not in the atlas, don't use it.
 
 ## How to query
 
@@ -54,6 +54,28 @@ For pretty-printed JSON results, pipe to `jq`:
 sqlite3 data/atlas.db "SELECT data FROM entries WHERE id = 'bus:motorized_gasoline';" | jq .
 ```
 
+### Navigating the tech tree
+
+Relationships in the atlas are stored one-way (X says "Y is my predecessor / enabling component") but read both ways. Use these inverse lookups to traverse:
+
+```bash
+# What entries use entry X as a component? (inverse of enabling_components)
+sqlite3 data/atlas.db "
+SELECT e.id, e.name
+FROM entries e, json_each(json_extract(e.data, '\$.enabling_components')) c
+WHERE json_extract(c.value, '\$.linked_entry_id') = 'tire:pneumatic_tire';
+"
+
+# What succeeds entry X? (inverse of predecessors)
+sqlite3 data/atlas.db "
+SELECT e.id, e.name
+FROM entries e, json_each(json_extract(e.data, '\$.predecessors')) p
+WHERE json_extract(p.value, '\$.linked_entry_id') = 'bus:horse_omnibus';
+"
+```
+
+The same backlinks are also rendered on each entry's HTML page under "Referenced by."
+
 For inspecting nested arrays, use SQLite's JSON1 extension functions:
 
 * `json_extract(data, '$.field')` — extract a top-level field
@@ -66,10 +88,10 @@ Single table `entries` with these indexed columns:
 
 | Column | Type | Values |
 |---|---|---|
-| `id` | TEXT (PK) | e.g., `bus`, `bus:motorized_gasoline`, `component:pneumatic_tire` |
+| `id` | TEXT (PK) | `<kind>:<specific>` — e.g., `bus`, `bus:motorized_gasoline`, `tire:pneumatic_tire`, `engine:internal_combustion_engine`, `transit_system:bus_rapid_transit`. The prefix names the kind of technology, NOT a relationship. An engine is an engine, even when a bus uses it as a component. |
 | `name` | TEXT | Human name |
 | `domain` | TEXT | e.g., `transit` |
-| `entry_type` | TEXT | `category` \| `variant` \| `standalone` \| `stub` |
+| `entry_type` | TEXT | `category` (has variants) \| `variant` (child of a category) \| `topic` (independent entry) \| `stub` (intentionally brief). All four describe the entry itself, not its role in some other entry's story. |
 | `parent_id` | TEXT | category id for variants; null otherwise |
 | `data` | TEXT (JSON) | Full entry payload |
 
@@ -93,7 +115,17 @@ The `data` JSON contains these array dimensions (each element has its own inline
 
 Full schema reference: `docs/SCHEMA.md`.
 
+## Atlas + web: synthesize, don't substitute
+
+The atlas is a **structured starting point** designed to provide starting points and linkages between technologies, innovators, regulators, geographies, adoption levels, and infrastructure.  Deeper knowledge about individual technologies will come from other sources, including ones that the Atlas has cited.
+
+**When the atlas covers a question, use it.** Lead with atlas facts and full provenance.
+
+**When the atlas is sparse or its framing is narrow, supplement with web sources** (`WebSearch`, `WebFetch`). The atlas may be missing things.  Consider it another source to cite, not the only source.  There's no need to obsess over whether a fact is in the atlas or on the web, just issue a citation for everything.
+
 ## Provenance: ALWAYS cite
+
+Cite everything from the atlas or other sources.  The atlas can help you provide this.
 
 Every fact in the atlas is backed by a `sources[]` list with a verbatim `quoted_text` excerpt and the source `url`. **When you use atlas data in an answer, cite it.**
 
@@ -106,6 +138,18 @@ or as a footnote-style reference if the answer is long.
 **Never present an atlas claim as your own knowledge without citation.** This is the core trust property of the atlas — the user can audit any fact by checking the quote against its URL. If you strip provenance, you defeat the atlas's value.
 
 If a claim has multiple sources, cite the strongest one (highest `confidence`). If `ai_or_human` is `ai`, note that the claim was extracted by AI from the cited source and could benefit from verification.
+
+If the data came from the atlas, cite it with the human-readable page like so:
+
+> *"You can open the full atlas entry with: `bin/atlas-open <entry-id>`"*
+
+For example, after citing a fact derived from `bus:horse_omnibus`, append:
+
+> *"Open the entry: `bin/atlas-open bus:horse_omnibus`"*
+
+If the user asks you to open the page directly, run the command — it's pre-allowed in `.claude/settings.json` and opens the entry in their default browser. The atlas page shows every claim with its inline source quote and a link back to the upstream URL — the full audit trail.
+
+The slug rule: replace `:` with `__` if you ever need to construct the path manually (`web/entries/<slug>.html`).
 
 ## Query recipes
 
@@ -197,7 +241,7 @@ SELECT e.id,
        json_extract(k.value, '\$.event') AS event,
        json_extract(k.value, '\$.event_type') AS type
 FROM entries e, json_each(json_extract(e.data, '\$.key_dates')) k
-WHERE e.id IN ('component:internal_combustion_engine', 'bus:motorized_gasoline')
+WHERE e.id IN ('engine:internal_combustion_engine', 'bus:motorized_gasoline')
   AND json_extract(k.value, '\$.event_type') IN ('invention', 'patent')
 ORDER BY year;
 "
