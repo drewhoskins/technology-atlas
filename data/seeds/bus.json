@@ -1,0 +1,140 @@
+{
+  "id": "bus",
+  "name": "Bus",
+  "domain": "transit",
+  "entry_type": "category",
+  "parent_id": null,
+  "description": "A road vehicle that picks up passengers along a fixed, published route — either on a posted schedule or simply when flagged down — without each rider arranging hire in advance. Earlier vehicles (sedan chairs, hackney coaches, post chaises, stagecoaches) carried passengers for money but required individual booking or charter; the bus innovation is the route + flag-down model. The category emerged in stages: Pascal's 1662 carrosses à cinq sols demonstrated the fixed-route fare-paying coach but was killed by class-restrictive rules; Stanislas Baudry's 1826 Nantes service rediscovered the model and gave it the name 'omnibus' (Latin: 'for all'); George Shillibeer brought it to London in 1829. Successive variants substitute the propulsion (horses → internal combustion → overhead electric → battery electric) while keeping the route + flag-down core.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The carrosses à cinq sols (English: five-sol coaches) was the first modern form of public transport in the world, developed by mathematician and philosopher Blaise Pascal and operated in Paris in the 1660s.",
+      "ai_or_human": "ai",
+      "confidence": 0.9
+    },
+    {
+      "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Omnibus",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "Baudry launched the first urban transit service in 1826, calling his coach an 'omnibus,' a Latin word meaning 'for all.'",
+      "ai_or_human": "ai",
+      "confidence": 0.9
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1662,
+      "event": "Pascal's carrosses à cinq sols open in Paris — five fixed routes with timetabled departures, the first modern public transport service.",
+      "event_type": "invention",
+      "significance": "Demonstrates the bus model (fixed route + posted fare + walk-up boarding) more than 160 years before the term 'omnibus' is coined; killed by class-exclusion rules and a fare hike, then forgotten.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "After the first trials starting 26 February, five routes were progressively started from 18 March 1662, linking multiple historical quarters of Paris. It had consistent routes, fixed schedules with regular departures (7½ minutes on the first line), and fares that varied based on distance.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1826,
+      "event": "Stanislas Baudry begins horse-omnibus service in Nantes; the route gets its name from a hatter named Omnès whose shop sign read 'Omnès Omnibus'.",
+      "event_type": "invention",
+      "significance": "Re-invention of the bus model for the industrial era. The name 'omnibus' coined here goes global within three years.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Baudry launched the first urban transit service in 1826, calling his coach an 'omnibus,' a Latin word meaning 'for all.' The company appeared publicly on August 10, 1826, after obtaining permission from the municipality, and began operating on September 30, 1826.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1829,
+      "event": "George Shillibeer launches London's first omnibus service between Paddington and Bank.",
+      "event_type": "adoption",
+      "significance": "Brings the bus model to Britain and, through Britain, to the global English-speaking world. The contemporary press coverage establishes 'omnibus' as a household word.",
+      "sources": [
+        {
+          "raw_id": "londonbusmuseum:Shillibeer@2026-04-25T22:00:00Z",
+          "url": "https://www.londonbusmuseum.com/george-shillibeer-father-of-the-london-bus/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 4th July 1829, Shillibeer's first Omnibuses went into service between Paddington (The Yorkshire Stingo) and 'Bank Junction' (Bank of England) via the 'New Road' (now Marylebone Road), Somers Town and City Road.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1882,
+      "event": "Werner von Siemens demonstrates the Elektromote in Berlin — the first electric trolleybus prototype.",
+      "event_type": "invention",
+      "significance": "First electrified bus, predating the petrol bus by 13 years.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Electromote was the world's first vehicle run like a trolleybus, which was first presented to the public on April 29, 1882, by its inventor Dr. Ernst Werner von Siemens in Halensee, a suburb of Berlin, Germany.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1895,
+      "event": "Netphener Omnibusgesellschaft opens the first internal-combustion bus line in the world (Siegen–Netphen–Deuz, Germany), using Benz omnibuses.",
+      "event_type": "invention",
+      "significance": "First motorbus in scheduled service. Lasts only nine months (closes December 1895) due to engine weakness on grades.",
+      "sources": [
+        {
+          "raw_id": "urbantransport:130_years_motor_bus@2026-04-25T22:00:00Z",
+          "url": "https://www.urban-transport-magazine.com/en/130-years-of-motor-bus-service/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 18 March 1895, the world's first public transport line operated by a motorised bus rather than a stagecoach was opened. The newly founded Netphener Omnibusgesellschaft opened the first ever bus route from Siegen via Netphen to Deuz.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1974,
+      "event": "Curitiba opens the world's first Bus Rapid Transit (BRT) corridor.",
+      "event_type": "invention",
+      "significance": "Reframes the bus from 'cheap rail substitute' into a high-capacity transit mode in its own right; becomes the template for cities that cannot afford metros.",
+      "sources": [
+        {
+          "raw_id": "streetsblog:Curitiba_50_years@2026-04-25T22:00:00Z",
+          "url": "https://usa.streetsblog.org/2024/10/17/curitiba-50-years-of-lessons-from-the-worlds-first-bus-rapid-transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1974, Curitiba inaugurated the first 20 kilometers of a pioneering transit system that became known as Bus Rapid Transit (BRT).",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "event": "First commercial battery-electric bus services launch in parallel: BYD K9 mass production in Shenzhen and Proterra EcoRide BE35 in Foothill Transit (Pomona/La Verne, California).",
+      "event_type": "scaling",
+      "significance": "Batteries finally reach the energy density and cost needed to displace diesel on regular routes. Opens a 2010s diffusion wave that takes Shenzhen to a fully-electric 16,000-bus fleet by 2017.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "BYD Auto pioneered commercialization by developing the K9 model, with the first prototypes entering testing in Shenzhen as early as 2009 and mass production commencing in 2010. Around the same time, Foothill Transit launched North America's first battery-electric bus service on September 3, 2010, deploying three Proterra EcoRide BE35 models equipped with fast-charging stations for routes in California's San Gabriel Valley.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

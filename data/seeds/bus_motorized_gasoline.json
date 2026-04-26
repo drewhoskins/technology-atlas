@@ -1,0 +1,322 @@
+{
+  "id": "bus:motorized_gasoline",
+  "name": "Motorized gasoline (internal combustion) bus",
+  "domain": "transit",
+  "entry_type": "variant",
+  "parent_id": "bus",
+  "description": "A bus powered by an internal-combustion engine fed with gasoline (petrol). The world's first scheduled motorbus line opened on 18 March 1895, when the newly founded Netphener Omnibusgesellschaft used two Benz omnibuses — built by Benz & Cie of Mannheim — to run between Siegen, Netphen, and Deuz in the Siegerland region of western Germany. The vehicles carried 6–8 passengers, ran on a 2.9-litre single-cylinder engine producing 5 PS (3.7 kW), and had glazed windows and heating. They were not, in retrospect, ready: the engine was too weak for the route's two main hills (passengers had to push), repairs required a mechanic from Mannheim, and operations stopped in December 1895 after carrying about 10,000 passengers in nine months. The category nonetheless took off elsewhere within a decade — Daimler-Motoren-Gesellschaft and other manufacturers produced more reliable petrol buses by the early 1900s, London replaced its last horse omnibus in 1911, and the gasoline bus dominated city operation until being itself displaced by the diesel bus from the 1930s onward (and, on heavily-trafficked routes in postwar Europe, by the trolleybus). Petrol remains the propulsion of choice for shuttle, school, and tourist buses where small fleet size makes a diesel maintenance program uneconomic.",
+  "description_sources": [
+    {
+      "raw_id": "urbantransport:130_years_motor_bus@2026-04-25T22:00:00Z",
+      "url": "https://www.urban-transport-magazine.com/en/130-years-of-motor-bus-service/",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "On 18 March 1895, the world's first public transport line operated by a motorised bus rather than a stagecoach was opened. The newly founded Netphener Omnibusgesellschaft opened the first ever bus route from Siegen via Netphen to Deuz.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    },
+    {
+      "raw_id": "mercedes-benz:Benz_buses_1895_1898@2026-04-25T22:00:00Z",
+      "url": "https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/Benz-buses-1895--1898.xhtml?oid=16438713",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The Benz Omnibus was the first internal combustion engine-powered omnibus in the world, built by Benz & Cie of automotive pioneer Carl Benz and had eight seats, including the driver's seat.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Carl (Karl) Benz",
+      "role": "Founder of Benz & Cie; manufacturer of the first motorbus chassis",
+      "country": "Germany",
+      "year": 1895,
+      "contribution": "Benz & Cie built both vehicles used on the Netphen line. The bus used a horizontal single-cylinder rear-mounted engine with 2.9 L displacement, 5 PS, glazed windows and heating — adapted directly from Benz's 1885–1890s passenger car platform.",
+      "recognition_status": "headline",
+      "sources": [
+        {
+          "raw_id": "mercedes-benz:Benz_buses_1895_1898@2026-04-25T22:00:00Z",
+          "url": "https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/Benz-buses-1895--1898.xhtml?oid=16438713",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Both vehicles were powered by a horizontal single-cylinder engine in the rear with a standing flywheel and 2.9 liters displacement, delivering 3.7 kW (5 PS).",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Netphener Omnibusgesellschaft (operating company)",
+      "role": "First scheduled motorbus operator",
+      "country": "Germany",
+      "year": 1895,
+      "contribution": "Founded specifically to run the Siegen–Netphen–Deuz route. Rural rather than urban: the Netphen choice mattered because the Royal Prussian Postal Service had refused to extend its post-coach service into the area, leaving an underserved corridor that an entrepreneur could fill.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "urbantransport:130_years_motor_bus@2026-04-25T22:00:00Z",
+          "url": "https://www.urban-transport-magazine.com/en/130-years-of-motor-bus-service/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 18 March 1895, the world's first public transport line operated by a motorised bus rather than a stagecoach was opened. The newly founded Netphener Omnibusgesellschaft opened the first ever bus route from Siegen via Netphen to Deuz.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Nikolaus Otto",
+      "role": "Inventor of the four-stroke internal-combustion engine (1876) — the propulsion technology the motorbus depends on",
+      "country": "Germany",
+      "year": 1876,
+      "contribution": "Otto's compressed-charge four-stroke engine, patented in 1877, is the direct ancestor of every petrol bus engine. Carl Benz used the Otto cycle in his 1885 Patent-Motorwagen and in the 1895 Netphen buses.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "After 14 years of research and development, Otto succeeded in creating the compressed charge internal combustion engine on May 9, 1876, finding a way to layer the fuel mixture into the cylinder to cause the fuel to burn in a progressive, as opposed to explosive fashion.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Horse-drawn omnibus",
+      "relationship": "evolved_from",
+      "year": 1826,
+      "brief": "The motorbus inherits the horse omnibus's route-and-timetable model wholesale; only the propulsion changes. In the 1890s and 1900s many cities ran horse and motor buses on the same routes side-by-side.",
+      "linked_entry_id": "bus:horse_omnibus",
+      "sources": []
+    },
+    {
+      "name": "Steam bus / steam carriage",
+      "relationship": "competing_predecessor",
+      "year": 1830,
+      "brief": "Walter Hancock and Goldsworthy Gurney ran steam buses on British roads in the 1830s; the 1865 Locomotive Acts (the 'Red Flag Acts') effectively killed them by capping speeds at 4 mph and requiring a man with a flag to walk in front. They were a competing ancestor that lost to legal restriction long before the motorbus was technically possible.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Trolleybus (Elektromote)",
+      "relationship": "competing_predecessor",
+      "year": 1882,
+      "brief": "Werner von Siemens's electric trolleybus prototype demonstrated electrified bus operation 13 years before the petrol bus. The two propulsion technologies competed for the next century.",
+      "linked_entry_id": "bus:trolleybus",
+      "sources": []
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Internal combustion engine (Otto cycle)",
+      "type": "technology",
+      "role": "Provides the on-board power that lets a bus operate without rails or overhead wires. The 1895 Netphen buses used a 2.9 L single-cylinder Benz engine; the technology line runs unbroken to today's diesel and CNG transit fleets.",
+      "brief": null,
+      "linked_entry_id": "component:internal_combustion_engine",
+      "sources": [
+        {
+          "raw_id": "mercedes-benz:Benz_buses_1895_1898@2026-04-25T22:00:00Z",
+          "url": "https://mercedes-benz-publicarchive.com/marsClassic/en/instance/ko/Benz-buses-1895--1898.xhtml?oid=16438713",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Both vehicles were powered by a horizontal single-cylinder engine in the rear with a standing flywheel and 2.9 liters displacement, delivering 3.7 kW (5 PS).",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Pneumatic tire",
+      "type": "technology",
+      "role": "Solid rubber tires were standard on early motorbuses (the 1895 Netphen buses had them). Pneumatic tires, scaled from Dunlop's 1888 bicycle tire, made motorbus rides tolerable for passengers and dropped the unsprung mass, enabling higher speeds and lower road damage. By the 1910s pneumatic tires were standard equipment.",
+      "brief": null,
+      "linked_entry_id": "component:pneumatic_tire",
+      "sources": []
+    },
+    {
+      "name": "Gasoline distribution network",
+      "type": "infrastructure",
+      "role": "A motorbus on a 30-km rural route needs reliable refuelling. In 1895 there was effectively no such network — fuel had to be stockpiled at the operator's depot, and parts came from Mannheim by train. The petrol bus could not scale until the 1900s when chemists' shops, then dedicated filling stations, made fuel routinely available.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Roadside mechanic / repair depot practice",
+      "type": "practice",
+      "role": "The Netphen line's downtime — days waiting for a Mannheim mechanic — was the binding constraint, not engine power. Motorbus operators developed a depot-based repair practice (own mechanics, own spare parts) that became the model for transit maintenance generally.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "urbantransport:130_years_motor_bus@2026-04-25T22:00:00Z",
+          "url": "https://www.urban-transport-magazine.com/en/130-years-of-motor-bus-service/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The technology was still quite sensitive and in need of frequent repairs, so that the bus could often not be used for days until a mechanic travelled from Mannheim with necessary replacement parts.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "failed_alternatives": [
+    {
+      "name": "Steam omnibus (Hancock, Gurney)",
+      "why_failed": "Killed by Britain's 1865 Locomotive Act ('Red Flag Act') which required a man with a red flag to walk in front and capped speeds at 4 mph in towns. The act was repealed only in 1896 — by which point the petrol bus had a head start that steam never recovered.",
+      "period": "1830s–1860s",
+      "sources": []
+    },
+    {
+      "name": "Jitney (independent five-cent automobile)",
+      "why_failed": "Briefly a major competitor to both motorbuses and streetcars — by March 1915 thousands of jitneys ran in southern and western US cities. Killed within four years by combinations of liability insurance requirements, route restrictions, and operating-time limits sponsored by streetcar companies and supportive municipalities. By 1918 over 90% of 1915-era jitneys had ceased operating. The pattern (entry-permissive technology, regulatory rollback to protect incumbents) repeats with later transit-network challengers.",
+      "period": "1914–1918",
+      "sources": [
+        {
+          "raw_id": "rollins:Jitney_Scholarship@2026-04-25T22:00:00Z",
+          "url": "https://files01.core.ac.uk/download/pdf/235715894.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By July 1915, twenty-seven municipalities had already imposed burdensome liability costs to all jitney drivers. Drivers were compelled to post up to $10,000 in liability insurance, biting into 25 to 50 percent of drivers' annual earnings. By 1918, more than 90% of the jitney services that opened in 1915 had ceased operations.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Netphener Omnibusgesellschaft (private subscription)",
+      "type": "private",
+      "period": "1895",
+      "brief": "A locally-organised private company financed the route and the two Benz buses. The post office's refusal to serve the route created the opening.",
+      "sources": []
+    },
+    {
+      "entity": "Benz & Cie",
+      "type": "private",
+      "period": "1895",
+      "brief": "Manufacturer of the buses; supplied parts and the Mannheim-based mechanic on call.",
+      "sources": []
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 1865,
+      "jurisdiction": "United Kingdom (Locomotive Act / 'Red Flag Act')",
+      "description": "Required self-propelled road vehicles to have a crew of three (one walking ahead with a red flag) and capped speeds at 4 mph in towns and 2 mph in the country. Effectively outlawed practical motor road transport in Britain for a generation.",
+      "effect": "restricting",
+      "sources": []
+    },
+    {
+      "year": 1896,
+      "jurisdiction": "United Kingdom (Locomotives on Highways Act)",
+      "description": "Repealed the Red Flag requirement and raised speed limits, opening the British market to motorbuses. Marked by the 'Emancipation Run' from London to Brighton.",
+      "effect": "enabling",
+      "sources": []
+    },
+    {
+      "year": 1915,
+      "jurisdiction": "Multiple US municipalities (including San Francisco, Salt Lake City, Los Angeles)",
+      "description": "Anti-jitney ordinances impose liability-insurance bonds, route restrictions, and time-of-day operating limits on independent automobile operators, protecting both streetcar companies and licensed motorbus operators.",
+      "effect": "mixed",
+      "sources": [
+        {
+          "raw_id": "slchistory:Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://www.slchistory.org/2020/02/jitneys-early-automobile-ridesharing.html",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "For example, in Salt Lake City, a new city ordinance went into effect on April 1, 1915, and by April 4 nearly all of the SLC Jitney operators surrendered their licenses leaving only 2 Jitney busses in operation out of a previous fleet of nearly 40.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Siegerland, Germany (Siegen–Netphen–Deuz)",
+      "year": 1895,
+      "milestone": "first",
+      "brief": "Netphener Omnibusgesellschaft, two Benz omnibuses, opened 18 March, closed December — but the first scheduled motorbus line in the world.",
+      "sources": [
+        {
+          "raw_id": "urbantransport:130_years_motor_bus@2026-04-25T22:00:00Z",
+          "url": "https://www.urban-transport-magazine.com/en/130-years-of-motor-bus-service/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 18 March 1895, the world's first public transport line operated by a motorised bus rather than a stagecoach was opened.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "London, United Kingdom",
+      "year": 1911,
+      "milestone": "saturation",
+      "brief": "London's last horse omnibus is withdrawn. The motorbus has effectively replaced the horse on London streets within sixteen years of the Netphen experiment.",
+      "sources": []
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1876,
+      "event": "Nikolaus Otto demonstrates the four-stroke compressed-charge engine.",
+      "event_type": "invention",
+      "significance": "Without the Otto cycle, no motorbus. Patent granted in 1877.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "After 14 years of research and development, Otto succeeded in creating the compressed charge internal combustion engine on May 9, 1876, finding a way to layer the fuel mixture into the cylinder to cause the fuel to burn in a progressive, as opposed to explosive fashion.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1885,
+      "event": "Carl Benz builds the Patent-Motorwagen and founds the first practical automobile manufacturing company.",
+      "event_type": "invention",
+      "significance": "The Benz car platform is the parent technology that, ten years later, scales up into the Netphen omnibus.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Carl Benz established the first practical automobile manufacturing company in 1885 and used the Otto engine design in his automobiles.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1895,
+      "event": "Netphener Omnibusgesellschaft opens the world's first scheduled motorbus line, 18 March.",
+      "event_type": "invention",
+      "significance": "First public ICE bus operation. Carries about 10,000 passengers in nine months before closing in December 1895.",
+      "sources": [
+        {
+          "raw_id": "urbantransport:130_years_motor_bus@2026-04-25T22:00:00Z",
+          "url": "https://www.urban-transport-magazine.com/en/130-years-of-motor-bus-service/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "To increase reliability, the bus company purchased a second vehicle on 1 July 1895. However, this would not bring any lasting improvement and operations were discontinued again in December of the same year. The first motorized omnibus line in the world transported over 10,000 people during its operational period.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1914,
+      "event": "Jitney movement begins in Los Angeles when L.P. Draper carries a passenger in a Ford Model T for five cents (1 July).",
+      "event_type": "adoption",
+      "significance": "Mass-produced cars meet the bus model: any Model T owner can become a one-vehicle bus company. Within a year, thousands of jitneys are running in the western US.",
+      "sources": [
+        {
+          "raw_id": "reason:Taxis_and_Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://reason.com/1972/02/01/taxis-and-jitneys/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The jitney movement began in late 1914 in Los Angeles, when enterprising Model T owners discovered they could offer seats in their private cars for the same fare as a trolley: a nickel, or 'jitney.' The first documented jitney operation began on July 1, 1914, when driver L.P. Draper used his Ford Model T to transport a passenger for five cents. By March 1915, thousands of jitneys operated in the southern and western United States.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

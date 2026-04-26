@@ -1,0 +1,357 @@
+{
+  "id": "bus:battery_electric_modern",
+  "name": "Modern battery-electric bus",
+  "domain": "transit",
+  "entry_type": "variant",
+  "parent_id": "bus",
+  "description": "A bus powered by on-board lithium-ion (or lithium-iron-phosphate) batteries, with no overhead wires. The modern category took commercial form in 2010 in two roughly simultaneous events on opposite sides of the Pacific. In China, BYD Auto — a battery manufacturer that had moved into vehicles in 2003 — began mass production of the K9, a 12-metre lithium-iron-phosphate bus, after first prototypes ran in Shenzhen in 2009. In California, Foothill Transit took delivery of three Proterra EcoRide BE35 buses in September 2010 and put them in scheduled service on Line 291 between Pomona and La Verne — the first North American battery-electric transit deployment. The two architectures are different in revealing ways: BYD bet on long-range LFP packs that recharge overnight at the depot; Proterra bet on smaller lithium-titanate packs that recharge in minutes from a 500 kW overhead charger at a route terminus. Both worked. By 2011 BYD had supplied 200 K9 buses for the Shenzhen Universiade with 250 km range; by 2017 Shenzhen had completed a full conversion of its ~16,000-vehicle bus fleet to battery-electric, the first major city in the world to do so. Diffusion outside China has been slower: a combination of higher capital cost (typically 1.5–2× a diesel bus), depot retrofit requirements, and battery longevity uncertainty. National and state subsidies (China's 'new energy vehicle' program, US FTA Low-No grants, EU Clean Vehicles Directive) underpin most procurements outside private fleets.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "BYD Auto pioneered commercialization by developing the K9 model, with the first prototypes entering testing in Shenzhen as early as 2009 and mass production commencing in 2010. Around the same time, Foothill Transit launched North America's first battery-electric bus service on September 3, 2010, deploying three Proterra EcoRide BE35 models equipped with fast-charging stations for routes in California's San Gabriel Valley.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Wang Chuanfu / BYD Auto",
+      "role": "Founder of BYD; led the K9 development program and Shenzhen rollout",
+      "country": "China",
+      "year": 2010,
+      "contribution": "BYD's bet that the same lithium-iron-phosphate chemistry it manufactured for consumer electronics could scale to a 250 km transit bus, recharged overnight, defined the depot-charging architecture that became the global default. The K9 entered mass production in 2010 and supplied 200 units for the 2011 Shenzhen Universiade.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By 2011, BYD supplied 200 K9 buses for the Shenzhen Universiade, demonstrating scalability with iron-phosphate batteries offering 250 km range per charge.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Proterra (founding team incl. Dale Hill, Jeff Granato)",
+      "role": "Manufacturer of the first North American battery-electric transit bus",
+      "country": "United States",
+      "year": 2010,
+      "contribution": "Designed the EcoRide BE35 around fast-charge lithium-titanate chemistry — small battery, big charger — letting a transit agency deploy electric buses without overnight depot retrofits. The architecture (overhead 500 kW chargers at route termini) became one of two industry-standard approaches.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Proterra_EcoRide@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Proterra_EcoRide",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Proterra EcoRide BE35 is a 35-foot fast-charge battery electric low-floor transit bus manufactured by Proterra from 2010 to 2014. The EcoRide featured lithium-titanate battery chemistry, which enabled fast on-route charging using the company's proprietary charger.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Foothill Transit",
+      "role": "First North American transit agency to deploy battery-electric buses in scheduled service",
+      "country": "United States",
+      "year": 2010,
+      "contribution": "Bought three Proterra EcoRide BE35 buses and put them on Line 291 (Pomona–La Verne) on 3 September 2010. Demonstrated at agency-procurement scale, not just lab scale.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "nrel:Foothill_Transit_BEB@2026-04-25T22:00:00Z",
+          "url": "https://docs.nrel.gov/docs/fy21osti/80022.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Foothill Transit became the first public transit agency in the nation to deploy three Proterra fast-charge, all-electric buses in 2010 on the 16.1-mile Line 291 between Pomona and La Verne.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Trolleybus",
+      "relationship": "competing_predecessor",
+      "year": 1882,
+      "brief": "The trolleybus solved the same problem (electric road transit) by leaving the energy storage on the grid. Battery-electric buses inherit the propulsion (electric motor) and the customer promise (no tailpipe) but discard the wires.",
+      "linked_entry_id": "bus:trolleybus",
+      "sources": []
+    },
+    {
+      "name": "Diesel motorbus",
+      "relationship": "evolved_from",
+      "year": 1936,
+      "brief": "Direct vehicle ancestor: same body, same chassis layout, same low-floor passenger cabin. Only the powertrain changes.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Hybrid-electric bus (1990s–2010s)",
+      "relationship": "evolved_from",
+      "year": 1998,
+      "brief": "Diesel-electric hybrids by Allison, BAE Systems and Orion in the late 1990s and early 2000s normalised electric-drive components in transit fleets and gave manufacturers experience with traction batteries — the proving ground for full battery-electric.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Early-20th-century battery streetcars and battery buses",
+      "relationship": "competing_predecessor",
+      "year": 1905,
+      "brief": "Lead-acid battery buses operated briefly in cities like New York and London in the 1900s–1910s but lost decisively to ICE buses on energy density. They remained the demonstration that batteries weren't ready, until they were.",
+      "linked_entry_id": null,
+      "sources": []
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Lithium-iron-phosphate (LFP) battery",
+      "type": "technology",
+      "role": "BYD's chemistry of choice. LFP is heavier per kWh than NMC but more thermally stable, longer cycling, and uses cheaper non-cobalt cathode materials — well-suited to multi-tonne transit vehicles parked overnight at depots. The K9's 324 kWh LFP pack delivered 250 km range.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By 2011, BYD supplied 200 K9 buses for the Shenzhen Universiade, demonstrating scalability with iron-phosphate batteries offering 250 km range per charge.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Lithium-titanate (LTO) battery",
+      "type": "technology",
+      "role": "Proterra's chemistry of choice for the EcoRide. LTO accepts very high charge currents without degradation, enabling 5–10 minute fast charges from 500 kW overhead chargers — the architectural alternative to BYD's overnight model.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Proterra_EcoRide@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Proterra_EcoRide",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The EcoRide featured lithium-titanate battery chemistry, which enabled fast on-route charging using the company's proprietary charger.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Depot charging infrastructure",
+      "type": "infrastructure",
+      "role": "An overnight-charge fleet needs grid capacity sufficient to charge dozens or hundreds of buses simultaneously — typically a multi-MW substation upgrade. The capital cost of depot electrification is often comparable to the bus fleet itself and is the binding constraint on rollout in many cities.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Pantograph fast charger (overhead)",
+      "type": "infrastructure",
+      "role": "A bus-roof or station-mounted pantograph delivers 250–500 kW DC for a 5–10 minute opportunity charge. The Proterra design at Foothill Transit was the first commercial deployment.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "nrel:Foothill_Transit_BEB@2026-04-25T22:00:00Z",
+          "url": "https://docs.nrel.gov/docs/fy21osti/80022.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The BEBs at the Pomona facility are all fast-charge buses that use a high-powered overhead charger designed by Proterra.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "AC traction motor and inverter",
+      "type": "technology",
+      "role": "Inherited from the hybrid-electric bus generation. Permits regenerative braking — a meaningful energy-recovery contribution on stop-start transit duty cycles.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    }
+  ],
+  "failed_alternatives": [
+    {
+      "name": "Hydrogen fuel-cell bus (parallel competitor, not yet failed)",
+      "why_failed": "Repeatedly proposed since the 1990s, never won decisive market share. As of the mid-2020s, fuel-cell buses cost more than battery-electric and require a hydrogen distribution network that battery-electric does not. Fuel cells retain a niche on long intercity routes but lost the transit segment to lithium.",
+      "period": "1994–present",
+      "sources": []
+    },
+    {
+      "name": "Compressed natural gas (CNG) bus",
+      "why_failed": "From the 1990s into the 2010s, CNG was the leading 'cleaner than diesel' alternative for US transit fleets. Battery-electric is now displacing CNG in new procurement; CNG remains a substantial installed base but is losing the new-build market.",
+      "period": "1992–2020",
+      "sources": []
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Government of China — 'New Energy Vehicle' subsidies",
+      "type": "government",
+      "period": "2009–present",
+      "brief": "Central-government subsidies funding pilot programs in over 20 Chinese cities from 2009 onward, paired with municipal procurement (notably Shenzhen) that bought BYD K9 fleets at scale and made China the dominant manufacturing market.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "BYD's pure-electric buses achieved a milestone in 2011 with the world's first commercial fleet operation in Shenzhen, supported by national 'new energy vehicle' subsidies that funded pilot programs in over 20 cities from 2009 onward.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "entity": "US Federal Transit Administration — Low-No grants and California Climate Investments",
+      "type": "government",
+      "period": "2010–present",
+      "brief": "Foothill Transit's Proterra deployment was funded in part by FTA Transit Investments for Greenhouse Gas and Energy Reduction (TIGGER) grants. California Climate Investments later funded broader Foothill Transit fleet electrification.",
+      "sources": []
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 2017,
+      "jurisdiction": "Shenzhen, China",
+      "description": "Shenzhen completes the world's first full conversion of a major-city bus fleet (~16,000 buses) to battery-electric. Backed by a long-running municipal mandate and BYD-supplied vehicles.",
+      "effect": "enabling",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The city continued expanding rapidly: 2017 saw the southern metropolis of Shenzhen, with a population of over 17 million, complete a full transition to electric buses with a fleet of more than 16,000.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "jurisdiction": "European Union (Clean Vehicles Directive 2019/1161)",
+      "description": "Mandates minimum shares of 'clean' (low- and zero-emission) buses in EU public procurement, with 22.5–32.5% (varying by member state) zero-emission by August 2025 and higher targets through 2030. The most consequential demand-side regulation pulling European fleets to battery-electric.",
+      "effect": "enabling",
+      "sources": []
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Shenzhen, China",
+      "year": 2010,
+      "milestone": "first",
+      "brief": "BYD K9 prototypes enter testing in Shenzhen, then go into mass production. First commercial fleet operation in 2011.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "BYD Auto pioneered commercialization by developing the K9 model, with the first prototypes entering testing in Shenzhen as early as 2009 and mass production commencing in 2010.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "Pomona / La Verne, California (USA)",
+      "year": 2010,
+      "milestone": "first",
+      "brief": "Foothill Transit deploys three Proterra EcoRide BE35 buses on Line 291 — first North American battery-electric transit operation, 3 September 2010.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Foothill Transit launched North America's first battery-electric bus service on September 3, 2010, deploying three Proterra EcoRide BE35 models equipped with fast-charging stations for routes in California's San Gabriel Valley.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "Shenzhen, China",
+      "year": 2017,
+      "milestone": "saturation",
+      "brief": "First major city in the world with a fully battery-electric bus fleet (~16,000 buses).",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "2017 saw the southern metropolis of Shenzhen, with a population of over 17 million, complete a full transition to electric buses with a fleet of more than 16,000.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 2009,
+      "event": "BYD K9 prototypes begin testing in Shenzhen.",
+      "event_type": "invention",
+      "significance": "First serious modern battery-electric transit bus prototype; mass production begins the following year.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "BYD Auto pioneered commercialization by developing the K9 model, with the first prototypes entering testing in Shenzhen as early as 2009 and mass production commencing in 2010.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "event": "Foothill Transit puts three Proterra EcoRide BE35 fast-charge buses into scheduled service on Line 291, 3 September.",
+      "event_type": "adoption",
+      "significance": "First North American battery-electric transit deployment in revenue service.",
+      "sources": [
+        {
+          "raw_id": "nrel:Foothill_Transit_BEB@2026-04-25T22:00:00Z",
+          "url": "https://docs.nrel.gov/docs/fy21osti/80022.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first production Proterra EcoRide BE35 was delivered to Foothill Transit in September 2010, operating as the 'EcoLiner' on line 291.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "event": "BYD supplies 200 K9 buses to the Shenzhen Universiade — first large commercial fleet.",
+      "event_type": "scaling",
+      "significance": "Demonstrates the depot-charging architecture at fleet scale and seeds the Shenzhen full-electrification program.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "BYD's pure-electric buses achieved a milestone in 2011 with the world's first commercial fleet operation in Shenzhen, supported by national 'new energy vehicle' subsidies that funded pilot programs in over 20 cities from 2009 onward.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "event": "Shenzhen completes full conversion of its bus fleet (~16,000 vehicles) to battery-electric.",
+      "event_type": "scaling",
+      "significance": "First major city in the world to fully electrify its bus fleet — proof of feasibility at the largest scale to date.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:BYD_K_series@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/BYD_K_series",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "2017 saw the southern metropolis of Shenzhen, with a population of over 17 million, complete a full transition to electric buses with a fleet of more than 16,000.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

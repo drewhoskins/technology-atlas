@@ -1,0 +1,52 @@
+{
+  "id": "component:articulated_bus",
+  "name": "Articulated bus",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "A bus with two rigid sections joined by a pivoting articulation, allowing the vehicle to be much longer (typically 18 m, vs. 12 m for a standard bus) while still negotiating ordinary urban turning circles. The first articulated bus appeared in Milan, Italy, in 1937; in 1938 Twin Coach built one for the city of Baltimore (a 47-foot, four-axle vehicle articulated only in the vertical plane to handle steep grades). Articulated buses became central to the Bus Rapid Transit model from the 1970s onward — a single articulated vehicle carries 120–160 passengers, and the double-articulated 'biarticulated' designs used in Curitiba and elsewhere carry up to 270.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Articulated_bus@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Articulated_bus",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The first example of the articulated bus appeared in Milan, Italy, in 1937. In 1938, Twin Coach built an articulated bus for the city of Baltimore; this bus, which had four axles on a 47 ft (14.33 m) long body, was only articulated in the vertical direction to accommodate steep grades.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1937,
+      "event": "First articulated bus appears in Milan, Italy.",
+      "event_type": "invention",
+      "significance": "Origin of the articulated-bus form factor.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Articulated_bus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Articulated_bus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first example of the articulated bus appeared in Milan, Italy, in 1937.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1938,
+      "event": "Twin Coach builds the first North American articulated bus, for Baltimore.",
+      "event_type": "invention",
+      "significance": "First US articulated bus; only vertically articulated to manage Baltimore's grades.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Articulated_bus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Articulated_bus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1938, Twin Coach built an articulated bus for the city of Baltimore; this bus, which had four axles on a 47 ft (14.33 m) long body, was only articulated in the vertical direction to accommodate steep grades.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

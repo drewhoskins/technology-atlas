@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.uv/
+*.egg-info/
+build/
+dist/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Raw cached scrape data — NEVER redistributed.
+# Keeps source flexibility (any-tier sources allowed) and prevents the
+# Pepsi-challenge no-atlas leg from grepping through cached source text.
+data/raw/
+
+# Claude Code per-developer settings (not shared)
+.claude/settings.local.json
+.claude/jit-tooling/
+
+# Logs / temp
+*.log
+tmp/

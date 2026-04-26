@@ -1,0 +1,90 @@
+{
+  "id": "component:pneumatic_tire",
+  "name": "Pneumatic tire",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "An air-filled rubber tire — first built by John Boyd Dunlop in October 1887 for his son's tricycle (a 96 cm wooden disc with an inflated rubber sleeve), tested successfully on 28 February 1888, and patented on 7 December 1888. The patent was later invalidated by prior art: Robert William Thomson, a Scottish inventor, had patented the same idea in France in 1846 and the US in 1847, but had built no commercial product. Dunlop's tire reached scale because it arrived with the safety bicycle (J. K. Starley, 1885) and the early automobile market both needing it. By the 1910s pneumatic tires were standard on motor vehicles, including buses; they were the technology that made motorbus rides tolerable for passengers and dropped axle and road damage to a tractable level.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:John_Boyd_Dunlop@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "In October 1887, John Boyd Dunlop developed the first practical pneumatic or inflatable tyre for his son's tricycle and fitted it to a wooden disc 96 centimetres across. The modified tricycle was tried on the night of February 28, 1888, and it worked well, with its tires undamaged by the rough test road.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "John Boyd Dunlop",
+      "role": "Veterinary surgeon and inventor; built the first commercially successful pneumatic tire",
+      "country": "United Kingdom (Belfast, then Dublin)",
+      "year": 1888,
+      "contribution": "Built the first practical pneumatic tire (October 1887), tested it (28 February 1888), and patented it (7 December 1888). Sold rights to Harvey du Cros, who scaled the company that became Dunlop Rubber.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:John_Boyd_Dunlop@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Dunlop patented his invention on December 7, 1888.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Robert William Thomson",
+      "role": "Patented the pneumatic tire principle 41 years before Dunlop",
+      "country": "United Kingdom (Scotland)",
+      "year": 1846,
+      "contribution": "Patented the pneumatic tire in France in 1846 and the US in 1847 — the prior art that invalidated Dunlop's patent two years after it was granted. Thomson built no commercial product, so the credit (and the company) went to Dunlop.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:John_Boyd_Dunlop@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Two years after he was granted the patent, Dunlop was officially informed that it was invalid as Scottish inventor Robert William Thomson had patented the idea in France in 1846 and in the US in 1847.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1846,
+      "event": "Thomson patents the pneumatic tire concept in France.",
+      "event_type": "patent",
+      "significance": "Conceptual priority — never commercialised — that later invalidated Dunlop's 1888 patent.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:John_Boyd_Dunlop@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Robert William Thomson had patented the idea in France in 1846 and in the US in 1847.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1888,
+      "event": "Dunlop tests his pneumatic tire (28 February) and is granted a UK patent (7 December).",
+      "event_type": "patent",
+      "significance": "First commercially-successful pneumatic tire; foundation of the global tire industry.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:John_Boyd_Dunlop@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/John_Boyd_Dunlop",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Dunlop patented his invention on December 7, 1888.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "component:internal_combustion_engine",
+  "name": "Four-stroke internal combustion engine (Otto cycle)",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "A heat engine in which fuel is burned inside the cylinder rather than (as with a steam engine) outside it. The four-stroke cycle — intake, compression, power, exhaust — was patented in 1862 by the French engineer Alphonse Beau de Rochas as a thermodynamic concept, but Nikolaus Otto built the first practical compressed-charge engine on this principle in May 1876, with a German patent granted in 1877. The Otto cycle is the propulsion ancestor of every petrol or diesel bus engine in history; Carl Benz used it in his 1885 Patent-Motorwagen and in the 1895 Netphen omnibuses, the first motorbuses in the world.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "Nikolaus Otto was a German engineer who developed the four-stroke internal-combustion engine, which offered the first practical alternative to the steam engine as a power source. Otto's innovation in creating a four-stroke piston cycle engine in 1876 marked a pivotal moment in engine design.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Nikolaus Otto",
+      "role": "Built the first practical four-stroke compressed-charge internal-combustion engine, 1876",
+      "country": "Germany",
+      "year": 1876,
+      "contribution": "Solved the problem of progressive (rather than explosive) combustion via charge stratification — making the four-stroke principle commercially viable. Patent granted 1877.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "After 14 years of research and development, Otto succeeded in creating the compressed charge internal combustion engine on May 9, 1876, finding a way to layer the fuel mixture into the cylinder to cause the fuel to burn in a progressive, as opposed to explosive fashion.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Alphonse Beau de Rochas",
+      "role": "Patented the four-stroke cycle as a thermodynamic concept, 1862",
+      "country": "France",
+      "year": 1862,
+      "contribution": "Theoretical formulation of the four-stroke cycle 14 years before Otto's working engine. Underrecognized because his patent didn't lead to a working machine and Otto's name attached to the cycle.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Although Otto was the first to build an engine based upon this principle, the four-stroke cycle was patented in 1862 by the French engineer Alphonse Beau de Rochas, but it is commonly known as the Otto cycle.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1862,
+      "event": "Beau de Rochas patents the four-stroke cycle as a concept.",
+      "event_type": "patent",
+      "significance": "Theoretical priority on the four-stroke cycle, but no working engine.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "the four-stroke cycle was patented in 1862 by the French engineer Alphonse Beau de Rochas",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1876,
+      "event": "Otto builds the first working compressed-charge four-stroke engine, 9 May.",
+      "event_type": "invention",
+      "significance": "Founding event of the modern internal-combustion engine industry.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Otto succeeded in creating the compressed charge internal combustion engine on May 9, 1876",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1877,
+      "event": "Otto granted German patent for the four-stroke engine.",
+      "event_type": "patent",
+      "significance": "Patent later partially invalidated due to Beau de Rochas's prior art, but commercial dominance was already established.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Nicolaus_Otto@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Nicolaus_Otto",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Otto was granted a patent for his four-stroke engine in 1877.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

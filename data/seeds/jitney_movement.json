@@ -1,0 +1,241 @@
+{
+  "id": "standalone:jitney_movement",
+  "name": "Jitney movement (1914–1918)",
+  "domain": "transit",
+  "entry_type": "standalone",
+  "parent_id": null,
+  "description": "A four-year explosion of independent five-cent automobile transit in US cities, almost entirely killed by regulation. The movement began on 1 July 1914 in Los Angeles when L.P. Draper used his Ford Model T to carry a paying passenger for five cents — a 'jitney' in then-current slang for a nickel. By March 1915 thousands of jitneys were operating in the southern and western United States; many ran on streetcar routes, undercutting the trolleys' nickel fare while offering door-to-door service. The streetcar industry, hard-hit, lobbied municipalities for protection. Within a year, twenty-seven cities had imposed liability-insurance bonds (up to $10,000 — 25–50% of an annual driver's earnings), route restrictions, and time-of-day bans. In Salt Lake City an April 1915 ordinance reduced the fleet from 40 to 2 in four days. By 1918 more than 90% of the 1915-era jitney services had ceased operating. The jitney is the cleanest case study in 20th-century transit of an entry-permissive technology (mass-produced automobile + flag-down model + cash fare) defeated by incumbent-protective regulation. The pattern recurs almost beat-for-beat with Uber and Lyft a century later — and is preserved in this entry as the long-running historical analogue.",
+  "description_sources": [
+    {
+      "raw_id": "reason:Taxis_and_Jitneys@2026-04-25T22:00:00Z",
+      "url": "https://reason.com/1972/02/01/taxis-and-jitneys/",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The jitney movement began in late 1914 in Los Angeles, when enterprising Model T owners discovered they could offer seats in their private cars for the same fare as a trolley: a nickel, or 'jitney.' The first documented jitney operation began on July 1, 1914, when driver L.P. Draper used his Ford Model T to transport a passenger for five cents. By March 1915, thousands of jitneys operated in the southern and western United States.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    },
+    {
+      "raw_id": "rollins:Jitney_Scholarship@2026-04-25T22:00:00Z",
+      "url": "https://files01.core.ac.uk/download/pdf/235715894.pdf",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "By July 1915, twenty-seven municipalities had already imposed burdensome liability costs to all jitney drivers. Drivers were compelled to post up to $10,000 in liability insurance, biting into 25 to 50 percent of drivers' annual earnings. By 1918, more than 90% of the jitney services that opened in 1915 had ceased operations.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "L.P. Draper",
+      "role": "First documented jitney operator",
+      "country": "United States",
+      "year": 1914,
+      "contribution": "Carried the first paying jitney passenger in his Ford Model T in Los Angeles, 1 July 1914 — the founding event of the movement.",
+      "recognition_status": "obscure",
+      "sources": [
+        {
+          "raw_id": "reason:Taxis_and_Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://reason.com/1972/02/01/taxis-and-jitneys/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first documented jitney operation began on July 1, 1914, when driver L.P. Draper used his Ford Model T to transport a passenger for five cents.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Streetcar (electric tram)",
+      "relationship": "competing_predecessor",
+      "year": 1888,
+      "brief": "The five-cent streetcar fare set the price point that jitneys imitated. Streetcar companies were the chief lobbyists behind the anti-jitney ordinances.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Ford Model T (mass-produced automobile)",
+      "relationship": "evolved_from",
+      "year": 1908,
+      "brief": "Ford's $400-and-falling Model T put a vehicle in reach of working-class owners for the first time. Without it, no jitney movement.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Horse-drawn omnibus",
+      "relationship": "inspiration",
+      "year": 1826,
+      "brief": "The flag-down, fixed-fare model that the jitneys revived using a Model T instead of a coach.",
+      "linked_entry_id": "bus:horse_omnibus",
+      "sources": []
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Mass-produced automobile (Ford Model T)",
+      "type": "technology",
+      "role": "Vehicle.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Cash fare collection at boarding",
+      "type": "practice",
+      "role": "No tickets, no ledgers, no scheduling — driver took a nickel, passenger got in. The same operational simplicity that defines the bus model going back to Pascal.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    }
+  ],
+  "failed_alternatives": [
+    {
+      "name": "Self-regulated jitney associations",
+      "why_failed": "Some cities saw drivers form associations to negotiate with regulators (insurance pooling, voluntary route limits). These were almost always overrun by streetcar-friendly ordinances before they could establish themselves.",
+      "period": "1915–1917",
+      "sources": []
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Individual drivers (owner-operators)",
+      "type": "private",
+      "period": "1914–1918",
+      "brief": "The jitney was capital-light: a driver's existing Model T was the entire fleet. This is what made it explosively scalable and what made $10,000 insurance bonds so effective at killing it.",
+      "sources": []
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 1915,
+      "jurisdiction": "Salt Lake City, Utah (USA)",
+      "description": "City ordinance effective 1 April 1915 reduces SLC's jitney fleet from ~40 vehicles to 2 within four days.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "slchistory:Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://www.slchistory.org/2020/02/jitneys-early-automobile-ridesharing.html",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "For example, in Salt Lake City, a new city ordinance went into effect on April 1, 1915, and by April 4 nearly all of the SLC Jitney operators surrendered their licenses leaving only 2 Jitney busses in operation out of a previous fleet of nearly 40.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1915,
+      "jurisdiction": "27 US municipalities",
+      "description": "By July 1915, 27 cities have imposed liability-insurance bonds (up to $10,000) on jitney operators — equivalent to 25–50% of an annual driver's earnings.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "rollins:Jitney_Scholarship@2026-04-25T22:00:00Z",
+          "url": "https://files01.core.ac.uk/download/pdf/235715894.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By July 1915, twenty-seven municipalities had already imposed burdensome liability costs to all jitney drivers. Drivers were compelled to post up to $10,000 in liability insurance, biting into 25 to 50 percent of drivers' annual earnings.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1916,
+      "jurisdiction": "San Francisco (USA)",
+      "description": "Jitney Bus Ordinance limits jitney drivers to 700 and bans them from Market Street between Fremont and 6th between 10:30 a.m. and 4 p.m.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "slchistory:Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://www.slchistory.org/2020/02/jitneys-early-automobile-ridesharing.html",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Jitney Bus Ordinance passed in August 1916 in San Francisco limited the number of jitney drivers to 700 and forbade jitneys on Market Street from Fremont to 6th Street between the hours of 10:30 a.m. and 4 p.m.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Los Angeles, California (USA)",
+      "year": 1914,
+      "milestone": "first",
+      "brief": "L.P. Draper's first nickel ride, 1 July 1914.",
+      "sources": [
+        {
+          "raw_id": "reason:Taxis_and_Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://reason.com/1972/02/01/taxis-and-jitneys/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first documented jitney operation began on July 1, 1914, when driver L.P. Draper used his Ford Model T to transport a passenger for five cents.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "Western and southern United States (regional)",
+      "year": 1915,
+      "milestone": "10pct",
+      "brief": "By March 1915, thousands of jitneys were operating across the southern and western US — meaningful share of urban transit ridership in many cities.",
+      "sources": [
+        {
+          "raw_id": "reason:Taxis_and_Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://reason.com/1972/02/01/taxis-and-jitneys/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By March 1915, thousands of jitneys operated in the southern and western United States.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1914,
+      "event": "L.P. Draper carries the first paying jitney passenger, Los Angeles, 1 July.",
+      "event_type": "invention",
+      "significance": "Birth of the jitney movement.",
+      "sources": [
+        {
+          "raw_id": "reason:Taxis_and_Jitneys@2026-04-25T22:00:00Z",
+          "url": "https://reason.com/1972/02/01/taxis-and-jitneys/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first documented jitney operation began on July 1, 1914, when driver L.P. Draper used his Ford Model T to transport a passenger for five cents.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1915,
+      "event": "Anti-jitney ordinances spread to 27 US cities by July.",
+      "event_type": "regulatory",
+      "significance": "Coordinated regulatory rollback that killed the movement within three years.",
+      "sources": [
+        {
+          "raw_id": "rollins:Jitney_Scholarship@2026-04-25T22:00:00Z",
+          "url": "https://files01.core.ac.uk/download/pdf/235715894.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By July 1915, twenty-seven municipalities had already imposed burdensome liability costs to all jitney drivers.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1918,
+      "event": "More than 90% of 1915-era jitney services have ceased operating.",
+      "event_type": "regulatory",
+      "significance": "Effective end of the jitney as a major US transit form.",
+      "sources": [
+        {
+          "raw_id": "rollins:Jitney_Scholarship@2026-04-25T22:00:00Z",
+          "url": "https://files01.core.ac.uk/download/pdf/235715894.pdf",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By 1918, more than 90% of the jitney services that opened in 1915 had ceased operations.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

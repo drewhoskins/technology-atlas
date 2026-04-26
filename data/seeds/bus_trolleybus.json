@@ -1,0 +1,282 @@
+{
+  "id": "bus:trolleybus",
+  "name": "Trolleybus (overhead-wire electric bus)",
+  "domain": "transit",
+  "entry_type": "variant",
+  "parent_id": "bus",
+  "description": "An electric bus that draws power from a pair of overhead wires via twin trolley poles, operating on rubber tires (unlike a tram, which uses rails). The first prototype — Werner von Siemens's Elektromote — ran in Halensee, a suburb of Berlin, from 29 April to 13 June 1882, on a 540-metre test track. The Elektromote was a converted four-wheel landau carriage with two 2.2 kW motors driving the rear wheels through a chain, fed by 550 V DC drawn from overhead wires by a small eight-wheeled 'contact car' (Kontaktwagen) — the device that gave English its words 'trolley' and 'trolleybus.' The technology spread fitfully in the early 20th century, then became dominant in the 1930s and 1940s as cities sought rubber-tired vehicles that could share roads with cars but still draw clean grid electricity. By the early 1950s trolleybuses carried about 10% of US transit ridership with more than 6,500 vehicles in service. Western Europe and North America largely dismantled their networks from the 1950s onward in favour of the cheaper-to-deploy diesel motorbus, but the Soviet Union and the rest of the socialist bloc continued investing — about three-quarters of the roughly 150 European trolleybus systems still operating today are in central and eastern Europe. Switzerland and a handful of German cities also kept and modernised theirs. The trolleybus is the long-running competitor to the diesel bus: same body, same routes, same operational model, but with the polluting tailpipe replaced by a substation cable.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Electromote",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The Electromote was the world's first vehicle run like a trolleybus, which was first presented to the public on April 29, 1882, by its inventor Dr. Ernst Werner von Siemens in Halensee, a suburb of Berlin, Germany.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    },
+    {
+      "raw_id": "trolleybuses_org:History@2026-04-25T22:00:00Z",
+      "url": "https://trolleybuses.org/history/",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "At the peak of their operation in the early 1950s, trolleybuses represented about 10 percent of the transit activity in the United States, with more than 6500 units in operation.",
+      "ai_or_human": "ai",
+      "confidence": 0.9
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Werner von Siemens",
+      "role": "Inventor of the Elektromote and founder of Siemens & Halske",
+      "country": "Germany",
+      "year": 1882,
+      "contribution": "Presented the world's first electric road vehicle drawing power from overhead wires (Halensee, 29 April 1882). The 'Kontaktwagen' he devised — a small contact car running on the wires — supplied both the working principle and (via English use) the names 'trolley' and 'trolleybus.' His 1881 Paris Electric Exposition tram with overhead wires was the immediate technological predecessor.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The electric power transmission to the coach was by a flexible cable pulling a small eight-wheeled 'contact car' (Kontaktwagen) that ran along the overhead power lines. In English language use, the Kontaktwagen was later named the 'trolley', giving the trolley car and trolley bus their names.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1881, the first tram with overhead lines was presented by Werner von Siemens on the International Electric Exposition in Paris. The Elektromote then represented the next phase of this technology development in Berlin.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Horse-drawn omnibus",
+      "relationship": "evolved_from",
+      "year": 1826,
+      "brief": "Inherits the route + flag-down model from the horse omnibus.",
+      "linked_entry_id": "bus:horse_omnibus",
+      "sources": []
+    },
+    {
+      "name": "Electric tram (Siemens 1881, Lichterfelde)",
+      "relationship": "evolved_from",
+      "year": 1881,
+      "brief": "Siemens's 1881 Lichterfelde tram, then the Paris Electric Exposition tram with overhead lines, are direct technological parents of the trolleybus. Removing the rails (and the rail-vehicle franchise) was the trolleybus's main innovation.",
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1881, the first tram with overhead lines was presented by Werner von Siemens on the International Electric Exposition in Paris.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Overhead twin-wire DC power distribution",
+      "type": "infrastructure",
+      "role": "Trolleybuses need a positive and a negative wire (unlike trams, which use the rails for return current). The twin-wire grid is more expensive than tram wire but spares the city from rail track. Voltage was originally 550 V DC; modern systems use 600–750 V DC.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Electromote was a converted four-wheel landau carriage, equipped with two 2.2 kW electric motors transmitting the power using a chain drive to the rear wheels. The voltage used was 550 V DC.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Trolley pole / current collector",
+      "type": "technology",
+      "role": "Each trolleybus uses two spring-loaded poles topped with grooved wheels or carbon shoes that ride the underside of the wires. Designs evolved from Siemens's eight-wheeled 'Kontaktwagen' (1882) to the modern roof-mounted twin-pole system.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "DC traction motor",
+      "type": "technology",
+      "role": "Originally direct-drive DC motors. From the 1990s, AC induction motors with on-board inverters allow regenerative braking. The motor + drive train is the technological inheritance from the electric tram.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Pneumatic tire",
+      "type": "technology",
+      "role": "What makes a trolleybus a bus rather than a tram: rubber tires let it share roads with cars, swerve around obstacles within the wire envelope, and avoid the per-mile cost of laying rail.",
+      "brief": null,
+      "linked_entry_id": "component:pneumatic_tire",
+      "sources": []
+    }
+  ],
+  "failed_alternatives": [
+    {
+      "name": "Battery streetcars / battery buses (early 20th century)",
+      "why_failed": "Electric buses with on-board lead-acid batteries were tried in the 1900s–1910s but the energy density was far too low: vehicles were heavy, ranges short, and battery swaps onerous. The trolleybus won by leaving the batteries on the grid. Battery-electric buses only become viable a century later, with lithium chemistry.",
+      "period": "1900–1920",
+      "sources": []
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Siemens & Halske",
+      "type": "private",
+      "period": "1882",
+      "brief": "Funded and built the Elektromote demonstration as a corporate proof-of-concept; the company later supplied trolleybus equipment to many German and European cities.",
+      "sources": []
+    },
+    {
+      "entity": "Municipal transit authorities (Western Europe and North America)",
+      "type": "government",
+      "period": "1930s–1950s",
+      "brief": "The 1930s–1950s build-out of trolleybus networks was almost entirely municipal-government financed, often as replacement for life-expired tram networks.",
+      "sources": []
+    },
+    {
+      "entity": "Soviet state planning ministries",
+      "type": "government",
+      "period": "1933–1991",
+      "brief": "From 1933 (Moscow's first line) onward, the Soviet state built the world's largest trolleybus network. The strategic logic — domestic electricity, no imported oil — kept Eastern-bloc trolleybus systems growing through the period that Western systems were being scrapped.",
+      "sources": [
+        {
+          "raw_id": "trolleybuses_org:History@2026-04-25T22:00:00Z",
+          "url": "https://trolleybuses.org/history/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "However, the largest systems with the greatest number of applications are found within the former socialist bloc. Nearly three-quarters of the 150 existing European trolleybus systems are located in Central and Eastern Europe.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 1882,
+      "jurisdiction": "Berlin (Halensee), Germany",
+      "description": "Siemens obtains permission to operate the Elektromote on a public street between 29 April and 13 June 1882 — the first regulatory acceptance of an electric road vehicle drawing power from overhead wires.",
+      "effect": "enabling",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The world's first trolleybus operated from April 29 to June 13, 1882, on a 540 m (591 yard) trail-track starting at Halensee railway station, and thence to Straße No. 5', today's Joachim-Friedrich-Straße, and 'Straße No. 13', today's Johann-Georg-Straße, crossing the upper Kurfürstendamm at former Kurfürstenplatz.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Halensee, Berlin (Germany)",
+      "year": 1882,
+      "milestone": "first",
+      "brief": "Elektromote demonstration, 540 m route, 29 April to 13 June 1882.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The world's first trolleybus operated from April 29 to June 13, 1882, on a 540 m (591 yard) trail-track starting at Halensee railway station.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "United States (national)",
+      "year": 1952,
+      "milestone": "10pct",
+      "brief": "Early 1950s peak: about 10% of US transit activity, more than 6,500 trolleybuses in operation. Decline begins almost immediately as cities convert to motorbuses.",
+      "sources": [
+        {
+          "raw_id": "trolleybuses_org:History@2026-04-25T22:00:00Z",
+          "url": "https://trolleybuses.org/history/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "At the peak of their operation in the early 1950s, trolleybuses represented about 10 percent of the transit activity in the United States, with more than 6500 units in operation.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "place": "Central and Eastern Europe (region)",
+      "year": 2024,
+      "milestone": "saturation",
+      "brief": "About three-quarters of the roughly 150 currently-operating European trolleybus systems are in central/eastern Europe — the inheritance of socialist-era investment when Western Europe was dismantling.",
+      "sources": [
+        {
+          "raw_id": "trolleybuses_org:History@2026-04-25T22:00:00Z",
+          "url": "https://trolleybuses.org/history/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Nearly three-quarters of the 150 existing European trolleybus systems are located in Central and Eastern Europe.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1881,
+      "event": "Werner von Siemens demonstrates the first tram with overhead wires at the Paris International Electric Exposition.",
+      "event_type": "invention",
+      "significance": "Establishes overhead-wire DC traction as a workable propulsion model for street vehicles — the immediate parent of the trolleybus.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1881, the first tram with overhead lines was presented by Werner von Siemens on the International Electric Exposition in Paris.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1882,
+      "event": "Elektromote runs in Halensee, Berlin (29 April – 13 June).",
+      "event_type": "invention",
+      "significance": "First trolleybus in the world. 540 m route, two 2.2 kW motors, 550 V DC.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Electromote was the world's first vehicle run like a trolleybus, which was first presented to the public on April 29, 1882, by its inventor Dr. Ernst Werner von Siemens in Halensee, a suburb of Berlin, Germany.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1952,
+      "event": "Peak of US trolleybus operation.",
+      "event_type": "scaling",
+      "significance": "Roughly 10% of US transit activity and 6,500+ vehicles. Decline starts immediately as cities switch to diesel motorbuses.",
+      "sources": [
+        {
+          "raw_id": "trolleybuses_org:History@2026-04-25T22:00:00Z",
+          "url": "https://trolleybuses.org/history/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "At the peak of their operation in the early 1950s, trolleybuses represented about 10 percent of the transit activity in the United States, with more than 6500 units in operation.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ]
+}

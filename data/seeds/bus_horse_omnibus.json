@@ -1,0 +1,410 @@
+{
+  "id": "bus:horse_omnibus",
+  "name": "Horse-drawn omnibus",
+  "domain": "transit",
+  "entry_type": "variant",
+  "parent_id": "bus",
+  "description": "A horse-drawn passenger coach running a fixed route on a published schedule, with a flat fare and walk-up boarding — the first vehicle to make the bus model commercially durable. Two reasonably independent inventions stand at the head of its lineage: Blaise Pascal's 1662 carrosses à cinq sols (Paris) and Stanislas Baudry's 1826 service in Nantes. Pascal's coaches were the genuine first, with five timetabled routes from 18 March 1662, but the Parlement of Paris restricted ridership by social class and a fare hike eroded what remained of public goodwill; the service ran until 1677 and the model was effectively forgotten. Baudry — a half-pay army colonel running a steam-powered flour mill on the outskirts of Nantes — set up a shuttle in 1826 to bring customers to a bathhouse heated by waste mill water. The bathhouse failed but the shuttle didn't, and Baudry pivoted into running urban routes named after the hatter Omnès (whose 'Omnès Omnibus' shop sign supplied the name). George Shillibeer, who had built omnibus bodies in Paris, brought the model to London on 4 July 1829 (Paddington–Bank). From there it spread quickly across Europe, the Americas, and the British colonies, and dominated city passenger transport until the motorbus and electric tram replaced it (in London, the last horse omnibus ran in 1911).",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "After the first trials starting 26 February, five routes were progressively started from 18 March 1662, linking multiple historical quarters of Paris. It had consistent routes, fixed schedules with regular departures (7½ minutes on the first line), and fares that varied based on distance.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    },
+    {
+      "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Omnibus",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "Stanislas Baudry built a steam-powered flour mill outside Nantes in 1823. Baudry saw an opportunity to open a bathhouse by using the hot water from the mill, but since it was a long walk from central Nantes and had few customers, he hit on the idea of offering a shuttle service with a coach on a regular schedule.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Blaise Pascal",
+      "role": "Mathematician, philosopher; promoter and conceptual designer of the carrosses à cinq sols",
+      "country": "France",
+      "year": 1662,
+      "contribution": "Designed and obtained royal privilege for the world's first scheduled, fixed-fare, fixed-route public coach service. The fourth route, opened 24 June 1662, introduced both circular routing and distance-based fares.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The carrosses à cinq sols (English: five-sol coaches) was the first modern form of public transport in the world, developed by mathematician and philosopher Blaise Pascal and operated in Paris in the 1660s.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The fourth route, beginning service on 24 June, contained two new innovations: a circular route and distance-based fares, which were implemented by dividing the circular route into six sections; riders paid five sols when they passed two sections.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Stanislas Baudry",
+      "role": "Operator; founded the first durable horse-omnibus service",
+      "country": "France",
+      "year": 1826,
+      "contribution": "Started the Nantes shuttle that became the modern omnibus and gave the vehicle its name; later expanded into Paris (Entreprise Générale des Omnibus, 1828).",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Baudry launched the first urban transit service in 1826, calling his coach an 'omnibus,' a Latin word meaning 'for all.' The company appeared publicly on August 10, 1826, after obtaining permission from the municipality, and began operating on September 30, 1826.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "George Shillibeer",
+      "role": "Operator; founded London's first omnibus service",
+      "country": "United Kingdom",
+      "year": 1829,
+      "contribution": "Adapted the Paris omnibus model for London on 4 July 1829, running between the Yorkshire Stingo (Paddington) and Bank Junction. Established the bus business in the English-speaking world.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "londonbusmuseum:Shillibeer@2026-04-25T22:00:00Z",
+          "url": "https://www.londonbusmuseum.com/george-shillibeer-father-of-the-london-bus/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Whilst in Paris, Shillibeer concluded that operating similar vehicles in London, but for the fare-paying public with multiple stops, would be a paying enterprise, so he returned to his native city. George Shillibeer was born in 1797 at Tottenham Court Road, London.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Monsieur Omnès",
+      "role": "Hatter whose 'Omnès Omnibus' shop sign in Nantes gave the omnibus its name (the original Nantes omnibus stop was outside his shop)",
+      "country": "France",
+      "year": 1826,
+      "contribution": "Inadvertent etymological contributor: the Latin pun 'Omnès Omnibus' on his sign was adopted as the name of Baudry's service.",
+      "recognition_status": "obscure",
+      "sources": [
+        {
+          "raw_id": "loc:Legend_of_Monsieur_Omnes@2026-04-25T22:00:00Z",
+          "url": "https://blogs.loc.gov/folklife/2020/02/the-legend-of-monsieur-omnes/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The service started at the Place du Commerce, outside the hat shop of M. Omnès, who displayed the motto Omnès Omnibus ('Omnès for all') on his shopfront.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Stagecoach",
+      "relationship": "evolved_from",
+      "year": 1640,
+      "brief": "Long-distance scheduled stage service between cities. The horse omnibus is, in mechanical terms, a stagecoach with a shorter route, more stops, and walk-up boarding rather than booking by stage.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Hackney coach",
+      "relationship": "competing_predecessor",
+      "year": 1620,
+      "brief": "Hired horse-drawn coach available for individual charter from London ranks; an ancestor of the taxi, not the bus, since each passenger arranged hire individually rather than joining a posted route.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Carrosses à cinq sols (Pascal)",
+      "relationship": "inspiration",
+      "year": 1662,
+      "brief": "Pascal's Paris coach service was the first to combine fixed routes, schedules, and walk-up fares — the bus model in all but the name. It went out of service in 1677 and was effectively re-discovered by Baudry 149 years later.",
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "According to Marc Gaillard, the service ran until 1677.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Paved urban streets",
+      "type": "infrastructure",
+      "role": "Allowed multi-passenger coaches to maintain a tolerable speed and avoid axle damage. The expanding macadam-and-cobble road network of early-19th-century European cities is what made fixed-route service feasible at a profit.",
+      "brief": "Pre-Telford and Macadam, the cost of horseflesh and coach repair on muddy streets made omnibus fares uneconomic.",
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Royal/municipal route concession",
+      "type": "practice",
+      "role": "Both Pascal and Baudry needed prior government permission to run a scheduled route in a public street. Baudry obtained municipal permission on 10 August 1826 before opening on 30 September.",
+      "brief": "The bus business is a regulated business from day one; route licensing is a recurring theme across the variants.",
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The company appeared publicly on August 10, 1826, after obtaining permission from the municipality, and began operating on September 30, 1826.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Printed timetables and route signage",
+      "type": "practice",
+      "role": "A scheduled, fixed-route service requires riders to know where the coach goes and when. Pascal's 1662 lines published 7½-minute headways on the first route — a level of operational discipline new to European cities.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "It had consistent routes, fixed schedules with regular departures (7½ minutes on the first line), and fares that varied based on distance.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "failed_alternatives": [
+    {
+      "name": "Pascal carrosses (1662–1677)",
+      "why_failed": "The Parlement of Paris barred 'soldiers, pages, liverymen, and laborers' from the coaches to protect the comfort of bourgeois riders, then raised the fare from 5 to 6 sols. Public opinion turned against the service and ridership collapsed. The technological model was right but the social design was wrong.",
+      "period": "1662–1677",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "However, the Parlement of Paris barred the commoners (soldiers, pages, liverymen, and laborers) from riding in the carriages 'to assure the greater comfort and freedom of the bourgeois and meritous classes'.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "These 'safety' measures, along with others such as a police ordinance that threatened 'whipping and greater penalties' for those who interfered with proper operation on the service, and a fare increase from five to six French sols, eventually caused public opinion to turn against the service, causing the enterprise's profitability to decline.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Baudry's bathhouse",
+      "why_failed": "The original Nantes shuttle was meant to feed riders to Baudry's bathhouse, but riders treated the coach as the destination, not the feeder. Baudry shut the bathhouse and the mill and pivoted into omnibus operations — a clean example of customers revealing a different job-to-be-done than the founder had imagined.",
+      "period": "1823–1826",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "He therefore established a shuttle with a horse-drawn carriage. The success was immediate, but not where it was expected: although the cars were full when they left Nantes, the baths remained empty. The people of Nantes were using his cars to get around.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Louis XIV (royal privilege grant) and the Duc de Roannez consortium",
+      "type": "government",
+      "period": "1662–1677",
+      "brief": "Pascal's enterprise required a royal privilege granted in 1661–1662; the Duc de Roannez (Pascal's patron) and a noble consortium funded operations.",
+      "sources": []
+    },
+    {
+      "entity": "Stanislas Baudry / Entreprise Générale des Omnibus",
+      "type": "private",
+      "period": "1826–1855",
+      "brief": "Baudry self-funded the Nantes service from his mill business, then organised the Paris-based Entreprise Générale des Omnibus in 1828. The firm lost money in its first two years and nearly failed.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The omnibuses proved extremely popular from the start, though Baudry's firm lost money in its first two years of operation and nearly failed.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 1662,
+      "jurisdiction": "Parlement of Paris (France)",
+      "description": "Bars commoners (soldiers, pages, liverymen, laborers) from the carrosses, restricting them to bourgeois and 'meritous classes'. Threatens 'whipping and greater penalties' for interference.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "However, the Parlement of Paris barred the commoners (soldiers, pages, liverymen, and laborers) from riding in the carriages 'to assure the greater comfort and freedom of the bourgeois and meritous classes'.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1826,
+      "jurisdiction": "Municipality of Nantes (France)",
+      "description": "Grants Baudry permission to operate a scheduled urban omnibus route — the first municipal bus license.",
+      "effect": "enabling",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The company appeared publicly on August 10, 1826, after obtaining permission from the municipality, and began operating on September 30, 1826.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Paris, France",
+      "year": 1662,
+      "milestone": "first",
+      "brief": "Pascal's carrosses à cinq sols, five timetabled routes from 18 March 1662; service ran until 1677.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "After the first trials starting 26 February, five routes were progressively started from 18 March 1662, linking multiple historical quarters of Paris.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "Nantes, France",
+      "year": 1826,
+      "milestone": "first",
+      "brief": "Stanislas Baudry's modern-era omnibus, public from 10 August 1826; running from 30 September 1826.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Baudry launched the first urban transit service in 1826, calling his coach an 'omnibus,' a Latin word meaning 'for all.'",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "London, United Kingdom",
+      "year": 1829,
+      "milestone": "first",
+      "brief": "Shillibeer's Paddington–Bank service, 4 July 1829. 20 passengers, three horses, four daily round trips, fare one shilling.",
+      "sources": [
+        {
+          "raw_id": "londonbusmuseum:Shillibeer@2026-04-25T22:00:00Z",
+          "url": "https://www.londonbusmuseum.com/george-shillibeer-father-of-the-london-bus/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 4th July 1829, Shillibeer's first Omnibuses went into service between Paddington (The Yorkshire Stingo) and 'Bank Junction' (Bank of England) via the 'New Road' (now Marylebone Road), Somers Town and City Road.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "londonbusmuseum:Shillibeer@2026-04-25T22:00:00Z",
+          "url": "https://www.londonbusmuseum.com/george-shillibeer-father-of-the-london-bus/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first Omnibuses carried 20 passengers and were drawn by three horses. Four services were provided in each direction daily. The fare was one shilling, not cheap.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1662,
+      "event": "Pascal's carrosses à cinq sols open in Paris (18 March, first three routes; 24 June, fourth circular route).",
+      "event_type": "invention",
+      "significance": "First scheduled, fixed-route, fixed-fare passenger coach service in modern history.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "After the first trials starting 26 February, five routes were progressively started from 18 March 1662, linking multiple historical quarters of Paris.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1677,
+      "event": "Pascal's carrosses cease operation.",
+      "event_type": "regulatory",
+      "significance": "End of the first bus model after fifteen years; the model is forgotten until Baudry rediscovers it 149 years later.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "According to Marc Gaillard, the service ran until 1677.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "year": 1826,
+      "event": "Baudry opens the Nantes omnibus, 30 September.",
+      "event_type": "invention",
+      "significance": "Modern-era reinvention; gives the bus its name.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Omnibus",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Baudry launched the first urban transit service in 1826, calling his coach an 'omnibus,' a Latin word meaning 'for all.'",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1829,
+      "event": "Shillibeer launches the London omnibus, 4 July.",
+      "event_type": "adoption",
+      "significance": "The model crosses the Channel and becomes a global English-language word within weeks.",
+      "sources": [
+        {
+          "raw_id": "londonbusmuseum:Shillibeer@2026-04-25T22:00:00Z",
+          "url": "https://www.londonbusmuseum.com/george-shillibeer-father-of-the-london-bus/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "'Saturday the new vehicle, called the Omnibus, commenced running from Paddington to the City, and excited considerable notice, both from the novel form of the carriage, and the elegance with which it is fitted out.' This account was from the Morning Post of 7th July 1829.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "id": "standalone:bus_rapid_transit",
+  "name": "Bus Rapid Transit (BRT)",
+  "domain": "transit",
+  "entry_type": "standalone",
+  "parent_id": null,
+  "description": "A bus-based mass-transit system that imitates rail in everything except the vehicle: dedicated bus-only running ways, raised-platform stations, level boarding, off-board fare collection, signal priority at intersections, and high-capacity (often articulated or biarticulated) vehicles. The category was invented in Curitiba, Brazil, in 1974, when mayor Jaime Lerner — an architect who had led a Universidade Federal do Paraná team that wrote the 1968 Curitiba Master Plan — refused to widen arterial roads and instead built dedicated busways down the medians of axial corridors. The first 20 km opened in 1974 with 'tube stations' that pre-paid and level-boarded passengers like a subway. The Rede Integrada de Transporte (RIT) carried 54,000 daily passengers in its first year and 2.4 million by 2014. Curitiba's design template — dedicated lane + station + level boarding + biarticulated buses up to 270 passengers — has been copied in over 200 cities globally, most prominently Bogotá's TransMilenio (2000), Quito, Mexico City, Guangzhou and Jakarta. BRT matters because it offers most of a metro's capacity at a small fraction of the capital cost ($5–25M per km vs. $100M+ per km for heavy rail), making rapid transit fiscally tractable in cities that would otherwise have nothing.",
+  "description_sources": [
+    {
+      "raw_id": "streetsblog:Curitiba_50_years@2026-04-25T22:00:00Z",
+      "url": "https://usa.streetsblog.org/2024/10/17/curitiba-50-years-of-lessons-from-the-worlds-first-bus-rapid-transit",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "In 1974, Curitiba inaugurated the first 20 kilometers of a pioneering transit system that became known as Bus Rapid Transit (BRT).",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    },
+    {
+      "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The first BRT system in the world was the Rede Integrada de Transporte (RIT, integrated transportation network), implemented in Curitiba, Brazil, in 1974.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Jaime Lerner",
+      "role": "Architect, planner, three-term mayor of Curitiba; principal author and political champion of BRT",
+      "country": "Brazil",
+      "year": 1974,
+      "contribution": "Took office in 1971 with the Curitiba Master Plan he had helped draft (1968) and built the world's first BRT corridor in 1974, refusing pressure to widen arterial roads and instead reserving lanes for buses. Conceived the 'tube station' that brought subway-style level boarding to a surface bus.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "streetsblog:Curitiba_50_years@2026-04-25T22:00:00Z",
+          "url": "https://usa.streetsblog.org/2024/10/17/curitiba-50-years-of-lessons-from-the-worlds-first-bus-rapid-transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The creation of the BRT system is primarily credited to Jaime Lerner, who assumed his first term as Curitiba's mayor in 1971. Resisting public pressure to widen arterial roads to accommodate growing traffic, he helped to conceive and refine the city's master plan to preserve the structure of the city and took office with an acute understanding of how efficient public transit and urban development go hand-in-hand.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Jaime Lerner, who later became mayor, led a team from the Universidade Federal do Paraná that suggested a reduction of private vehicle traffic in the downtown area and a convenient and affordable public transit system. The plan also sought to concentrate development along the bus routes to maximise the benefit of the high capacity system. This plan, known as the Curitiba Master Plan, was adopted in 1968.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Motorized gasoline / diesel bus",
+      "relationship": "evolved_from",
+      "year": 1936,
+      "brief": "BRT does not invent a new vehicle — it inherits the diesel motorbus and runs it under different infrastructure rules.",
+      "linked_entry_id": "bus:motorized_gasoline",
+      "sources": []
+    },
+    {
+      "name": "Articulated bus",
+      "relationship": "evolved_from",
+      "year": 1937,
+      "brief": "BRT depends on the articulated and biarticulated bus form factor to deliver the per-vehicle passenger capacity that justifies a dedicated lane.",
+      "linked_entry_id": "component:articulated_bus",
+      "sources": []
+    },
+    {
+      "name": "Heavy-rail metro",
+      "relationship": "competing_predecessor",
+      "year": 1863,
+      "brief": "BRT is explicitly framed as a low-cost substitute for an underground metro: same operating model (high-capacity, level-boarded, signal-prioritised), one tenth the capital cost.",
+      "linked_entry_id": null,
+      "sources": []
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Dedicated bus-only running way",
+      "type": "infrastructure",
+      "role": "The defining feature. A median or kerbside lane reserved for buses lets them maintain rail-like average speeds in congested cities. Without it, a 'BRT' is just a bus.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Tube station with level pre-paid boarding",
+      "type": "infrastructure",
+      "role": "Curitiba's signature invention: a raised, enclosed platform where passengers pay before entering and board flush with the bus floor. Cuts dwell time per stop from 30 seconds to 8–10, the single biggest determinant of corridor throughput.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Key features that defined Curitiba's BRT included the groundbreaking concept of the 'tube stations,' which incorporated the subway-defining elements of pre-paid and same-level boarding into a surface system, turning the bus into a subway with specially designed stations that allow for same-level pre-paid boarding, dedicated busways, short headways, and higher-capacity vehicles (up to 270 passengers per double-articulated bus).",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Biarticulated bus (up to 270 passengers)",
+      "type": "technology",
+      "role": "The vehicle side of high corridor capacity. Curitiba's biarticulateds let one bus carry the load of three.",
+      "brief": null,
+      "linked_entry_id": "component:articulated_bus",
+      "sources": []
+    },
+    {
+      "name": "Transit-oriented development zoning",
+      "type": "process",
+      "role": "Curitiba paired the BRT corridors with zoning that concentrated tall-building development along the busways — a deliberate land-use lever that fed ridership and generated property-tax base. The land-use coupling is what distinguishes Curitiba's BRT from a purely transport project.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The plan also sought to concentrate development along the bus routes to maximise the benefit of the high capacity system.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Municipality of Curitiba (Brazil) and the State of Paraná",
+      "type": "government",
+      "period": "1974–present",
+      "brief": "Original infrastructure funded by the city; vehicles operated by private concessionaires under municipal regulation.",
+      "sources": []
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 1968,
+      "jurisdiction": "Municipality of Curitiba (Brazil)",
+      "description": "Adoption of the Curitiba Master Plan, drafted by Lerner's UFP team — the legal foundation that made dedicated busways possible six years later.",
+      "effect": "enabling",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "This plan, known as the Curitiba Master Plan, was adopted in 1968.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Curitiba, Brazil",
+      "year": 1974,
+      "milestone": "first",
+      "brief": "First 20 km of the Rede Integrada de Transporte open. Carried 54,000 daily passengers in year one.",
+      "sources": [
+        {
+          "raw_id": "streetsblog:Curitiba_50_years@2026-04-25T22:00:00Z",
+          "url": "https://usa.streetsblog.org/2024/10/17/curitiba-50-years-of-lessons-from-the-worlds-first-bus-rapid-transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1974, Curitiba inaugurated the first 20 kilometers of a pioneering transit system that became known as Bus Rapid Transit (BRT).",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "Curitiba, Brazil",
+      "year": 2014,
+      "milestone": "saturation",
+      "brief": "RIT carries 2.4 million daily passengers — a 44× increase from year one, on the same dedicated-busway template.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The innovative and cost-efficient public transit network helped mold and accommodate the city's growth, expanding from servicing 54,000 daily passengers in its first year to over 2.4 million by 2014.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1968,
+      "event": "Curitiba Master Plan adopted.",
+      "event_type": "regulatory",
+      "significance": "Lerner's plan reserves arterial corridors for transit instead of road widening — the precondition for BRT six years later.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_rapid_transit@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_rapid_transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "This plan, known as the Curitiba Master Plan, was adopted in 1968.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1971,
+      "event": "Jaime Lerner becomes mayor of Curitiba (first of three terms).",
+      "event_type": "adoption",
+      "significance": "Political agency to implement the Master Plan.",
+      "sources": [
+        {
+          "raw_id": "streetsblog:Curitiba_50_years@2026-04-25T22:00:00Z",
+          "url": "https://usa.streetsblog.org/2024/10/17/curitiba-50-years-of-lessons-from-the-worlds-first-bus-rapid-transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The creation of the BRT system is primarily credited to Jaime Lerner, who assumed his first term as Curitiba's mayor in 1971.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1974,
+      "event": "First 20 km of Curitiba's Rede Integrada de Transporte opens.",
+      "event_type": "invention",
+      "significance": "Birth of Bus Rapid Transit as a category.",
+      "sources": [
+        {
+          "raw_id": "streetsblog:Curitiba_50_years@2026-04-25T22:00:00Z",
+          "url": "https://usa.streetsblog.org/2024/10/17/curitiba-50-years-of-lessons-from-the-worlds-first-bus-rapid-transit",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1974, Curitiba inaugurated the first 20 kilometers of a pioneering transit system that became known as Bus Rapid Transit (BRT).",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ]
+}
