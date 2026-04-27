@@ -1,0 +1,106 @@
+{
+  "bus": {
+    "entry_id": "bus",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Shillibeer%27s_first_omnibus.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Shillibeer%27s_first_omnibus.png",
+    "title": "Shillibeer's first London omnibus, 1829",
+    "credit": "Unknown engraver, from \"Omnibuses and Cabs\" (Henry Charles Moore, 1902); via Wikimedia Commons",
+    "license": "Public domain (UK and US)",
+    "verified_at": "2026-04-26T12:30:00Z",
+    "note": "Used on the Bus category page as a representative early-omnibus image; the same illustration also represents the Horse-drawn omnibus variant."
+  },
+  "bus:horse_omnibus": {
+    "entry_id": "bus:horse_omnibus",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Shillibeer%27s_first_omnibus.png",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Shillibeer%27s_first_omnibus.png",
+    "title": "Shillibeer's first London omnibus, 1829",
+    "credit": "Unknown engraver, from \"Omnibuses and Cabs\" (Henry Charles Moore, 1902); via Wikimedia Commons",
+    "license": "Public domain (UK and US)",
+    "verified_at": "2026-04-26T12:30:00Z"
+  },
+  "bus:motorized_gasoline": {
+    "entry_id": "bus:motorized_gasoline",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Erster_Benzin-Omnibus_der_Welt.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Erster_Benzin-Omnibus_der_Welt.jpg",
+    "title": "Der erste Benzin-Omnibus der Welt — Netphen, 1895",
+    "credit": "Siegener Zeitung, 20 March 1895; via Wikimedia Commons",
+    "license": "Public domain",
+    "verified_at": "2026-04-26T12:30:00Z",
+    "note": "The original press photograph of the world's first internal-combustion bus, run by the Netphener Omnibusgesellschaft from 18 March 1895."
+  },
+  "bus:motorized_diesel": {
+    "entry_id": "bus:motorized_diesel",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Mercedes-Benz_O_305_Heppenheim_100_1915.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_O_305_Heppenheim_100_1915.JPG",
+    "title": "Mercedes-Benz O 305, preserved in Heppenheim",
+    "credit": "LosHawlos (Wikimedia Commons), 2005",
+    "license": "CC BY-SA 3.0 / GFDL 1.2+",
+    "verified_at": "2026-04-26T12:30:00Z",
+    "note": "Mercedes-Benz O 305 (1969-1987) — the canonical European VöV-Standard-Bus diesel transit bus, illustrative of the variant rather than its earliest example."
+  },
+  "bus:trolleybus": {
+    "entry_id": "bus:trolleybus",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/29/First_Trolleybuss_of_Siemens_in_Berlin_1882_%28postcard%29.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:First_Trolleybuss_of_Siemens_in_Berlin_1882_(postcard).jpg",
+    "title": "Siemens Elektromote, Berlin Halensee, 1882 — world's first trolleybus",
+    "credit": "Anonymous, contemporary postcard reproduction (Siemens Archive); via Wikimedia Commons",
+    "license": "Public domain",
+    "verified_at": "2026-04-26T12:30:00Z"
+  },
+  "bus:battery_electric_modern": {
+    "entry_id": "bus:battery_electric_modern",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Dalian_BRT_BYD_K9Fe.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dalian_BRT_BYD_K9Fe.jpg",
+    "title": "BYD K9Fe in Dalian BRT service, 2018",
+    "credit": "Zhiyuan Wang, uploaded by Saa350 (Wikimedia Commons), 2018",
+    "license": "CC BY-SA 4.0 / GFDL 1.2+",
+    "verified_at": "2026-04-26T12:30:00Z"
+  },
+  "transit_system:bus_rapid_transit": {
+    "entry_id": "transit_system:bus_rapid_transit",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Bus_Rapid_Transit_System_%28BRT%29_Curitiba_%28Brasil%29.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bus_Rapid_Transit_System_(BRT)_Curitiba_(Brasil).jpg",
+    "title": "Bus Rapid Transit (BRT), Curitiba, Brasil — origin of the modern BRT model",
+    "credit": "Hans-Rudolf Stoll (Wikimedia Commons)",
+    "license": "CC BY 2.0",
+    "verified_at": "2026-04-26T12:30:00Z",
+    "note": "Curitiba's BRT — raised platforms, level boarding, pre-paid fares — the design Lerner inaugurated in 1974 and that became the BRT template worldwide."
+  },
+  "engine:internal_combustion_engine": {
+    "entry_id": "engine:internal_combustion_engine",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Otto_four-stroke-cycle_internal_combustion_engine.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Otto_four-stroke-cycle_internal_combustion_engine.jpg",
+    "title": "Otto four-stroke-cycle internal combustion engine (Crossley-built example, on display at the National Museum of Nature and Science, Tokyo)",
+    "credit": "Momotarou2012 (Wikimedia Commons), 2013",
+    "license": "CC BY-SA 3.0",
+    "verified_at": "2026-04-26T12:30:00Z"
+  },
+  "tire:pneumatic_tire": {
+    "entry_id": "tire:pneumatic_tire",
+    "status": "external",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Dunlop_first_pneumatic_bicycle_tyre.JPG",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Dunlop_first_pneumatic_bicycle_tyre.JPG",
+    "title": "John Boyd Dunlop's first pneumatic bicycle tyre (National Museum of Scotland, dated 1887)",
+    "credit": "Geni (Wikimedia Commons), 2016",
+    "license": "CC BY-SA 4.0 / GFDL 1.2+",
+    "verified_at": "2026-04-26T12:30:00Z"
+  },
+  "bus:articulated": {
+    "entry_id": "bus:articulated",
+    "status": "placeholder",
+    "note": "No suitably representative CC-licensed image of an early (1937 Milan or 1938 Twin Coach) articulated bus found at curation time. Modern articulated bus photos are abundant on Commons but would mislead the chronological framing of this stub."
+  },
+  "phenomenon:jitney_movement": {
+    "entry_id": "phenomenon:jitney_movement",
+    "status": "placeholder",
+    "note": "No verified period photograph of a 1914-1918 jitney-Model-T located on Commons at curation time. Period press photographs of jitneys exist in archival collections but were not findable via Commons search."
+  }
+}

@@ -1,0 +1,787 @@
+{
+  "id": "bus:motorized_diesel",
+  "name": "Motorized diesel (compression-ignition) bus",
+  "domain": "transit",
+  "entry_type": "variant",
+  "parent_id": "bus",
+  "description": "A bus powered by a compression-ignition (diesel) internal-combustion engine, fed with light or middle distillate fuel oil rather than gasoline. The diesel bus is the propulsion variant that displaced both the gasoline bus and the trolleybus to dominate transit globally from roughly 1936 through 2020. Its lineage runs from Rudolf Diesel's 1893–1897 prototype work at Maschinenfabrik Augsburg (later MAN), through Benz & Cie's pre-chamber OB 2 truck engine of 1923 (the world's first commercial diesel road-vehicle engine), to the MAN type NOB diesel-equipped omnibus from 1926, Daimler-Benz's three-axle N 56 series-production diesel bus of 1928, and the unified German VöV-Standard-Bus / Mercedes-Benz O 305 of 1969 that defined the late-20th-century city bus form factor in Western Europe. In North America the breakthrough came with GM's Yellow Coach Model 719 (1938), which married a rear-mounted Detroit Diesel two-stroke 6-71 engine to a transit chassis — the configuration that became standard for postwar US city buses. By the early postwar decades, the diesel bus had largely replaced the gasoline bus on regular routes (gasoline survives mainly on shuttle, school and light fleets), and from the 1950s onward most Western European and North American cities also retired their trolleybuses in favour of cheaper diesel operation. Diesel's dominance held for roughly seven decades on the strength of three properties — energy-dense fuel that gave long shift ranges without overhead infrastructure, a rugged engine architecture suitable for a 12+-year transit duty cycle, and a fuel-cost advantage that compounded across large fleets. Regulation gradually closed the cost gap from the 1970 US Clean Air Act onwards (first heavy-duty diesel emission standards in 1974, 92% particulate reduction mandate by 1996, ULSD fuel from 15 October 2006 in the US) and the European Euro 0–VI sequence (Euro I 1992, Euro VI 2014). By the late 2010s, urban low-emission zones in Madrid (2018), Paris (announced 2018), London (ULEZ 2020) and others, plus the EU Clean Vehicles Directive 2019/1161, had set explicit phase-out trajectories for diesel transit fleets in major Western cities, opening the slot now being filled by battery-electric and (more slowly) hydrogen buses.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Diesel_engine@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Diesel_engine",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The most common power source since the 1920s has been the diesel engine for buses.",
+      "ai_or_human": "ai",
+      "confidence": 0.9
+    },
+    {
+      "raw_id": "transinfo:diesel_omnibuses@2026-04-25T22:00:00Z",
+      "url": "https://trans.info/en/history-transport-part-7-first-business-diesel-omnibuses-88347",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "In 1928, Daimler-Benz produced a series-production bus with diesel engine. More specifically, in 1928, Daimler-Benz sent its first series-production bus on a promotional journey – the three-axle N 56.",
+      "ai_or_human": "ai",
+      "confidence": 0.85
+    },
+    {
+      "raw_id": "wikipedia:Mercedes-Benz_O305@2026-04-25T22:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_O305",
+      "fetched_at": "2026-04-25T22:00:00Z",
+      "quoted_text": "The Mercedes-Benz O305 is a single deck, double deck or articulated bus manufactured by Mercedes-Benz in Mannheim, West Germany from 1969 until 1988. Mercedes-Benz unveiled the O305 prototype in 1967, production in Mannheim started in 1969.",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Rudolf Diesel",
+      "role": "Inventor of the compression-ignition (diesel) engine",
+      "country": "Germany",
+      "year": 1893,
+      "contribution": "Patented the compression-ignition principle in 1893 (German patent for 'working methods and design for internal combustion engines') and demonstrated the first commercially viable diesel engine — the Motor 250/400, 25 hp, single-cylinder — at MAN Augsburg on 17 February 1897 with 26.2% thermal efficiency, more than double the steam engine of the period. Every diesel bus engine in history descends from this Augsburg engine.",
+      "recognition_status": "headline",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Rudolf_Diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On February 23, 1893, German engineer Rudolf Diesel was granted a patent by the Imperial Patent Office in Berlin for 'working methods and design for internal combustion engines.'",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Rudolf_Diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "A successful test on February 17, 1897, showed Diesel's engine had an efficiency of 26.2 percent, a significant achievement given that the steam engines of the times only had efficiencies of around 10 percent.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Heinrich von Buz / Maschinenfabrik Augsburg (later MAN)",
+      "role": "Industrial sponsor of Diesel's engine R&D, 1893–1897; first manufacturer of the working diesel engine",
+      "country": "Germany",
+      "year": 1893,
+      "contribution": "As director of Maschinenfabrik Augsburg (which would later merge into MAN), von Buz funded and hosted Diesel's prototype work in Augsburg from 1893 to 1897. The first functional engine — 150 mm bore, 400 mm stroke, 25 hp — was built at the Augsburg plant and first ran on 10 August 1893. Without Augsburg's industrial backing the engine would not have left the patent office.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Rudolf_Diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "From 1893 to 1897, Heinrich von Buz, director of Maschinenfabrik Augsburg in Augsburg, provided Rudolf Diesel the opportunity to test and develop his ideas. The first functional engine prototype (150mm bore and a 400mm stroke, producing 25 hp) was built at Maschinenfabrik-Augsburg AG (MAN) plant in July 1893 and started on August 10, 1893.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Krupp",
+      "role": "Co-funder of Diesel's prototype engine via 1893 contract with Maschinenfabrik Augsburg",
+      "country": "Germany",
+      "year": 1893,
+      "contribution": "In April 1893, Krupp signed a contract with Diesel and joined Maschinenfabrik Augsburg in funding the build of a single prototype engine in Augsburg. Krupp's industrial weight made the engine credible to other manufacturers; the company later built diesel engines for marine and rail use that informed bus-engine design.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Diesel_engine@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Diesel_engine",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In April 1893, Diesel and Krupp signed a contract that allows Diesel to build a prototype engine, and both Krupp and the Maschinenfabrik Augsburg decided to collaborate and build a single prototype in Augsburg.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Benz & Cie. (Mannheim diesel team)",
+      "role": "Built the world's first commercial diesel road-vehicle engine, the OB 2 (1922–1923)",
+      "country": "Germany",
+      "year": 1923,
+      "contribution": "Benz's Mannheim engineering team developed the four-cylinder pre-chamber-injection OB 2 diesel engine, first put on the test stand in autumn 1922 and first road-tested on 10 September 1923 in the hills around Gaggenau. The decision to commence series production was taken on 14 April 1923; the truck entered series production in 1924 with output raised to 50 hp. The pre-chamber design — small antechamber that initiated combustion before the main charge — was the breakthrough that made the diesel viable in a road vehicle, and was carried forward into bus engines for the next two decades.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "daimlertruck:first_diesel_trucks_1923@2026-04-25T22:00:00Z",
+          "url": "https://www.daimlertruck.com/en/newsroom/pressrelease/the-worlds-first-ever-diesel-trucks-from-benz-and-daimler-in-1923-50057802",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1923, Benz & Cie. presented the first diesel truck to the world, driven by a four-cylinder diesel OB 2 engine with an output of 33 kW (45 hp) at 1000 rpm.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        },
+        {
+          "raw_id": "daimlertruck:first_diesel_trucks_1923@2026-04-25T22:00:00Z",
+          "url": "https://www.daimlertruck.com/en/newsroom/pressrelease/the-worlds-first-ever-diesel-trucks-from-benz-and-daimler-in-1923-50057802",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 14 April 1923, after successful introduction of the diesel pre-chamber system, Benz & Cie. decided to commence series production of a four-cylinder diesel engine, and in 1924 the truck entered series production with an engine output increased to 50 hp (37 kW).",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "MAN (Maschinenfabrik Augsburg-Nürnberg)",
+      "role": "Built the first dedicated diesel-engined bus chassis (NOB type, 1926)",
+      "country": "Germany",
+      "year": 1926,
+      "contribution": "MAN began offering its NOB-type omnibus in 1924 with a petrol engine, then from 1926 with an alternative 65 hp four-cylinder diesel engine — the first commercially-offered diesel bus chassis. MAN inherited the original Diesel-prototype site at Augsburg and was the natural manufacturer to put the engine in a bus.",
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "transinfo:diesel_omnibuses@2026-04-25T22:00:00Z",
+          "url": "https://trans.info/en/history-transport-part-7-first-business-diesel-omnibuses-88347",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The MAN type NOB omnibus was offered commencing in 1924, and starting in 1926 it was also offered with a 65 HP four-cylinder diesel engine.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "name": "Daimler-Benz (Mannheim and Marienfelde)",
+      "role": "Produced the first series-production diesel bus, the N 56 (1928); later defined the late-20th-century city bus with the O 305 (1969)",
+      "country": "Germany",
+      "year": 1928,
+      "contribution": "After the 1926 Daimler–Benz merger, the combined firm sent its three-axle N 56 — the first series-production diesel bus — on a promotional journey in 1928. Forty years later the same Mannheim plant launched the O 305 (prototype 1967, production 1969), the Mercedes-Benz adaptation of the unified German VöV-Standard-Bus design, with an OM 407 h six-cylinder diesel producing 147 kW (200 hp). The O 305 and its derivatives were licence-built or adopted by Büssing, Magirus-Deutz, MAN, Ikarus, Gräf/Steyr, Heuliez, Renault and Pegaso, making it the de-facto European city-bus template.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "transinfo:diesel_omnibuses@2026-04-25T22:00:00Z",
+          "url": "https://trans.info/en/history-transport-part-7-first-business-diesel-omnibuses-88347",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1928, Daimler-Benz produced a series-production bus with diesel engine. More specifically, in 1928, Daimler-Benz sent its first series-production bus on a promotional journey – the three-axle N 56.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        },
+        {
+          "raw_id": "wikipedia:Mercedes-Benz_O305@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_O305",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "It was built as either a complete bus or a bus chassis and was the Mercedes-Benz adaptation of the unified German VöV-Standard-Bus design, that was produced by some different bus manufacturers including Büssing, Magirus-Deutz, MAN, Ikarus, Gräf/Steyr, Heuliez, Renault, and Pegaso.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "Yellow Coach / GM Truck & Coach Division (Detroit Diesel team)",
+      "role": "Brought the diesel transit bus to North America with the Model 719 (1938) and PD-3751 Silversides (1947)",
+      "country": "United States",
+      "year": 1938,
+      "contribution": "Yellow Coach (acquired by GM in 1943 to form GMC Truck & Coach Division) built about 400 Model 719 buses in 1938, the first North-American transit bus with a rear-mounted Detroit Diesel two-stroke 6-71 engine producing 165 hp. Detroit Diesel's Series 71 (1939) became the dominant US bus engine of the 1940s–60s. The 1947 PD-3751 'Silversides' Greyhound coach extended the configuration to inter-city service.",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Yellow_Coach@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Yellow_Coach_Manufacturing_Company",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Some 400 units were built in 1938, with GM's very advanced Yellow Coach Model 719 being the primary recipient. Its rear-mounted 6-71 DD made 165 hp—also available in GM's transit buses—making it the first truly competitive diesel coach.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        },
+        {
+          "raw_id": "wikipedia:Yellow_Coach@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Yellow_Coach_Manufacturing_Company",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1939, Detroit Diesel Series 71 engines were installed in buses produced by Yellow Coach, who would be acquired by GM in 1943 to launch the GMC Truck and Coach Division.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    }
+  ],
+  "predecessors": [
+    {
+      "name": "Motorized gasoline (internal combustion) bus",
+      "relationship": "evolved_from",
+      "year": 1895,
+      "brief": "The diesel bus inherits the entire chassis, body, and operational model of the gasoline bus that Benz inaugurated at Netphen in 1895 — only the engine changes. Diesel's pre-chamber engine was first dropped into existing gasoline-bus chassis (MAN NOB, 1926; Daimler N 56, 1928), and the displacement of gasoline by diesel on regular routes was largely complete in Europe by the late 1930s and in the US by the 1950s.",
+      "linked_entry_id": "bus:motorized_gasoline",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Diesel_engine@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Diesel_engine",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The most common power source since the 1920s has been the diesel engine for buses.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Trolleybus (overhead-wire electric bus)",
+      "relationship": "competing_predecessor",
+      "year": 1882,
+      "brief": "Trolleybuses had a 13-year head start on the gasoline bus and were the dominant electrified bus mode through the 1950s; the diesel bus's postwar cost advantage (no overhead infrastructure, no per-route capex) is what triggered the Western dismantling of trolleybus networks from the early 1950s onward. The Soviet bloc kept its trolleybus systems precisely because diesel fuel had to be imported while electricity was domestic.",
+      "linked_entry_id": "bus:trolleybus",
+      "sources": []
+    },
+    {
+      "name": "Diesel-powered railcar / lorry (1912–1924)",
+      "relationship": "inspiration",
+      "year": 1923,
+      "brief": "The diesel engine reached commercial road and rail service before it reached buses. The Prussian State Railways operated the world's first diesel locomotive (Diesel-Sulzer-Klose, delivered 1912 to Berlin), and Benz & Cie's OB 2 truck in September 1923 was the first commercial diesel road vehicle. Both demonstrated the engine's ruggedness and fuel-economy advantage in heavy-vehicle duty cycles, clearing the path to put the same engine in a bus chassis 1–3 years later.",
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "daimlertruck:first_diesel_trucks_1923@2026-04-25T22:00:00Z",
+          "url": "https://www.daimlertruck.com/en/newsroom/pressrelease/the-worlds-first-ever-diesel-trucks-from-benz-and-daimler-in-1923-50057802",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1923, Benz & Cie. presented the first diesel truck to the world, driven by a four-cylinder diesel OB 2 engine with an output of 33 kW (45 hp) at 1000 rpm.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Compression-ignition diesel engine (Otto-vs-Diesel cycle)",
+      "type": "technology",
+      "role": "The defining enabler. Compression-ignition runs the cylinder at compression ratios of 14:1–24:1 (vs. 8:1–12:1 for petrol Otto-cycle), so the charge auto-ignites without a spark plug and the engine extracts more work per unit of fuel — the source of the diesel bus's 25–32% fuel-consumption advantage over a comparable gasoline bus. The architecture is also more rugged at high duty cycles, which is what makes a 12+ year transit life realistic.",
+      "brief": null,
+      "linked_entry_id": "engine:internal_combustion_engine",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Rudolf_Diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In his engine, fuel was injected at the end of the compression stroke and was ignited by the high temperature resulting from the compression.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "Pre-chamber (indirect) fuel injection",
+      "type": "technology",
+      "role": "Benz & Cie's 1922–1923 OB 2 used a small antechamber where injected fuel partly combusted before passing into the main cylinder — taming the noisy, smoky combustion of the original Diesel architecture and making the engine viable for road vehicles. Pre-chamber (indirect) injection dominated transit diesels until direct injection took over in the 1980s–90s.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "daimlertruck:first_diesel_trucks_1923@2026-04-25T22:00:00Z",
+          "url": "https://www.daimlertruck.com/en/newsroom/pressrelease/the-worlds-first-ever-diesel-trucks-from-benz-and-daimler-in-1923-50057802",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On 14 April 1923, after successful introduction of the diesel pre-chamber system, Benz & Cie. decided to commence series production of a four-cylinder diesel engine, and in 1924 the truck entered series production with an engine output increased to 50 hp (37 kW).",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "name": "High-pressure mechanical fuel injection pump (Bosch)",
+      "type": "technology",
+      "role": "Robert Bosch's in-line PE injection pump, productionised from 1927, made compression-ignition engines mass-producible: it metered fuel into each cylinder at hundreds of bars of pressure with timing matched to the crank, replacing the cumbersome air-blast injection of the Diesel original. Every commercial diesel bus from the late 1920s onward used a Bosch (or Bosch-licensee) injection pump.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Diesel fuel distribution network (middle distillate refining and supply)",
+      "type": "infrastructure",
+      "role": "Diesel buses share a fuel chemistry with trucks, ships, locomotives and heating oil — a much larger and more stable middle-distillate market than gasoline. Existing oil-company refineries and depots could supply transit garages without bespoke buildout, which was a major cost advantage over both petrol-only fleets and (electric) trolleybus substations.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Ultra-low-sulfur diesel (ULSD) fuel",
+      "type": "standard",
+      "role": "Standard diesel fuel had ~500 ppm sulfur; ULSD caps it at 15 ppm, enabling diesel particulate filters and SCR (selective catalytic reduction) aftertreatment that would otherwise be poisoned by sulfur. California mandated ULSD for transit and school buses from 1 September 2006; US-wide highway phase-in began 15 October 2006; full nationwide compliance was reached on 1 December 2010. The shift extended the diesel bus's life by another decade against tightening emissions standards.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Ultra_low_sulfur_diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Ultra-low-sulfur_diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Beginning in 2006, EPA began to phase-in more stringent regulations to lower the amount of sulfur in diesel fuel to 15 ppm. The United States started phasing in ULSD requirements for highway vehicles in 2006, with implementation for off-highway applications, such as locomotive and marine fuel, beginning in 2007.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Ultra_low_sulfur_diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Ultra-low-sulfur_diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Since December 1, 2010, all highway diesel fuel nationwide has been ULSD.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "name": "VöV-Standard-Bus (German unified city-bus design specification)",
+      "type": "standard",
+      "role": "The Verband öffentlicher Verkehrsbetriebe (VöV) standardised dimensions, doorways, and chassis interfaces in the late 1960s, allowing operators across West Germany to mix vehicles from Mercedes-Benz, MAN, Büssing and Magirus-Deutz on the same routes and procure spare parts interchangeably. The Mercedes-Benz O 305 (1969) was the canonical implementation. The VöV standard also propagated into Eastern and Southern Europe via Ikarus, Gräf/Steyr, Heuliez, Renault and Pegaso licence-builds.",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": [
+        {
+          "raw_id": "wikipedia:Mercedes-Benz_O305@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_O305",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "It was built as either a complete bus or a bus chassis and was the Mercedes-Benz adaptation of the unified German VöV-Standard-Bus design, that was produced by some different bus manufacturers including Büssing, Magirus-Deutz, MAN, Ikarus, Gräf/Steyr, Heuliez, Renault, and Pegaso.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    }
+  ],
+  "failed_alternatives": [
+    {
+      "name": "Producer-gas (wood-gas) buses (1939–1945)",
+      "why_failed": "When wartime fuel shortages cut off diesel and gasoline supplies, European operators retrofitted buses with Imbert-style wood-gas generators (mass-produced from 1931): trailer-mounted gasifiers that converted firewood or charcoal into producer gas to feed the existing engine. Germany alone had ~500,000 such vehicles by 1945; France had ~65,000 by 1942; trucks, buses and tractors all participated. The technology worked but was slow, dirty, and required ~10 minutes of warmup plus regular cleaning of the gasifier; once the war ended and diesel fuel was again available the conversions were stripped within months. A textbook case of regression-on-shortage that did not survive the shortage.",
+      "period": "1939–1945",
+      "sources": [
+        {
+          "raw_id": "lowtechmag:wood_gas_vehicles@2026-04-25T22:00:00Z",
+          "url": "https://solar.lowtechmagazine.com/2010/01/wood-gas-vehicles-firewood-in-the-fuel-tank/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In Germany alone, there were an estimated 500,000 wood gas-powered vehicles on the road by 1945.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        },
+        {
+          "raw_id": "lowtechmag:wood_gas_vehicles@2026-04-25T22:00:00Z",
+          "url": "https://solar.lowtechmagazine.com/2010/01/wood-gas-vehicles-firewood-in-the-fuel-tank/",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Not only private cars but also trucks, buses, tractors, motorcycles, ships and trains were equipped with a wood gasification unit.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "name": "Heavy-fuel-oil hot-bulb / semi-diesel bus engines (1900s–1920s)",
+      "why_failed": "Before the Bosch high-pressure injection pump made true compression-ignition diesels reliable, several European manufacturers offered 'semi-diesel' or hot-bulb engines that ran on heavy fuel oil but used a heated combustion chamber to assist ignition. They competed briefly with both petrol and early diesel road engines but were heavier, less efficient, slower-revving, and required a torch to pre-heat the bulb — none of which suited a stop-start city bus duty cycle. Compression-ignition with mechanical injection won definitively after 1923.",
+      "period": "1905–1925",
+      "sources": []
+    },
+    {
+      "name": "London Electrobus Company battery-electric buses (1907–1909)",
+      "why_failed": "The Electrobus Company ran lead-acid battery buses between Victoria and Liverpool Street from 15 July 1907; service ceased 3 January 1910 amid fraud accusations and the company was wound up. Eight units were sold to Brighton, Hove and Preston United where they ran reliably for ten years — but the model could not scale: lead-acid energy density was too low, battery swaps too operationally heavy, and the diesel engine that arrived a decade and a half later closed the energy-density gap from the propulsion side rather than the chemistry side. A reminder that battery-electric buses had a serious 1900s prototype run that failed precisely because diesel was about to win.",
+      "period": "1907–1910 (London); 1910–1920 (Brighton)",
+      "sources": [
+        {
+          "raw_id": "wikipedia:London_Electrobus_Company@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/London_Electrobus_Company",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The company, which was first registered in April 1906, started running a service of electrobuses between London's Victoria Station and Liverpool Street on 15 July 1907.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        },
+        {
+          "raw_id": "wikipedia:London_Electrobus_Company@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/London_Electrobus_Company",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "By 3 January 1910 the electrobus service had ceased and the company went into liquidation amid accusations of fraud.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    }
+  ],
+  "funders": [
+    {
+      "entity": "Krupp + Maschinenfabrik Augsburg consortium (1893 prototype)",
+      "type": "private",
+      "period": "1893–1897",
+      "brief": "Krupp and Maschinenfabrik Augsburg jointly funded the build of Diesel's first prototype engine in Augsburg in 1893 — the engine that, three decades later, became the diesel bus engine. Industrial-consortium funding of the upstream technology, before any bus exists, is the funding pattern that distinguishes the diesel bus from the gasoline bus (which had Benz's car business as the parent).",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Diesel_engine@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Diesel_engine",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In April 1893, Diesel and Krupp signed a contract that allows Diesel to build a prototype engine, and both Krupp and the Maschinenfabrik Augsburg decided to collaborate and build a single prototype in Augsburg.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "entity": "Daimler-Benz / Benz & Cie internal R&D budget",
+      "type": "private",
+      "period": "1922–1928",
+      "brief": "The OB 2 truck-engine programme (1922–24) and the N 56 diesel bus (1928) were funded entirely from Benz/Daimler corporate R&D — not government. The 1926 Daimler–Benz merger consolidated diesel-bus production at Mannheim, where it remained for a century.",
+      "sources": []
+    },
+    {
+      "entity": "Société des Transports en Commun de la Région Parisienne (STCRP) / RATP capital programmes",
+      "type": "government",
+      "period": "1924–1960s",
+      "brief": "Paris's municipal transit agency STCRP (founded 1921, succeeded by RATP in 1949) financed sustained fleet purchases of Renault diesel buses from 1930 onward, replacing tramway routes wholesale under political pressure. The case is a clean example of municipal-government capital driving the diesel-bus replacement of streetcars in a major Western European city.",
+      "sources": [
+        {
+          "raw_id": "fr_wikipedia:Reseau_de_bus_RATP@2026-04-25T22:00:00Z",
+          "url": "https://fr.wikipedia.org/wiki/R%C3%A9seau_de_bus_RATP",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "À partir de 1924, la STCRP abandonne le constructeur Somua au profit de Renault et de ses petits autobus KX1 pour 25 voyageurs. À partir de 1930, sous l'effet des pressions politiques, la STCRP supprime rapidement les lignes de tramway et les remplace par des lignes d'autobus.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "entity": "US municipal transit authorities (NYC TA, CTA, MBTA, etc.) and the Federal Urban Mass Transportation Act of 1964",
+      "type": "government",
+      "period": "1948–2010",
+      "brief": "Postwar US transit agencies funded large diesel-bus fleet purchases through municipal bonds and, after 1964, federal Urban Mass Transportation Act capital grants (later FTA Section 5307/5339). The 12-year-life capital-replacement cycle that defines US transit procurement to this day is built around the diesel bus's expected service life. NYC Transit Authority, formed 1953 to operate the city's subway and bus systems, was the largest single buyer of diesel buses in North America for most of the second half of the 20th century.",
+      "sources": []
+    },
+    {
+      "entity": "Marshall Plan (European Recovery Programme) reconstruction transfers",
+      "type": "government",
+      "period": "1948–1952",
+      "brief": "Although the Marshall Plan did not target transit fleets specifically, the European Recovery Programme funded reconstruction of national transport networks in West Germany, France, Italy and the UK during the 1948–52 window — the same years European cities were re-equipping their war-damaged bus fleets. Italian provinces, for example, applied an average of 52% of their Marshall Plan grants to transportation infrastructure. The Marshall Plan was thus a structural enabler of the postwar diesel-bus rollout in Europe rather than a direct fleet-buyer.",
+      "sources": []
+    }
+  ],
+  "regulatory_moments": [
+    {
+      "year": 1970,
+      "jurisdiction": "United States (Clean Air Act amendments, Pub.L. 91-604)",
+      "description": "The 1970 Clean Air Act gave EPA authority to set federal emissions standards for mobile sources, including heavy-duty diesel engines used in buses. The first on-road diesel emission standards took effect in 1974, targeting carbon monoxide (CO) and combined hydrocarbons + nitrogen oxide (HC+NOx). This was the start of the regulatory pressure that would, over five decades, end the diesel bus's economic dominance.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "epa:clean_air_act_evolution@2026-04-25T22:00:00Z",
+          "url": "https://www.epa.gov/clean-air-act-overview/evolution-clean-air-act",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first on-road diesel emission standards established by the EPA went into effect in 1974, specifically targeting carbon monoxide (CO), and hydrocarbons and nitrogen oxide (HCa+NOx).",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1990,
+      "jurisdiction": "United States (Clean Air Act Amendments)",
+      "description": "The 1990 amendments specifically singled out urban transit buses, requiring a 92% reduction in diesel particulate emissions by 1996 and an 83% reduction for all other heavy-duty diesel engines on the same timeline. The bus-specific carve-out reflected a public-health concern about diesel particulates in dense urban corridors and led to the first widespread deployment of diesel particulate filters and clean-fuel transit programmes.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "epa:clean_air_act_evolution@2026-04-25T22:00:00Z",
+          "url": "https://www.epa.gov/clean-air-act-overview/evolution-clean-air-act",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The 1990 amendments required new urban buses to reduce emissions of diesel particulates 92% by 1996, and all other heavy-duty diesel engines to achieve an 83% reduction by the same year.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "jurisdiction": "European Union (Council Directive 91/542/EEC — Euro I heavy-duty)",
+      "description": "Euro I established the first EU-wide emission limits for new heavy-duty diesel engines used in trucks and buses. Subsequent Euro II (1996), Euro III (2000), Euro IV (2005), Euro V (2008/2009) and Euro VI (2013/2014) progressively tightened NOx, particulate, hydrocarbon and CO limits. Euro VI in particular required SCR + DPF aftertreatment systems that roughly doubled the engine package cost — closing the operating-cost gap with battery-electric buses.",
+      "effect": "restricting",
+      "sources": [
+        {
+          "raw_id": "wikipedia:European_emission_standards@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/European_emission_standards",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Euro I standards were introduced in 1992 and followed by the introduction of Euro II regulations in 1996. These standards applied to both truck engines and urban buses; the urban bus standards, however, were voluntary.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "jurisdiction": "United States (EPA Highway Diesel Rule) and California (CARB)",
+      "description": "California mandated ultra-low-sulfur diesel (ULSD, 15 ppm sulfur) for transit and school buses from 1 September 2006; US-wide highway phase-in began 15 October 2006. ULSD enabled diesel particulate filters and SCR aftertreatment that pushed diesel-bus tailpipe emissions to historically low levels — extending the platform's regulatory life by roughly a decade against the rising battery-electric alternative.",
+      "effect": "mixed",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Ultra_low_sulfur_diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Ultra-low-sulfur_diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Ultra low sulfur diesel (ULSD) fuel was first rolled out on October 15, 2006 in the United States minus Alaska which switched over completely in 2010.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "jurisdiction": "Madrid (Madrid Central low-emissions zone)",
+      "description": "Madrid created a 4.7 km² low-emissions zone in the city centre, banning petrol vehicles registered before 2000 and diesel vehicles registered before 2006 — including buses, although transit fleets received exemptions during transition. Madrid was followed by Paris (announced 2018, full diesel ban targeted 2025), London (Ultra Low Emission Zone from April 2019, expanded 2020), Barcelona (2019) and others. These urban diesel restrictions are the regulatory bookend matching the 1865 Red Flag Act in the gasoline-bus story — a city-level intervention that reshaped the propulsion mix of the road-transport stock.",
+      "effect": "restricting",
+      "sources": []
+    },
+    {
+      "year": 2019,
+      "jurisdiction": "European Union (Clean Vehicles Directive 2019/1161)",
+      "description": "The revised Clean Vehicles Directive sets binding minimum-procurement targets for clean and zero-emission buses in EU public transit fleets — 45% of new bus procurements 'clean' (including some Euro VI diesel) and 22.5% 'zero-emission' (battery-electric or hydrogen) by 2025, with the zero-emission share rising to 65% by 2030 in many member states. This is the regulation that closes the diesel-bus market window in the EU on a hard timeline.",
+      "effect": "restricting",
+      "sources": []
+    }
+  ],
+  "geographic_diffusion": [
+    {
+      "place": "Berlin (Marienfelde + IAA exhibition), Germany",
+      "year": 1923,
+      "milestone": "first",
+      "brief": "Daimler showed its 5C diesel commercial vehicles — a truck, tipper and bus — at the Berlin automobile exhibition (IAA) in early October 1923, the first public showing of a diesel-engined bus chassis. Series production followed within five years.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_transport_in_Berlin@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_transport_in_Berlin",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first Daimler 5C commercial diesel vehicles produced in Marienfelde – a truck, a three-sided tipper and a bus – were presented at the beginning of October 1923 at the Berlin automobile exhibition.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "place": "Germany (national)",
+      "year": 1928,
+      "milestone": "1pct",
+      "brief": "Daimler-Benz's series-production three-axle N 56 began promotional touring in 1928, joining MAN's NOB diesel option (1926). By the late 1920s diesel buses were a small but growing share of new German transit purchases — well under 10%, but no longer experimental.",
+      "sources": [
+        {
+          "raw_id": "transinfo:diesel_omnibuses@2026-04-25T22:00:00Z",
+          "url": "https://trans.info/en/history-transport-part-7-first-business-diesel-omnibuses-88347",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1928, Daimler-Benz produced a series-production bus with diesel engine. More specifically, in 1928, Daimler-Benz sent its first series-production bus on a promotional journey – the three-axle N 56.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "place": "Paris, France (STCRP / RATP)",
+      "year": 1930,
+      "milestone": "10pct",
+      "brief": "From 1930, under political pressure, Paris's STCRP began rapidly suppressing tramway lines and replacing them with bus lines — Renault diesel chassis were the dominant procurement. By the mid-1930s diesel buses were a meaningful share of the city's transit fleet, and tramway closures continued through 1937.",
+      "sources": [
+        {
+          "raw_id": "fr_wikipedia:Reseau_de_bus_RATP@2026-04-25T22:00:00Z",
+          "url": "https://fr.wikipedia.org/wiki/R%C3%A9seau_de_bus_RATP",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "À partir de 1924, la STCRP abandonne le constructeur Somua au profit de Renault et de ses petits autobus KX1 pour 25 voyageurs. À partir de 1930, sous l'effet des pressions politiques, la STCRP supprime rapidement les lignes de tramway et les remplace par des lignes d'autobus.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "place": "United States (national)",
+      "year": 1938,
+      "milestone": "first",
+      "brief": "Yellow Coach built ~400 Model 719 diesel transit buses in 1938, the first North-American transit buses with rear-mounted Detroit Diesel 6-71 engines. After 1943 (GM acquisition) and the 1947 PD-3751 Silversides Greyhound coach, diesel rapidly displaced gasoline on US inter-city and large-fleet city routes.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Yellow_Coach@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Yellow_Coach_Manufacturing_Company",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Some 400 units were built in 1938, with GM's very advanced Yellow Coach Model 719 being the primary recipient. Its rear-mounted 6-71 DD made 165 hp—also available in GM's transit buses—making it the first truly competitive diesel coach.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "place": "Western Europe and North America (region)",
+      "year": 1969,
+      "milestone": "saturation",
+      "brief": "By the late 1960s, diesel was the default propulsion for new transit buses across Western Europe and North America. The Mercedes-Benz O 305 (production from 1969, ~16,000 built by 1985) and its VöV-Standard-Bus contemporaries from MAN, Büssing and Magirus-Deutz set the template that the rest of Europe adopted, while in the US the GMC TDH/RTS series did the same job. Trolleybus networks had been largely dismantled and gasoline was relegated to small fleets.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Mercedes-Benz_O305@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_O305",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Mercedes-Benz O305 is a single deck, double deck or articulated bus manufactured by Mercedes-Benz in Mannheim, West Germany from 1969 until 1988.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "place": "Madrid / Paris / London (Western European capitals)",
+      "year": 2018,
+      "milestone": "saturation",
+      "brief": "By 2018, Western European capitals were imposing low-emission zones that begin to push diesel out of city centres. Madrid Central (2018, 4.7 km²), Paris's announced 2025 diesel ban, and London's Ultra Low Emission Zone (2019, expanded 2020) mark the practical end of the diesel bus's regulatory window in the largest Western European cities — even though the installed fleet remains overwhelmingly diesel into the late 2020s as it ages out of service.",
+      "sources": []
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1893,
+      "event": "Rudolf Diesel granted German patent for compression-ignition engine (23 February); Krupp and Maschinenfabrik Augsburg sign contract (April) to build the first prototype.",
+      "event_type": "patent",
+      "significance": "Founding patent of the propulsion technology that would dominate transit for the second half of the 20th century. Without the Krupp/Augsburg consortium, the engine remains a paper patent.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Rudolf_Diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "On February 23, 1893, German engineer Rudolf Diesel was granted a patent by the Imperial Patent Office in Berlin for 'working methods and design for internal combustion engines.'",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1897,
+      "event": "Diesel's Motor 250/400 successfully tested at MAN Augsburg, 17 February. 25 hp, 26.2% thermal efficiency.",
+      "event_type": "invention",
+      "significance": "First commercially viable compression-ignition engine. The 26.2% efficiency, more than double the contemporary steam engine's ~10%, is what made the technology economically interesting beyond a laboratory curiosity.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Rudolf_Diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Rudolf_Diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "A successful test on February 17, 1897, showed Diesel's engine had an efficiency of 26.2 percent, a significant achievement given that the steam engines of the times only had efficiencies of around 10 percent.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1923,
+      "event": "Benz & Cie OB 2 four-cylinder pre-chamber diesel — the first commercial diesel road-vehicle engine — first road-tested 10 September 1923 in the hills around Gaggenau. Daimler shows its 5C commercial diesel vehicles (truck, tipper, bus) at the Berlin IAA in October.",
+      "event_type": "invention",
+      "significance": "First commercial diesel road vehicles, including the first diesel-engined bus chassis shown publicly. Sets up the bus market that follows in 1926–28.",
+      "sources": [
+        {
+          "raw_id": "daimlertruck:first_diesel_trucks_1923@2026-04-25T22:00:00Z",
+          "url": "https://www.daimlertruck.com/en/newsroom/pressrelease/the-worlds-first-ever-diesel-trucks-from-benz-and-daimler-in-1923-50057802",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1923, Benz & Cie. presented the first diesel truck to the world, driven by a four-cylinder diesel OB 2 engine with an output of 33 kW (45 hp) at 1000 rpm.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        },
+        {
+          "raw_id": "wikipedia:Bus_transport_in_Berlin@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_transport_in_Berlin",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first Daimler 5C commercial diesel vehicles produced in Marienfelde – a truck, a three-sided tipper and a bus – were presented at the beginning of October 1923 at the Berlin automobile exhibition.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "year": 1926,
+      "event": "MAN type NOB omnibus offered with optional 65 hp four-cylinder diesel engine — the first commercially-available diesel bus chassis.",
+      "event_type": "invention",
+      "significance": "Diesel becomes a buyable bus configuration, not just a prototype.",
+      "sources": [
+        {
+          "raw_id": "transinfo:diesel_omnibuses@2026-04-25T22:00:00Z",
+          "url": "https://trans.info/en/history-transport-part-7-first-business-diesel-omnibuses-88347",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The MAN type NOB omnibus was offered commencing in 1924, and starting in 1926 it was also offered with a 65 HP four-cylinder diesel engine.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "year": 1928,
+      "event": "Daimler-Benz N 56 — first series-production diesel bus — sent on promotional touring journey.",
+      "event_type": "scaling",
+      "significance": "First serial diesel bus production line. Diesel transit moves from manufacturer-option to manufacturer-default within the decade.",
+      "sources": [
+        {
+          "raw_id": "transinfo:diesel_omnibuses@2026-04-25T22:00:00Z",
+          "url": "https://trans.info/en/history-transport-part-7-first-business-diesel-omnibuses-88347",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "In 1928, Daimler-Benz produced a series-production bus with diesel engine. More specifically, in 1928, Daimler-Benz sent its first series-production bus on a promotional journey – the three-axle N 56.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "year": 1938,
+      "event": "Yellow Coach Model 719 transit bus enters production — ~400 units built — with rear-mounted Detroit Diesel 6-71 two-stroke engine, 165 hp.",
+      "event_type": "scaling",
+      "significance": "Diesel transit reaches North America. The 6-71 / Series 71 architecture goes on to power most US transit buses through the 1960s and is the platform GM scales after acquiring Yellow Coach in 1943.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Yellow_Coach@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Yellow_Coach_Manufacturing_Company",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Some 400 units were built in 1938, with GM's very advanced Yellow Coach Model 719 being the primary recipient. Its rear-mounted 6-71 DD made 165 hp—also available in GM's transit buses—making it the first truly competitive diesel coach.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "year": 1969,
+      "event": "Mercedes-Benz O 305 enters production at Mannheim — adaptation of the German VöV-Standard-Bus design.",
+      "event_type": "adoption",
+      "significance": "Sets the canonical late-20th-century European city-bus form factor. Over 16,000 units built by 1985; licence-builds and design clones across Europe (Büssing, MAN, Magirus-Deutz, Ikarus, Heuliez, Renault, Pegaso). Marks the saturation point of the diesel bus's dominance.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Mercedes-Benz_O305@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Mercedes-Benz_O305",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Mercedes-Benz O305 is a single deck, double deck or articulated bus manufactured by Mercedes-Benz in Mannheim, West Germany from 1969 until 1988. Mercedes-Benz unveiled the O305 prototype in 1967, production in Mannheim started in 1969.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 1970,
+      "event": "US Clean Air Act amendments empower EPA to regulate diesel-engine emissions; first heavy-duty diesel standards take effect 1974.",
+      "event_type": "regulatory",
+      "significance": "Beginning of the regulatory pressure that would, over five decades, end the diesel bus's economic dominance. From this date forward, every new diesel bus engine has to clear a moving emissions target.",
+      "sources": [
+        {
+          "raw_id": "epa:clean_air_act_evolution@2026-04-25T22:00:00Z",
+          "url": "https://www.epa.gov/clean-air-act-overview/evolution-clean-air-act",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The first on-road diesel emission standards established by the EPA went into effect in 1974, specifically targeting carbon monoxide (CO), and hydrocarbons and nitrogen oxide (HCa+NOx).",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 1992,
+      "event": "Euro I heavy-duty emissions standards take effect across the European Union.",
+      "event_type": "regulatory",
+      "significance": "First EU-wide emissions limits on new diesel bus engines. The Euro 0 → Euro VI sequence over 1992–2014 progressively closed the diesel bus's cost advantage by mandating expensive aftertreatment hardware.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:European_emission_standards@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/European_emission_standards",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Euro I standards were introduced in 1992 and followed by the introduction of Euro II regulations in 1996. These standards applied to both truck engines and urban buses; the urban bus standards, however, were voluntary.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "event": "Ultra-low-sulfur diesel (ULSD) fuel rolled out in the US, beginning California (1 September) and nationwide highway (15 October).",
+      "event_type": "regulatory",
+      "significance": "Sulfur cap drops from ~500 ppm to 15 ppm, enabling diesel particulate filters and SCR aftertreatment. Extends the diesel bus's regulatory life by roughly a decade against tightening emission standards.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Ultra_low_sulfur_diesel@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Ultra-low-sulfur_diesel",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "Ultra low sulfur diesel (ULSD) fuel was first rolled out on October 15, 2006 in the United States minus Alaska which switched over completely in 2010.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "event": "Madrid creates 4.7 km² Madrid Central low-emissions zone, banning pre-2006 diesel vehicles. Paris announces 2025 diesel ban; London announces ULEZ (commences April 2019, expanded 2020).",
+      "event_type": "regulatory",
+      "significance": "First wave of urban diesel bans in major Western European capitals. The diesel bus's market window in city-centre service starts to close.",
+      "sources": []
+    }
+  ]
+}

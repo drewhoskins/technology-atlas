@@ -94,7 +94,16 @@
       "year": 1830,
       "brief": "Walter Hancock and Goldsworthy Gurney ran steam buses on British roads in the 1830s; the 1865 Locomotive Acts (the 'Red Flag Acts') effectively killed them by capping speeds at 4 mph and requiring a man with a flag to walk in front. They were a competing ancestor that lost to legal restriction long before the motorbus was technically possible.",
       "linked_entry_id": null,
-      "sources": []
+      "sources": [
+        {
+          "raw_id": "wikipedia:Locomotive_Acts@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Locomotive_Acts",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Locomotives Act 1865 (the 'Red Flag Act') imposed on road locomotives a speed limit of 2 mph in towns and 4 mph in the country. It increased the crew to three, of which one was to walk 60 yards ahead carrying a red flag.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
     },
     {
       "name": "Trolleybus (Elektromote)",
@@ -102,7 +111,16 @@
       "year": 1882,
       "brief": "Werner von Siemens's electric trolleybus prototype demonstrated electrified bus operation 13 years before the petrol bus. The two propulsion technologies competed for the next century.",
       "linked_entry_id": "bus:trolleybus",
-      "sources": []
+      "sources": [
+        {
+          "raw_id": "wikipedia:Electromote@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Electromote",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Electromote was the world's first vehicle run like a trolleybus, which was first presented to the public on April 29, 1882, by its inventor Dr. Ernst Werner von Siemens in Halensee, a suburb of Berlin, Germany.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
     }
   ],
   "enabling_components": [
@@ -111,7 +129,7 @@
       "type": "technology",
       "role": "Provides the on-board power that lets a bus operate without rails or overhead wires. The 1895 Netphen buses used a 2.9 L single-cylinder Benz engine; the technology line runs unbroken to today's diesel and CNG transit fleets.",
       "brief": null,
-      "linked_entry_id": "component:internal_combustion_engine",
+      "linked_entry_id": "engine:internal_combustion_engine",
       "sources": [
         {
           "raw_id": "mercedes-benz:Benz_buses_1895_1898@2026-04-25T22:00:00Z",
@@ -128,7 +146,7 @@
       "type": "technology",
       "role": "Solid rubber tires were standard on early motorbuses (the 1895 Netphen buses had them). Pneumatic tires, scaled from Dunlop's 1888 bicycle tire, made motorbus rides tolerable for passengers and dropped the unsprung mass, enabling higher speeds and lower road damage. By the 1910s pneumatic tires were standard equipment.",
       "brief": null,
-      "linked_entry_id": "component:pneumatic_tire",
+      "linked_entry_id": "tire:pneumatic_tire",
       "sources": []
     },
     {
@@ -162,7 +180,24 @@
       "name": "Steam omnibus (Hancock, Gurney)",
       "why_failed": "Killed by Britain's 1865 Locomotive Act ('Red Flag Act') which required a man with a red flag to walk in front and capped speeds at 4 mph in towns. The act was repealed only in 1896 — by which point the petrol bus had a head start that steam never recovered.",
       "period": "1830s–1860s",
-      "sources": []
+      "sources": [
+        {
+          "raw_id": "wikipedia:Locomotive_Acts@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Locomotive_Acts",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Locomotive Act 1865 (also known as the 'Red Flag Act') was introduced as a result of the increasing popularity of self-propelled traction engines (known then as 'road locomotives') on British public thoroughfares after 1850.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        },
+        {
+          "raw_id": "wikipedia:Locomotive_Acts@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Locomotive_Acts",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Locomotives on Highways Act 1896 defined a new class of light locomotives weighing less than 3 tons, to which the 1861, 1865 and 1878 Locomotive Acts did not apply. This removed from such vehicles the requirement for a crew of three with one man walking ahead, the speed limits and the bridge restrictions.",
+          "ai_or_human": "ai",
+          "confidence": 0.9
+        }
+      ]
     },
     {
       "name": "Jitney (independent five-cent automobile)",
@@ -202,14 +237,40 @@
       "jurisdiction": "United Kingdom (Locomotive Act / 'Red Flag Act')",
       "description": "Required self-propelled road vehicles to have a crew of three (one walking ahead with a red flag) and capped speeds at 4 mph in towns and 2 mph in the country. Effectively outlawed practical motor road transport in Britain for a generation.",
       "effect": "restricting",
-      "sources": []
+      "sources": [
+        {
+          "raw_id": "wikipedia:Locomotive_Acts@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Locomotive_Acts",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Locomotives Act 1865 (the 'Red Flag Act') imposed on road locomotives a speed limit of 2 mph in towns and 4 mph in the country. It increased the crew to three, of which one was to walk 60 yards ahead carrying a red flag.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        },
+        {
+          "raw_id": "wikipedia:Locomotive_Acts@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Locomotive_Acts",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "It has been claimed that the restrictions in the earlier act were advocated by those with interests in the UK railway industry and horse-drawn carriages.",
+          "ai_or_human": "ai",
+          "confidence": 0.85
+        }
+      ]
     },
     {
       "year": 1896,
       "jurisdiction": "United Kingdom (Locomotives on Highways Act)",
       "description": "Repealed the Red Flag requirement and raised speed limits, opening the British market to motorbuses. Marked by the 'Emancipation Run' from London to Brighton.",
       "effect": "enabling",
-      "sources": []
+      "sources": [
+        {
+          "raw_id": "wikipedia:Locomotive_Acts@2026-04-25T22:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Locomotive_Acts",
+          "fetched_at": "2026-04-25T22:00:00Z",
+          "quoted_text": "The Locomotives on Highways Act 1896 defined a new class of light locomotives weighing less than 3 tons, to which the 1861, 1865 and 1878 Locomotive Acts did not apply. This removed from such vehicles the requirement for a crew of three with one man walking ahead, the speed limits and the bridge restrictions.",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
     },
     {
       "year": 1915,

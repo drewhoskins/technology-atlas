@@ -1,0 +1,26 @@
+{
+  "id": "joint:articulation_joint",
+  "name": "Bus articulation joint (pivoting joint with bellows)",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "The mechanical assembly that links the two rigid halves of an articulated bus: a pivoting joint (the kinematic pair that lets the rear section yaw — and on hilly routes, also pitch — relative to the front), enclosed by flexible bellows on the inside and outside and a cover plate across the floor so passengers can walk between sections. The joint is what turns two ordinary bus bodies into a single 18 m vehicle that still negotiates ordinary urban turning circles. Production of the articulation assembly itself has been the province of a small number of specialist suppliers — for example, ATG Autotechnik GmbH near Hamburg — distinct from the bus manufacturers that integrate them. The joint design has evolved with the form factor: simple single-pivot articulation in the 1937 Milan and 1938 Twin Coach Baltimore vehicles; double-pivot 'biarticulated' designs from the 1990s onward to support the 24-27 m vehicles used in Curitiba-style BRT.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Articulated_bus@2026-04-26T15:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Articulated_bus",
+      "fetched_at": "2026-04-26T15:00:00Z",
+      "quoted_text": "linked by a pivoting joint (articulation) enclosed by protective bellows inside and outside, and a cover plate on the floor",
+      "ai_or_human": "ai",
+      "confidence": 0.95
+    },
+    {
+      "raw_id": "wikipedia:Articulated_bus@2026-04-26T15:00:00Z",
+      "url": "https://en.wikipedia.org/wiki/Articulated_bus",
+      "fetched_at": "2026-04-26T15:00:00Z",
+      "quoted_text": "Very few companies specialise in manufacturing the articulated section for the buses. One that does is ATG Autotechnik GmbH in Siek near Hamburg.",
+      "ai_or_human": "ai",
+      "confidence": 0.9
+    }
+  ]
+}

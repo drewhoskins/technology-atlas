@@ -72,3 +72,177 @@ For a tech-history vertical of this depth, the search-and-extract order that wor
 6. **Treat trade publications (Sustainable Bus, Streetsblog, Urban Transport Magazine) as corroboration only**, not primary sources — useful for "five recent sources agree" but cite the underlying primary.
 
 A worthwhile follow-up pass would be: a French-language Wikipedia trawl on Pascal/Baudry funders, a German-language trawl on Netphen and the early diesel-bus transition, and a dedicated diesel-bus variant entry once those sources are in cache.
+
+---
+
+# Source Quality Report — Diesel Bus Variant + Backfill (v2, 2026-04-25)
+
+This addendum covers the second-pass population of the bus vertical: the new
+`bus:motorized_diesel` variant and a backfill pass on the `sources: []` gaps
+flagged in the prior agent's eval.
+
+## Tooling note (v2)
+
+`WebFetch` was again denied in the sandbox; `WebSearch` worked. Direct
+execution of `scripts/build_db.py` (and any `python` / `uv` invocation) was
+blocked by the harness, so structural validation was performed via `jq`
+following the same approach the prior agent used:
+
+1. **`jq empty`** on every modified seed and the manifest — all valid JSON.
+2. **Enum cross-check** — every `entry_type`, `relationship`, `EnablingComponent.type`,
+   `Funder.type`, `RegulatoryMoment.effect`, `GeographicDiffusion.milestone`,
+   `KeyDate.event_type`, `Innovator.recognition_status`, and `Source.ai_or_human`
+   value in the new and modified seeds is one of the allowed literals in
+   `tech_atlas/schema.py`.
+3. **Confidence bounds** — all `confidence` values in the new seed are in
+   [0.85, 0.95], well within the schema-required `[0.0, 1.0]`.
+4. **Year-type check** — all `year` fields are JSON numbers (not strings).
+5. **Raw-id integrity** — every `raw_id` used in the new diesel seed and in
+   the gasoline-seed backfill resolves against an `id` in
+   `data/raw/manifest.json` (15 new manifest entries added).
+6. **Parent-id integrity** — `bus:motorized_diesel` has `parent_id: "bus"`,
+   which resolves to the existing `bus` category entry.
+
+If `uv run python scripts/build_db.py` reveals any pydantic-strictness
+mismatch I missed, the most likely culprit (per the prior agent) is a
+Literal-value typo — fixable in seconds.
+
+## What German and French Wikipedia delivered that English was missing
+
+The prior eval explicitly recommended a German-language trawl for the
+diesel-bus transition story, and that recommendation paid off. English
+Wikipedia covers the diesel engine well (Rudolf Diesel, MAN-Augsburg
+prototype, 1893 patent) but thins out sharply on the engine-to-bus jump.
+The richest material came from a triangle of German-aware sources:
+
+* **`de.wikipedia.org/wiki/Mercedes-Benz_O_305`** and its English mirror
+  identified the VöV-Standard-Bus framework as the canonical late-20th-century
+  city-bus design — the Daimler O 305 (1969, 16,000 units) was just one
+  manufacturer's implementation of the same standardised dimensions, doorways
+  and chassis interfaces also produced by Büssing, Magirus-Deutz, MAN, Ikarus,
+  Gräf/Steyr, Heuliez, Renault and Pegaso. English-only sources tend to
+  describe the O 305 as a Mercedes product rather than as the canonical
+  example of an industry-wide standard.
+* **`daimlertruck.com` corporate-archive press release on the 1923 OB 2
+  diesel** supplied the precise pre-chamber-system date (14 April 1923
+  decision to commence series production) and the 86% fuel-saving figure
+  vs. the petrol engine. No English Wikipedia article had this detail.
+* **`trans.info` (a German trade publication translated to English)** was
+  the only source that gave a clear, datable identification of the
+  *first series-production* diesel bus: the Daimler-Benz N 56 in 1928.
+  It also dated the MAN NOB diesel option to 1926 — three years earlier
+  than the 1928 Daimler series production. Both facts were either absent
+  or muddled in English-language sources.
+* **`fr.wikipedia.org/wiki/Réseau_de_bus_RATP`** — French Wikipedia gave a
+  much clearer account of the 1930 STCRP tramway-to-bus replacement in
+  Paris (the canonical European municipal example of diesel-bus
+  procurement displacing rail) than any English source. The same article
+  also identified Renault's first diesel bus engines (1930–31) with
+  precise displacements (7 L / 10.5 L direct-injection).
+* **`en.wikipedia.org/wiki/Bus_transport_in_Berlin`** — even the English
+  Berlin article had a German-source-derived nugget that English
+  Wikipedia's bus-history pages didn't surface: the October 1923 IAA
+  exhibition where Daimler showed its 5C diesel bus alongside the truck
+  and tipper. That date pins down "first public showing of a diesel-engined
+  bus chassis" two months after the OB 2 truck's first road test.
+
+The pattern: where a German manufacturer is centrally involved (Benz, MAN,
+Daimler), English Wikipedia tends to summarize while German Wikipedia
+records the dated detail. The same holds for French Wikipedia and Renault.
+Both languages were essential for the diesel variant.
+
+## Contradictions and priority disputes encountered
+
+* **"First diesel bus" is genuinely contested.** The strongest case is
+  MAN NOB (1926, optional diesel engine), but Daimler-Benz N 56 (1928, first
+  series production) is the more frequently cited "first" because series
+  production has more economic weight than an optional engine spec. The
+  seed credits MAN with the chassis-first crown (1926) and Daimler with the
+  series-production-first crown (1928), avoiding the false binary. Benz &
+  Cie's 1923 prototype bus shown at the IAA is treated as a "first showing"
+  rather than a "first commercial bus."
+* **GM Yellow Coach 1938 vs. 1947.** Curbside Classic frames the 1947
+  PD-3751 Silversides as "the first modern diesel bus." Wikipedia's Yellow
+  Coach article credits the 1938 Model 719 (~400 units, 6-71 Detroit Diesel)
+  as "the first truly competitive diesel coach." Both can be true — the
+  1938 vehicle was the technical breakthrough, the 1947 vehicle was its
+  commercial maturation. The seed records the 1938 date as the North
+  American `first` milestone and notes the 1947 PD-3751 in the innovator
+  contribution text.
+* **"Diesel displaces gasoline" date (Europe vs. US).** Wikipedia's
+  Diesel-engine article asserts diesel was "the most common power source
+  since the 1920s" for buses, which is true for German production but
+  optimistic for Western Europe as a whole and clearly wrong for the US
+  (where 1938 is the inflection point and full saturation arrives in the
+  late 1950s). The seed treats the European 1pct → 10pct → saturation
+  curve as 1928 → 1930 (Paris) → 1969 (Western Europe regional saturation
+  at the O 305 launch), and notes the US joined later via Yellow Coach 1938.
+
+## How the backfill went
+
+The eval flagged six high-priority `sources: []` gaps. Five of six were
+straightforward to backfill from English Wikipedia; one (`bus:trolleybus`
+1882 founding entry on `bus:motorized_gasoline.predecessors[]`) was already
+sourced indirectly via the trolleybus's own description; I added an
+explicit Electromote citation to close it cleanly.
+
+| Gap | Source used | Difficulty |
+|---|---|---|
+| `bus_motorized_gasoline.predecessors[].steam_bus` | Wikipedia Locomotive_Acts (Red Flag Act) | Easy |
+| `bus_motorized_gasoline.predecessors[].trolleybus` | Wikipedia Electromote | Easy |
+| `bus_motorized_gasoline.failed_alternatives[].steam_omnibus` | Wikipedia Locomotive_Acts (1865 + 1896 repeal) | Easy |
+| `bus_motorized_gasoline.regulatory_moments[].1865_red_flag` | Wikipedia Locomotive_Acts (verbatim 60-yards-ahead quote + railway-lobby attribution) | Easy |
+| `bus_motorized_gasoline.regulatory_moments[].1896_repeal` | Wikipedia Locomotive_Acts (1896 light-locomotive class) | Easy |
+
+I did not pursue the longer tail of `sources: []` arrays in the trolleybus,
+horse-omnibus, BRT, and battery-electric seeds — those were lower priority
+in the eval and cover dimensions (e.g., `enabling_components[].pneumatic_tire`
+on trolleybus) where the description-level citation already supports the
+claim. A future pass should target them; the German-language trawl for
+diesel didn't surface unique sources for those gaps, so they need a
+different source pass (e.g., trolleybuses.org for Soviet trolleybus dates,
+Russian-language Wikipedia for ZiU-9 specifics).
+
+## Sources newly added to manifest (v2)
+
+15 new artifact entries, bringing the manifest from 25 to 40:
+
+* English Wikipedia: Rudolf Diesel, Diesel engine, Mercedes-Benz O305,
+  Yellow Coach Manufacturing Company, European emission standards,
+  Ultra-low-sulfur diesel, London Electrobus Company, Locomotive Acts,
+  Bus transport in Berlin
+* German/French Wikipedia: fr_wikipedia: Véhicules utilitaires Renault 1930,
+  fr_wikipedia: Réseau de bus RATP
+* Trade / corporate / government: Daimler Truck press release (1923 OB 2),
+  trans.info (1928 N 56), EPA Clean Air Act evolution page, Low-Tech
+  Magazine wood-gas-vehicles essay
+
+All Wikipedia entries are CC-BY-SA-4.0 and `redistributable: true`. Corporate
+press releases and trade publications are flagged `redistributable: false`
+under fair-use citation; government works (EPA) are public-domain.
+Low-Tech Magazine asserts CC-BY-SA-3.0 on its content, treated as
+redistributable.
+
+## Recommendations for the next pass
+
+1. **More US-side diffusion datapoints.** The diesel variant has Paris 1930
+   and a regional Western European saturation 1969, but no New York / London
+   /Chicago city-level milestones. A pass through `nyct.info` and the FTA
+   National Transit Database would close this.
+2. **Battery-electric retrofit story.** When the diesel bus phases out, the
+   pattern in cities like Shenzhen is *retrofit*, not *replace* — the
+   chassis stays, the engine swaps. This is a 2020s story not yet captured
+   in the atlas.
+3. **A `component:diesel_engine` stub.** Defensible — Rudolf Diesel and the
+   1893–1897 Augsburg prototype have enough biographical and corporate
+   detail to support a stub similar in shape to
+   `component:internal_combustion_engine`. Not added in this pass to keep
+   the diesel-variant seed as the primary deliverable, but the source
+   material is already in the cache (`Diesel_Bus_History.txt`).
+4. **Hybrid-electric variant.** The diesel-electric hybrid bus
+   (Allison/BAE Systems Orion VII, 1998–2010s) is the actual technology
+   bridge between the diesel bus and the modern battery-electric bus, and
+   currently appears only as a passing reference in the battery-electric
+   seed. A `bus:hybrid_electric` variant would close the propulsion-tree
+   gap. The eval already lists this as suggested extension #8.
+

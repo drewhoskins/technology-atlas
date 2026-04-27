@@ -117,7 +117,7 @@
       "type": "technology",
       "role": "What makes a trolleybus a bus rather than a tram: rubber tires let it share roads with cars, swerve around obstacles within the wire envelope, and avoid the per-mile cost of laying rail.",
       "brief": null,
-      "linked_entry_id": "component:pneumatic_tire",
+      "linked_entry_id": "tire:pneumatic_tire",
       "sources": []
     }
   ],

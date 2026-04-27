@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(sqlite3:*)",
+      "Bash(jq:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(cat:*)",
+      "Bash(bin/atlas-open:*)",
+      "Bash(./bin/atlas-open:*)",
+      "Bash(open web/entries/*)"
+    ]
+  }
+}

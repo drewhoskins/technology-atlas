@@ -102,13 +102,24 @@ class KeyDate(BaseModel):
 
 
 class Entry(BaseModel):
-    """A single atlas entry — category, variant, standalone innovation, or component stub."""
+    """A single atlas entry — category, variant, independent topic, or brief stub.
+
+    `entry_type` describes the entry itself, not its role in another entry's story:
+      * category — has variants (e.g., bus)
+      * variant  — child of a category (e.g., bus:motorized_diesel)
+      * topic    — independent entry (e.g., transit_system:bus_rapid_transit)
+      * stub     — intentionally brief entry, often referenced by others (e.g., tire:pneumatic_tire)
+
+    "Component" is a relationship surfaced via enabling_components / backlinks, NOT a type.
+    Entry IDs follow `<kind>:<specific>` so the prefix names what the technology IS, not
+    the role it plays in some other entry's story.
+    """
 
     id: str
     name: str
     domain: str
     description: str
-    entry_type: Literal["category", "variant", "standalone", "stub"]
+    entry_type: Literal["category", "variant", "topic", "stub"]
     parent_id: str | None = None
 
     description_sources: list[Source] = Field(default_factory=list)

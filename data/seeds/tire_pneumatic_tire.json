@@ -1,5 +1,5 @@
 {
-  "id": "component:pneumatic_tire",
+  "id": "tire:pneumatic_tire",
   "name": "Pneumatic tire",
   "domain": "transit",
   "entry_type": "stub",

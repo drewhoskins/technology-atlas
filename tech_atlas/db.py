@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS entries (
     id          TEXT PRIMARY KEY,
     name        TEXT NOT NULL,
     domain      TEXT,
-    entry_type  TEXT NOT NULL CHECK (entry_type IN ('category', 'variant', 'standalone', 'stub')),
+    entry_type  TEXT NOT NULL CHECK (entry_type IN ('category', 'variant', 'topic', 'stub')),
     parent_id   TEXT REFERENCES entries(id),
     data        TEXT NOT NULL  -- JSON; full schema-conforming Entry object
 );

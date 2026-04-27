@@ -1,10 +1,10 @@
 {
-  "id": "component:articulated_bus",
+  "id": "bus:articulated",
   "name": "Articulated bus",
   "domain": "transit",
-  "entry_type": "stub",
-  "parent_id": null,
-  "description": "A bus with two rigid sections joined by a pivoting articulation, allowing the vehicle to be much longer (typically 18 m, vs. 12 m for a standard bus) while still negotiating ordinary urban turning circles. The first articulated bus appeared in Milan, Italy, in 1937; in 1938 Twin Coach built one for the city of Baltimore (a 47-foot, four-axle vehicle articulated only in the vertical plane to handle steep grades). Articulated buses became central to the Bus Rapid Transit model from the 1970s onward — a single articulated vehicle carries 120–160 passengers, and the double-articulated 'biarticulated' designs used in Curitiba and elsewhere carry up to 270.",
+  "entry_type": "variant",
+  "parent_id": "bus",
+  "description": "A bus form factor in which two rigid body sections are joined by a pivoting articulation, letting the vehicle reach 18 m (single-articulated) or 24-27 m (biarticulated) while still negotiating ordinary urban turning circles. The articulation is a propulsion-agnostic body innovation: articulated diesel, trolley, and battery-electric buses all exist. The first articulated bus appeared in Milan, Italy, in 1937; in 1938 Twin Coach built one for Baltimore (a 47-foot, four-axle vehicle articulated only in the vertical plane to handle the city's steep grades). Articulated buses became central to the Bus Rapid Transit model from the 1970s onward — a single articulated vehicle carries 120-160 passengers, and the biarticulated designs used in Curitiba and elsewhere carry up to 270.",
   "description_sources": [
     {
       "raw_id": "wikipedia:Articulated_bus@2026-04-25T22:00:00Z",
@@ -13,6 +13,25 @@
       "quoted_text": "The first example of the articulated bus appeared in Milan, Italy, in 1937. In 1938, Twin Coach built an articulated bus for the city of Baltimore; this bus, which had four axles on a 47 ft (14.33 m) long body, was only articulated in the vertical direction to accommodate steep grades.",
       "ai_or_human": "ai",
       "confidence": 0.95
+    }
+  ],
+  "enabling_components": [
+    {
+      "name": "Bus articulation joint (pivoting joint with bellows)",
+      "type": "technology",
+      "role": "The mechanical assembly that makes the form factor possible: a pivoting joint between the two rigid sections, enclosed by flexible bellows and a floor cover plate so passengers can walk through. Joint design has evolved alongside the form (single-pivot in 1937; double-pivot 'biarticulated' from the 1990s).",
+      "brief": null,
+      "linked_entry_id": "joint:articulation_joint",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Articulated_bus@2026-04-26T15:00:00Z",
+          "url": "https://en.wikipedia.org/wiki/Articulated_bus",
+          "fetched_at": "2026-04-26T15:00:00Z",
+          "quoted_text": "linked by a pivoting joint (articulation) enclosed by protective bellows inside and outside, and a cover plate on the floor",
+          "ai_or_human": "ai",
+          "confidence": 0.95
+        }
+      ]
     }
   ],
   "key_dates": [

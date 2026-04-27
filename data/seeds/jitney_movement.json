@@ -1,8 +1,8 @@
 {
-  "id": "standalone:jitney_movement",
+  "id": "phenomenon:jitney_movement",
   "name": "Jitney movement (1914–1918)",
   "domain": "transit",
-  "entry_type": "standalone",
+  "entry_type": "topic",
   "parent_id": null,
   "description": "A four-year explosion of independent five-cent automobile transit in US cities, almost entirely killed by regulation. The movement began on 1 July 1914 in Los Angeles when L.P. Draper used his Ford Model T to carry a paying passenger for five cents — a 'jitney' in then-current slang for a nickel. By March 1915 thousands of jitneys were operating in the southern and western United States; many ran on streetcar routes, undercutting the trolleys' nickel fare while offering door-to-door service. The streetcar industry, hard-hit, lobbied municipalities for protection. Within a year, twenty-seven cities had imposed liability-insurance bonds (up to $10,000 — 25–50% of an annual driver's earnings), route restrictions, and time-of-day bans. In Salt Lake City an April 1915 ordinance reduced the fleet from 40 to 2 in four days. By 1918 more than 90% of the 1915-era jitney services had ceased operating. The jitney is the cleanest case study in 20th-century transit of an entry-permissive technology (mass-produced automobile + flag-down model + cash fare) defeated by incumbent-protective regulation. The pattern recurs almost beat-for-beat with Uber and Lyft a century later — and is preserved in this entry as the long-running historical analogue.",
   "description_sources": [
