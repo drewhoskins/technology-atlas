@@ -46,12 +46,6 @@ uv sync
 uv run python scripts/build_db.py     # rebuild atlas.db from data/seeds/*.json
 ```
 
-## The Pepsi challenge
-
-The demo compares two Claude Code sessions on the same research task:
-* **Atlas-armed**: Claude Code in this directory, with the skill + DB
-* **No-atlas**: Claude Code in an empty directory, with WebSearch + WebFetch only
-
 This isolates the atlas as the differentiator against the realistic baseline (web-armed Claude Code, which is how serious researchers work today). See `docs/DEMO.md` for the prompts and recording protocol.
 
 ## License & redistribution
