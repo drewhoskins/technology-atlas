@@ -10,5 +10,18 @@
       "Bash(./bin/atlas-open:*)",
       "Bash(open web/entries/*)"
     ]
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "rgt hook"
+          }
+        ]
+      }
+    ]
   }
 }
