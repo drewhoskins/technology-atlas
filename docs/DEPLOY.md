@@ -38,15 +38,18 @@ correct.
 
 ## 2. First deploy from the CLI
 
-Source the credentials and deploy via `npx`:
+Run the wrapper:
 
 ```bash
-set -a; source .env; set +a
-npx wrangler deploy
+./scripts/deploy.sh
 ```
 
-The first invocation will offer to install `wrangler`; accept it. On
-success, the output prints the live URL. Verify:
+The wrapper sources `.env`, remaps SP's per-service variable names
+(`CLOUDFLARE_WORKERS_API_TOKEN`, `CLOUDFLARE_WORKERS_ACCOUNT_ID`) to the
+canonical names wrangler expects (`CLOUDFLARE_API_TOKEN`,
+`CLOUDFLARE_ACCOUNT_ID`), and runs `npx wrangler deploy`. The first
+invocation downloads `wrangler` into the npx cache; subsequent runs reuse
+it. On success, the output prints the live URL. Verify:
 
 - Homepage renders at `https://technology-atlas.<account>.workers.dev`.
 - A category page (`/entries/bus.html`) and an entry page

@@ -1,0 +1,6 @@
+name = "technology-atlas"
+compatibility_date = "2026-05-10"
+
+[assets]
+directory = "./web"
+html_handling = "none"
