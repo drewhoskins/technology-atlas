@@ -28,3 +28,8 @@ data/raw/
 # Logs / temp
 *.log
 tmp/
+
+.projects/cache
+.projects/vault
+.env
+.env.local
