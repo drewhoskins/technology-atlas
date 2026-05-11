@@ -1,92 +1,118 @@
-# Deploying technologyatlas.org on Cloudflare Pages
+# Deploying technology-atlas on Cloudflare Workers
 
-The site is a static bundle under `web/` produced by `scripts/build_site.py` and
-committed to the repo. Hosting is Cloudflare Pages, connected to GitHub
-`drewhoskins/technology-atlas`. The domain `technologyatlas.org` is registered
-at GoDaddy; DNS is delegated to Cloudflare.
+The site is a static bundle under `web/` produced by `scripts/build_site.py`
+and committed to the repo. Hosting is Cloudflare Workers Static Assets,
+provisioned via the Stripe Projects CLI. The custom domain
+`technologyatlas.org` is deferred — v1 serves at `<worker>.workers.dev`.
 
 This runbook covers the one-time setup. After it's in place, `git push` to
 `main` is the entire deploy.
 
-## Prerequisites
+## Where things stand
 
-- Cloudflare account with access to add a zone.
-- GoDaddy account with admin on `technologyatlas.org`.
-- GitHub account with admin on `drewhoskins/technology-atlas`.
+Stripe Projects has already:
 
-## 1. Add the zone to Cloudflare
+- Linked a Cloudflare account.
+- Provisioned the `workers:free` plan and the `workers` service.
+- Written Cloudflare API credentials to `.env`.
 
-1. Cloudflare dashboard → **Add a site** → enter `technologyatlas.org`.
-2. Pick the Free plan.
-3. Cloudflare scans existing DNS at GoDaddy. There are no records to preserve
-   (the domain has not been used), so the import can be empty.
-4. Cloudflare shows two assigned nameservers, e.g.
-   `xxx.ns.cloudflare.com` and `yyy.ns.cloudflare.com`. Copy both.
+Confirm with `stripe projects status`. The remaining work is the three
+sections below.
 
-## 2. Repoint nameservers at GoDaddy
+## 1. Add `wrangler.toml`
 
-1. GoDaddy → **My Products** → `technologyatlas.org` → **DNS** → **Nameservers**
-   → **Change**.
-2. Choose **Enter my own nameservers** and paste the two Cloudflare hosts.
-3. Save. GoDaddy may warn about leaving their DNS; that's expected.
-4. Back in Cloudflare, click **Done, check nameservers**. Propagation is
-   typically minutes to a few hours; Cloudflare emails when the zone is active.
+At repo root, create `wrangler.toml`:
 
-## 3. Create the Pages project
+```toml
+name = "technology-atlas"
+compatibility_date = "2026-05-10"
 
-1. Cloudflare dashboard → **Workers & Pages** → **Create application** →
-   **Pages** → **Connect to Git**.
-2. Authorize Cloudflare on GitHub and select `drewhoskins/technology-atlas`.
-3. Configure the build:
-   - **Production branch**: `main`
-   - **Framework preset**: None
-   - **Build command**: *(leave empty)*
-   - **Build output directory**: `web`
-   - **Root directory**: *(leave empty)*
-4. Save and deploy. First deploy serves at
-   `technology-atlas.pages.dev` (or similar). Confirm the homepage and a few
-   entry pages render correctly before wiring the custom domain.
+[assets]
+directory = "./web"
+```
 
-## 4. Attach the custom domain
+The Worker name becomes part of the public URL:
+`technology-atlas.<account>.workers.dev`. No `not_found_handling` is set;
+every entry is a real file in `web/`, so the default 404 behavior is
+correct.
 
-1. In the Pages project → **Custom domains** → **Set up a custom domain**.
-2. Add `technologyatlas.org`. Cloudflare creates the CNAME/AAAA records in the
-   zone automatically because DNS is delegated.
-3. Add `www.technologyatlas.org` the same way, or set up a redirect (see §6).
-4. Wait for the certificate to issue (usually under a minute). Visit
-   `https://technologyatlas.org` to confirm.
+## 2. First deploy from the CLI
 
-## 5. Verify
+Source the credentials and deploy via `npx`:
 
-- `https://technologyatlas.org` loads the homepage.
-- `https://technologyatlas.org/entries/bus.html` loads.
-- Cert is valid (Cloudflare-issued).
-- Pushing a no-op commit to `main` triggers a new deploy in the Pages
-  dashboard within ~30s.
+```bash
+set -a; source .env; set +a
+npx wrangler deploy
+```
 
-## 6. Optional: apex/www redirect
+The first invocation will offer to install `wrangler`; accept it. On
+success, the output prints the live URL. Verify:
 
-If `www.technologyatlas.org` should permanently redirect to the apex (or vice
-versa), add a Cloudflare **Bulk Redirect** or a single Page Rule. Pick one
-canonical host and 301 the other.
+- Homepage renders at `https://technology-atlas.<account>.workers.dev`.
+- A category page (`/entries/bus.html`) and an entry page
+  (`/entries/bus__horse_omnibus.html`) both render.
+- Styles load (no flash of unstyled HTML).
+
+If any of those fail, see **Troubleshooting** below before moving on.
+
+## 3. Wire up auto-deploy from GitHub
+
+Manual `wrangler deploy` is fine for an emergency, but every push to
+`main` should redeploy. Workers Builds (the GitHub integration in the
+Cloudflare dashboard) handles this:
+
+1. Cloudflare dashboard → **Workers & Pages** → `technology-atlas` →
+   **Settings** → **Builds**.
+2. Connect the GitHub repo `drewhoskins/technology-atlas`.
+3. Production branch: `main`.
+4. Build command: *(leave empty)* — `web/` is already built and
+   committed.
+5. Deploy command: `npx wrangler deploy`.
+6. Save. Workers Builds runs inside Cloudflare's environment and is
+   pre-authenticated against this account; no token plumbing required.
+
+A no-op commit to `main` should trigger a new deploy in the dashboard
+within ~30s.
 
 ## Operating model
 
-- Every push to `main` redeploys automatically. There is no manual step.
-- Preview deployments are enabled by default for non-`main` branches and
-  produce `<branch>.technology-atlas.pages.dev` URLs.
-- To roll back: Pages → **Deployments** → pick a prior successful deploy →
-  **Rollback to this deployment**. (Faster than reverting a commit.)
-- The build output `web/` is committed, so the site can also be served from
-  any other static host (S3+CloudFront, Netlify, GitHub Pages) without
-  changes if Cloudflare is ever swapped out.
+- Every push to `main` redeploys automatically.
+- Preview deployments are created for non-`main` branches and PRs at
+  `<branch>.technology-atlas.<account>.workers.dev`.
+- Rollback: dashboard → **Deployments** → pick a prior successful deploy
+  → **Rollback to this deployment**. Faster than reverting a commit.
+- Free-tier quota is 100K requests/day shared across all Workers on the
+  account. For an atlas site that's far more than current load; the
+  upgrade path if it ever matters is `workers:paid` (~$5/month minimum)
+  via `stripe projects upgrade cloudflare-plan workers:paid`.
+- The output `web/` is committed, so the site can also be served from
+  any other static host without changes if Workers is ever swapped out.
+
+## Deferred: custom domain
+
+Once verified at `*.workers.dev`, wiring `technologyatlas.org` is two
+steps:
+
+1. Add the zone to Cloudflare (GoDaddy stays as registrar; its
+   nameservers point at the two Cloudflare hosts shown when the zone is
+   added).
+2. Worker → **Settings** → **Domains & Routes** → **Add Custom Domain**
+   → `technologyatlas.org`.
+
+Cert issuance is automatic once the zone is active.
 
 ## Troubleshooting
 
-- **Nameserver change not detected after several hours.** Re-check the two
-  hosts at GoDaddy match exactly what Cloudflare assigned; GoDaddy sometimes
-  silently appends a trailing dot or drops one.
-- **Pages deploy succeeds but homepage 404s.** Confirm **Build output
-  directory** is `web`, not the repo root.
-- **Custom domain stuck on "Verifying".** The zone must be active in
-  Cloudflare first (§2). Pages won't issue a cert against a pending zone.
+- **`wrangler deploy` complains it can't find an account or token.**
+  Confirm `.env` was sourced in the *current* shell and that
+  `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` are populated.
+  `stripe projects env` shows what's available.
+- **Deploy succeeds but every URL returns 404.** Check that `[assets]
+  directory = "./web"` in `wrangler.toml`, not the repo root or another
+  directory.
+- **Styles 404 even though pages load.** `web/styles.css` is referenced
+  as `./styles.css` from `web/index.html` — confirm the asset upload
+  included the CSS file (`wrangler deploy` lists every file uploaded).
+- **Workers Builds fails on git push.** Open the build's logs in the
+  dashboard. The most common cause is a transient install failure for
+  `wrangler`; retrying the build usually resolves it.
