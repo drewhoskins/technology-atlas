@@ -33,3 +33,4 @@ tmp/
 .projects/vault
 .env
 .env.local
+.regent/
