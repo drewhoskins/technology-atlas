@@ -1,12 +1,46 @@
 {
   "version": 1,
   "project": {
-    "merchantId": "acct_1TE1cpBCsXniLAF3",
+    "initializedAt": "2026-05-11T01:03:40.839Z",
     "merchantDisplayName": null,
+    "merchantId": "acct_1TE1cpBCsXniLAF3",
     "projectId": "project_61Uf6DMEKDyyqyJdn16UNPaB3ESQFHsQ0TDDaa95M5rk",
-    "projectName": "technology-atlas",
-    "initializedAt": "2026-05-11T01:03:40.839Z"
+    "projectName": "technology-atlas"
   },
-  "providers": {},
-  "resources": {}
+  "providers": {
+    "cloudflare": {
+      "accountRequestId": "facctrq_61Uf6ZFRjE5XftWBF16UNPaB3ESQFHsQ0TDDaa95M3EO",
+      "configuration": {},
+      "linkedAt": "2026-05-11T01:26:20.724Z",
+      "providerId": "prvdr_61UQRSWMdrciFdBNs5Ipc",
+      "providerName": "Cloudflare",
+      "redirectUrl": null,
+      "requestedAt": "2026-05-11T01:26:20.724Z",
+      "status": "complete"
+    }
+  },
+  "resources": {
+    "cloudflare-plan": {
+      "configuration": {},
+      "createdAt": "2026-05-11T01:26:28.632Z",
+      "lastRevealedAt": "2026-05-11T01:26:28.928Z",
+      "lastStatus": "complete",
+      "name": "cloudflare-plan",
+      "providerId": "prvdr_61UQRSWMdrciFdBNs5Ipc",
+      "providerName": "Cloudflare",
+      "resourceId": "fres_61Uf6ZJ096156Clh016UNPaB3ESQFHsQ0TDDaa95MNtI",
+      "serviceId": "workers:free"
+    },
+    "cloudflare-workers": {
+      "configuration": {},
+      "createdAt": "2026-05-11T01:26:36.533Z",
+      "lastRevealedAt": "2026-05-11T01:26:36.835Z",
+      "lastStatus": "complete",
+      "name": "cloudflare-workers",
+      "providerId": "prvdr_61UQRSWMdrciFdBNs5Ipc",
+      "providerName": "Cloudflare",
+      "resourceId": "fres_61Uf6ZRqSYJcob9tJ16UNPaB3ESQFHsQ0TDDaa95MUzI",
+      "serviceId": "workers"
+    }
+  }
 }
