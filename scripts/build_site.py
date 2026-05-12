@@ -694,22 +694,29 @@ def _all_source_lists(entry: dict):
 
 
 def render_variant_links(category: dict, by_id: dict[str, dict]) -> str:
-    """For category pages: list child variants with brief descriptions."""
+    """For category pages: list child variants with brief descriptions.
+
+    Sorted chronologically by inception_year so the technology lineage reads
+    top-to-bottom. Entries without inception_year fall to the end, then
+    alphabetical by name.
+    """
     children = [e for e in by_id.values() if e.get("parent_id") == category["id"]]
     if not children:
         return ""
-    children.sort(key=lambda e: e["name"])
+    children.sort(key=lambda e: (e.get("inception_year") is None, e.get("inception_year"), e["name"]))
     li = []
     for child in children:
         # First-sentence preview of the child description.
         desc = (child.get("description") or "").strip()
         preview = desc.split(". ")[0][:240] + "."
+        year = child.get("inception_year")
+        year_html = f'<span class="mono variant-year">{year}</span>' if year else ""
         # Category pages live at web/entries/<slug>.html, so variant links are
         # sibling-relative.
         li.append(f"""
     <li>
       <a class="variant-link" href="./{esc(slug(child["id"]))}">
-        <div class="variant-name">{esc(child["name"])}</div>
+        <div class="variant-name">{year_html}{esc(child["name"])}</div>
         <div class="variant-preview">{esc(preview)}</div>
       </a>
     </li>""".rstrip())
@@ -1526,6 +1533,14 @@ sup.cites a.cite:hover {
   color: var(--sepia);
 }
 .variant-preview { font-size: 0.92rem; color: var(--sepia-soft); }
+.variant-year {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--brass-dark);
+  margin-right: 0.6rem;
+  letter-spacing: 0.03em;
+}
 
 /* ---- Landing doors ---- */
 .doors {

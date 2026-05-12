@@ -500,6 +500,14 @@ sup.cites a.cite:hover {
   color: var(--sepia);
 }
 .variant-preview { font-size: 0.92rem; color: var(--sepia-soft); }
+.variant-year {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--brass-dark);
+  margin-right: 0.6rem;
+  letter-spacing: 0.03em;
+}
 
 /* ---- Landing doors ---- */
 .doors {

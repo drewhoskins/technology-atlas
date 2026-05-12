@@ -4,6 +4,7 @@
   "domain": "transit",
   "entry_type": "variant",
   "parent_id": "bus",
+  "inception_year": 1937,
   "description": "A bus form factor in which two rigid body sections are joined by a pivoting articulation, letting the vehicle reach 18 m (single-articulated) or 24-27 m (biarticulated) while still negotiating ordinary urban turning circles. The articulation is a propulsion-agnostic body innovation: articulated diesel, trolley, and battery-electric buses all exist. The first articulated bus appeared in Milan, Italy, in 1937; in 1938 Twin Coach built one for Baltimore (a 47-foot, four-axle vehicle articulated only in the vertical plane to handle the city's steep grades). Articulated buses became central to the Bus Rapid Transit model from the 1970s onward — a single articulated vehicle carries 120-160 passengers, and the biarticulated designs used in Curitiba and elsewhere carry up to 270.",
   "description_sources": [
     {

@@ -4,6 +4,7 @@
   "domain": "transit",
   "entry_type": "variant",
   "parent_id": "bus",
+  "inception_year": 1895,
   "description": "A bus powered by an internal-combustion engine fed with gasoline (petrol). The world's first scheduled motorbus line opened on 18 March 1895, when the newly founded Netphener Omnibusgesellschaft used two Benz omnibuses — built by Benz & Cie of Mannheim — to run between Siegen, Netphen, and Deuz in the Siegerland region of western Germany. The vehicles carried 6–8 passengers, ran on a 2.9-litre single-cylinder engine producing 5 PS (3.7 kW), and had glazed windows and heating. They were not, in retrospect, ready: the engine was too weak for the route's two main hills (passengers had to push), repairs required a mechanic from Mannheim, and operations stopped in December 1895 after carrying about 10,000 passengers in nine months. The category nonetheless took off elsewhere within a decade — Daimler-Motoren-Gesellschaft and other manufacturers produced more reliable petrol buses by the early 1900s, London replaced its last horse omnibus in 1911, and the gasoline bus dominated city operation until being itself displaced by the diesel bus from the 1930s onward (and, on heavily-trafficked routes in postwar Europe, by the trolleybus). Petrol remains the propulsion of choice for shuttle, school, and tourist buses where small fleet size makes a diesel maintenance program uneconomic.",
   "description_sources": [
     {

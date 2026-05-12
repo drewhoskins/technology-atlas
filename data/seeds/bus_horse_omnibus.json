@@ -4,6 +4,7 @@
   "domain": "transit",
   "entry_type": "variant",
   "parent_id": "bus",
+  "inception_year": 1662,
   "description": "A horse-drawn passenger coach running a fixed route on a published schedule, with a flat fare and walk-up boarding — the first vehicle to make the bus model commercially durable. Two reasonably independent inventions stand at the head of its lineage: Blaise Pascal's 1662 carrosses à cinq sols (Paris) and Stanislas Baudry's 1826 service in Nantes. Pascal's coaches were the genuine first, with five timetabled routes from 18 March 1662, but the Parlement of Paris restricted ridership by social class and a fare hike eroded what remained of public goodwill; the service ran until 1677 and the model was effectively forgotten. Baudry — a half-pay army colonel running a steam-powered flour mill on the outskirts of Nantes — set up a shuttle in 1826 to bring customers to a bathhouse heated by waste mill water. The bathhouse failed but the shuttle didn't, and Baudry pivoted into running urban routes named after the hatter Omnès (whose 'Omnès Omnibus' shop sign supplied the name). George Shillibeer, who had built omnibus bodies in Paris, brought the model to London on 4 July 1829 (Paddington–Bank). From there it spread quickly across Europe, the Americas, and the British colonies, and dominated city passenger transport until the motorbus and electric tram replaced it (in London, the last horse omnibus ran in 1911).",
   "description_sources": [
     {

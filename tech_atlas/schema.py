@@ -125,6 +125,7 @@ class Entry(BaseModel):
     description: str
     entry_type: Literal["category", "variant", "topic", "stub"]
     parent_id: str | None = None
+    inception_year: int | None = None  # earliest year the entry itself existed; sort key for variant listings
 
     description_sources: list[Source] = Field(default_factory=list)
     innovators: list[Innovator] = Field(default_factory=list)
