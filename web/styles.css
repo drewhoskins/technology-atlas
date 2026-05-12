@@ -274,28 +274,6 @@ p { margin: 0 0 1rem 0; }
 }
 .caption-title { display: block; font-style: normal; font-weight: 500; color: var(--sepia); margin-bottom: 0.25rem; }
 
-/* Placeholder card when no CC image is available */
-.hero.placeholder .placeholder-card {
-  display: inline-block;
-  width: min(100%, 520px);
-  padding: 3rem 2rem;
-  background: var(--parchment-dark);
-  border: 1px solid var(--brass);
-  box-shadow: 0 2px 0 var(--shadow);
-  position: relative;
-}
-.placeholder-name {
-  font-family: var(--serif-head);
-  font-size: 1.4rem;
-  color: var(--sepia);
-  margin-bottom: 0.7rem;
-}
-.placeholder-mark {
-  font-size: 1.6rem;
-  color: var(--brass-dark);
-  letter-spacing: 0.5em;
-}
-
 /* ---- Description / lead paragraph ---- */
 .description p, .lead {
   font-size: 1.05rem;

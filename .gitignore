@@ -34,3 +34,6 @@ tmp/
 .env
 .env.local
 .regent/
+
+# Wrangler local state — miniflare caches, simulated KV/D1/DO storage
+.wrangler/

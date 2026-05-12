@@ -4,6 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Technology Atlas &middot; Tech Atlas</title>
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+  <link rel="shortcut icon" href="/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/icons/site.webmanifest" />
+  <meta name="theme-color" content="#3A2E1F" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" />
@@ -16,7 +21,10 @@
     <p class="kicker">An empirical atlas of frontier technology and its innovators</p>
     <h1>Technology Atlas</h1>
     <p class="lede">
-      A graph of technologies and what brought them to into being.
+      A curated graph of technologies, traced through their predecessors,
+      enabling components, funders, regulatory moments, geographic diffusion,
+      and key dates. Every fact carries an inline citation back to a verbatim
+      source excerpt.
     </p>
     <div class="divider" aria-hidden="true">&#8258;</div>
   </header>
@@ -25,17 +33,21 @@
     <article class="door">
       <h2>Browse the atlas</h2>
       <p>
-        The atlas prototype currently covers one technology in depth: the bus.  From the bus, reach important variants, components, innovators, and historical moments.
+        The atlas currently covers one technology in depth: the bus. Every
+        variant, component, predecessor, innovator, and regulatory moment is
+        reachable from there.
       </p>
       <p class="door-cta">
-        <a class="door-link" href="./entries/bus.html">Bus &rsaquo;</a>
+        <a class="door-link" href="./entries/bus">Bus &rsaquo;</a>
       </p>
     </article>
 
     <article class="door">
       <h2>For LLMs &amp; developers</h2>
       <p>
-        The prototype atlas is a SQLite database with a Claude skill.  Clone the linked GitHub repo to explore the data, or use the skill to query it with natural language.
+        The atlas ships as a SQLite database with a documented schema. Clone
+        the repo and query it locally; a hosted API and MCP endpoint are
+        planned.
       </p>
       <p class="door-cta">
         <a class="door-link" href="https://github.com/drewhoskins/technology-atlas">GitHub repo &rsaquo;</a>
@@ -45,7 +57,8 @@
 
   <footer class="index-footer">
     <p class="collab-invite">
-      If you have feedback or want to help build out the atlas, get in touch via LinkedIn, Email, or Substack, linked from
+      This is an early prototype, growing one technology at a time. If you have
+      sources, corrections, or want to help build it out, get in touch via
       <a href="https://drewhoskins.carrd.co/" target="_blank" rel="noopener">drewhoskins.carrd.co</a>.
     </p>
   </footer>

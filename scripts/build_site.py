@@ -69,7 +69,7 @@ def find_image(entry_id: str, manifest: dict | None = None) -> tuple[str, str] |
          path: hot-link to Wikimedia Commons / other CC sources, no copyright re-distribution.
       2. Local file at web/images/<slug>.{jpg,png,gif,svg,webp} — fallback if image was
          downloaded locally (legacy path; no longer the recommended workflow).
-      3. None — caller renders a placeholder.
+      3. None — caller omits the image block.
 
     The first element of the returned tuple is either an external https URL or a path
     relative to the entry page (which lives in entries/).
@@ -165,7 +165,7 @@ DIVIDER = '<div class="divider" aria-hidden="true">&#10086;</div>'
 
 
 def render_image_block(entry: dict, manifest: dict[str, dict]) -> str:
-    """Hero image block (or styled placeholder if no image)."""
+    """Hero image block, or empty string if no image is available."""
     img = find_image(entry["id"], manifest)
     attribution = manifest.get(entry["id"], {})
     if img:
@@ -195,16 +195,7 @@ def render_image_block(entry: dict, manifest: dict[str, dict]) -> str:
             f'  <figcaption>{caption}</figcaption>\n'
             '</figure>'
         )
-    # Placeholder: a stylised text card.
-    return (
-        '<figure class="hero placeholder">\n'
-        '  <div class="placeholder-card">\n'
-        f'    <div class="placeholder-name">{esc(entry["name"])}</div>\n'
-        '    <div class="placeholder-mark">&#8258;</div>\n'
-        '  </div>\n'
-        '  <figcaption><em>No CC-licensed image available for this entry.</em></figcaption>\n'
-        '</figure>'
-    )
+    return ""
 
 
 def render_description(entry: dict, collector: SourceCollector) -> str:
@@ -222,7 +213,7 @@ def render_description(entry: dict, collector: SourceCollector) -> str:
 
 def _link_for_linked_entry(linked_id: str | None, all_ids: set[str]) -> str | None:
     if linked_id and linked_id in all_ids:
-        return f"./{slug(linked_id)}.html"
+        return f"./{slug(linked_id)}"
     return None
 
 
@@ -272,7 +263,7 @@ def render_backlinks(entry: dict, backlinks: dict, by_id: dict) -> str:
     parts = []
     if children:
         items = "".join(
-            f'<li><a href="./{esc(slug(c["id"]))}.html">{esc(c["name"])}</a>'
+            f'<li><a href="./{esc(slug(c["id"]))}">{esc(c["name"])}</a>'
             f' <span class="mono backlink-id">{esc(c["id"])}</span></li>'
             for c in children
         )
@@ -283,7 +274,7 @@ def render_backlinks(entry: dict, backlinks: dict, by_id: dict) -> str:
         )
     if used_by:
         items = "".join(
-            f'<li><a href="./{esc(slug(rid))}.html">{esc(by_id[rid]["name"])}</a>'
+            f'<li><a href="./{esc(slug(rid))}">{esc(by_id[rid]["name"])}</a>'
             f' <span class="mono backlink-id">{esc(rid)}</span></li>'
             for rid in used_by
         )
@@ -294,7 +285,7 @@ def render_backlinks(entry: dict, backlinks: dict, by_id: dict) -> str:
         )
     if succeeded_by:
         items = "".join(
-            f'<li><a href="./{esc(slug(rid))}.html">{esc(by_id[rid]["name"])}</a>'
+            f'<li><a href="./{esc(slug(rid))}">{esc(by_id[rid]["name"])}</a>'
             f' <span class="mono backlink-id">{esc(rid)}</span></li>'
             for rid in succeeded_by
         )
@@ -306,7 +297,6 @@ def render_backlinks(entry: dict, backlinks: dict, by_id: dict) -> str:
     return f"""
 <section class="backlinks" id="referenced-by">
   <h2>Referenced by</h2>
-  <p class="backlinks-note">Inverse view of the tech tree — other atlas entries that point at this one.</p>
   {"".join(parts)}
 </section>"""
 
@@ -585,6 +575,11 @@ HEAD = """\
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{title} &middot; Tech Atlas</title>
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png" />
+  <link rel="shortcut icon" href="/icons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/icons/site.webmanifest" />
+  <meta name="theme-color" content="#3A2E1F" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" />
@@ -634,14 +629,14 @@ def render_breadcrumb(entry: dict, by_id: dict[str, dict]) -> str:
         parent = by_id[parent_id]
         return (
             '<nav class="breadcrumb">'
-            '<a href="../index.html">Atlas</a> &rsaquo; '
-            f'<a href="./{esc(slug(parent["id"]))}.html">{esc(parent["name"])}</a> '
+            '<a href="../">Atlas</a> &rsaquo; '
+            f'<a href="./{esc(slug(parent["id"]))}">{esc(parent["name"])}</a> '
             f'&rsaquo; <span>{esc(entry["name"])}</span>'
             '</nav>'
         )
     return (
         '<nav class="breadcrumb">'
-        '<a href="../index.html">Atlas</a> &rsaquo; '
+        '<a href="../">Atlas</a> &rsaquo; '
         f'<span>{esc(entry["name"])}</span>'
         '</nav>'
     )
@@ -697,7 +692,7 @@ def render_variant_links(category: dict, by_id: dict[str, dict]) -> str:
         # sibling-relative.
         li.append(f"""
     <li>
-      <a class="variant-link" href="./{esc(slug(child["id"]))}.html">
+      <a class="variant-link" href="./{esc(slug(child["id"]))}">
         <div class="variant-name">{esc(child["name"])}</div>
         <div class="variant-preview">{esc(preview)}</div>
       </a>
@@ -729,7 +724,7 @@ def render_related_topics(category: dict, by_id: dict[str, dict]) -> str:
         # entry pages are sibling-relative.
         li.append(f"""
     <li>
-      <a class="variant-link" href="./{esc(slug(s["id"]))}.html">
+      <a class="variant-link" href="./{esc(slug(s["id"]))}">
         <div class="variant-name">{esc(s["name"])}</div>
         <div class="variant-preview">{esc(preview)}</div>
       </a>
@@ -801,14 +796,14 @@ def build_category_page(
 """
     last_updated = find_latest_fetched_at(entry)
     head = page_head(entry["name"], "../styles.css")
-    foot = page_footer(entry["id"], "../index.html", last_updated)
+    foot = page_footer(entry["id"], "../", last_updated)
     return head + body + foot
 
 
 def render_category_header(entry: dict) -> str:
     return f"""
 <header class="entry-header category-header">
-  <nav class="breadcrumb"><a href="../index.html">Atlas</a> &rsaquo; <span>{esc(entry["name"])}</span></nav>
+  <nav class="breadcrumb"><a href="../">Atlas</a> &rsaquo; <span>{esc(entry["name"])}</span></nav>
   <h1 class="entry-name">{esc(entry["name"])}</h1>
   <div class="entry-meta">
     <span class="badge etype etype-category">category</span>
@@ -848,15 +843,7 @@ def render_category_image(entry: dict, manifest: dict[str, dict]) -> str:
             f'  <figcaption>{caption}</figcaption>\n'
             '</figure>'
         )
-    return (
-        '<figure class="hero placeholder">\n'
-        '  <div class="placeholder-card">\n'
-        f'    <div class="placeholder-name">{esc(entry["name"])}</div>\n'
-        '    <div class="placeholder-mark">&#8258;</div>\n'
-        '  </div>\n'
-        '  <figcaption><em>No CC-licensed image available for this entry.</em></figcaption>\n'
-        '</figure>'
-    )
+    return ""
 
 
 def render_description_for_category(entry: dict, collector: SourceCollector) -> str:
@@ -939,7 +926,7 @@ def build_rich_page(
 """
     last_updated = find_latest_fetched_at(entry)
     head = page_head(entry["name"], "../styles.css")
-    foot = page_footer(entry["id"], "../index.html", last_updated)
+    foot = page_footer(entry["id"], "../", last_updated)
     return head + body + foot
 
 
@@ -986,7 +973,7 @@ def build_index(entries: list[dict], by_id: dict[str, dict]) -> str:
         reachable from there.
       </p>
       <p class="door-cta">
-        <a class="door-link" href="./entries/bus.html">Bus &rsaquo;</a>
+        <a class="door-link" href="./entries/bus">Bus &rsaquo;</a>
       </p>
     </article>
 
@@ -1296,28 +1283,6 @@ p { margin: 0 0 1rem 0; }
   font-style: italic;
 }
 .caption-title { display: block; font-style: normal; font-weight: 500; color: var(--sepia); margin-bottom: 0.25rem; }
-
-/* Placeholder card when no CC image is available */
-.hero.placeholder .placeholder-card {
-  display: inline-block;
-  width: min(100%, 520px);
-  padding: 3rem 2rem;
-  background: var(--parchment-dark);
-  border: 1px solid var(--brass);
-  box-shadow: 0 2px 0 var(--shadow);
-  position: relative;
-}
-.placeholder-name {
-  font-family: var(--serif-head);
-  font-size: 1.4rem;
-  color: var(--sepia);
-  margin-bottom: 0.7rem;
-}
-.placeholder-mark {
-  font-size: 1.6rem;
-  color: var(--brass-dark);
-  letter-spacing: 0.5em;
-}
 
 /* ---- Description / lead paragraph ---- */
 .description p, .lead {
@@ -1648,6 +1613,25 @@ def collect_internal_links(path: Path) -> list[str]:
     return out
 
 
+def resolve_href(base_dir: Path, href: str) -> Path:
+    """Map an authored href to the file Cloudflare Workers Assets would serve.
+
+    Mirrors html_handling="auto-trailing-slash" (the deploy default):
+    trailing-slash or directory hrefs resolve to that directory's index.html;
+    extensionless paths get .html appended. Absolute hrefs (starting with /)
+    are resolved against WEB_DIR, matching how Cloudflare serves them.
+    """
+    if href.startswith("/"):
+        candidate = (WEB_DIR / href.lstrip("/")).resolve()
+    else:
+        candidate = (base_dir / href).resolve()
+    if href.endswith("/") or candidate.is_dir():
+        return candidate / "index.html"
+    if not candidate.suffix:
+        return candidate.with_suffix(".html")
+    return candidate
+
+
 def validate_css(path: Path) -> list[str]:
     """Crude CSS check: balanced braces, no obvious syntax catastrophe."""
     text = path.read_text(encoding="utf-8")
@@ -1732,7 +1716,7 @@ def main() -> int:
     bad_links = 0
     for path in written:
         for href in collect_internal_links(path):
-            target = (path.parent / href).resolve()
+            target = resolve_href(path.parent, href)
             if not target.exists():
                 print(f"  BROKEN LINK in {path.relative_to(REPO_ROOT)}: {href} -> {target}")
                 bad_links += 1
@@ -1747,7 +1731,7 @@ def main() -> int:
             continue
         visited.add(path)
         for href in collect_internal_links(path):
-            target = (path.parent / href).resolve()
+            target = resolve_href(path.parent, href)
             if target.suffix == ".html" and target not in visited:
                 queue.append(target)
     expected_pages = {(ENTRIES_DIR / f"{slug(e['id'])}.html").resolve() for e in seeds}

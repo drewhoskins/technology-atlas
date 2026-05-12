@@ -1,6 +1,9 @@
 name = "technology-atlas"
 compatibility_date = "2026-05-10"
 
+routes = [
+  { pattern = "technologyatlas.org", custom_domain = true }
+]
+
 [assets]
 directory = "./web"
-html_handling = "none"
