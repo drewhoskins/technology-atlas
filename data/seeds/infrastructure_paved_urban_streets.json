@@ -1,0 +1,234 @@
+{
+  "id": "infrastructure:paved_urban_streets",
+  "name": "Paved urban streets",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "Paved urban streets emerged from a long evolution of road-building science that culminated in the macadam method pioneered around 1820. The story begins in France, where Pierre-Marie-Jérôme Trésaguet worked paving roads in Paris from 1757 to 1764, and later, as chief engineer of road construction of Limoges, developed a layered construction method that \"soon became standard practice\" across France. His system called for three layers of stones on a crowned subgrade with side ditches for drainage — the first two layers of angular hand-broken aggregate up to 3 inches deep, topped by a finer 2-inch surface layer — establishing foundational principles of structured, drained road surfaces.\n\nScottish engineer Thomas Telford extended Trésaguet's theories in the early nineteenth century, working for the Commission of Highland Roads and Bridges from 1801 and directing the Holyhead Road Commission between 1815 and 1830. Telford used carefully shaped paving stones (\"pitchers\") arranged crossways to traffic and wedged with broken stone for lateral stability, producing what came to be known as \"Telford pitching.\" Critically, he rediscovered the importance of drainage: \"previous road builders in Britain ignored drainage problems, and Telford's rediscovery of drainage principles was a major contribution to road construction.\"\n\nJohn Loudon McAdam, born in Ayr, Scotland, in 1756, transformed urban and intercity road construction with a simpler and more economical approach. After becoming surveyor general of roads for the Bristol turnpike trust on 15 January 1816, he put his theories into practice on Marsh Road at Ashton Gate, Bristol — the first \"macadamised\" stretch of road. McAdam's key insight was that \"massive foundations of rock upon rock were unnecessary,\" and that native soil covered by a protective road crust of small, uniformly sized angular stones would suffice. The upper layer was restricted to stones no larger than 2 centimetres in diameter, checked by supervisors who carried scales.\n\nThe method crossed the Atlantic when the first macadam road in the United States — the Boonsborough Turnpike Road between Hagerstown and Boonsboro, Maryland — was completed in 1823. Later refinements addressed the dust problem created by motor vehicles: in 1902, Swiss doctor Ernest Guglielminetti proposed using tar from Monaco's gasworks as a binding agent, leading eventually to tar-bound macadam and, patented by Edgar Purnell Hooley, tarmac. \"A more durable road surface (modern mixed asphalt pavement) … was introduced in the 1920s,\" in which aggregates are thoroughly mixed with binding material before laying, forming the basis of the paved urban street as it exists today.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "he worked paving roads in Paris from 1757 to 1764 … he had opportunity to develop a better and cheaper method of road construction … soon became standard practice there",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "Trésaguet had recommended a roadway consisting of three layers of stones laid on a crowned subgrade with side ditches for drainage. The first two layers consisted of angular hand-broken aggregate, maximum size 3 inches (7.6 cm), to a depth of about 8 inches (20 cm). The third layer was about 2 inches (5 cm) thick with a maximum aggregate size of 1 inch (2.5 cm).",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "In 1801 Telford worked for the Commission of Highland Roads and Bridges. He became director of the Holyhead Road Commission between 1815 and 1830.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "Previous road builders in Britain ignored drainage problems, and Telford's rediscovery of drainage principles was a major contribution to road construction.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "On 15 January 1816, he was elected surveyor general of roads for the Bristol turnpike trust … the first 'macadamised' stretch of road being Marsh Road at Ashton Gate, Bristol.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "he discovered that massive foundations of rock upon rock were unnecessary and asserted that native soil alone would support the road and traffic upon it, as long as it was covered by a road crust that would protect the soil underneath from water and wear.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "The upper 2-inch-thick (5 cm) layer of stones was limited to stones 2 centimetres (3⁄4 in) in diameter; these were checked by supervisors who carried scales.",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "The first macadam road built in the United States was constructed between Hagerstown and Boonsboro, Maryland … This road was completed in 1823.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "In 1902 a Swiss doctor, Ernest Guglielminetti, came upon the idea of using tar from Monaco's gasworks for binding the dust.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+      "url": "https://en.wikipedia.org/wiki/Macadam",
+      "quoted_text": "A more durable road surface (modern mixed asphalt pavement), sometimes referred to in the U.S. as blacktop, was introduced in the 1920s.",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T16:30:45Z",
+      "ai_or_human": "ai"
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Pierre-Marie-Jérôme Trésaguet",
+      "role": "Pioneer of scientific layered road construction",
+      "contribution": "Developed a three-layer road construction method with crowned subgrade and side ditches for drainage, which became standard practice in France",
+      "country": "France",
+      "year": 1775,
+      "recognition_status": "underrecognized",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "Pierre-Marie-Jérôme Trésaguet is sometimes considered the first person to bring post-Roman science to road building … In 1775, Tresaguet became engineer-general and presented his answer for road improvement in France, which soon became standard practice there.",
+          "confidence": 0.95,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "name": "John Loudon McAdam",
+      "role": "Inventor of the macadam road surface",
+      "contribution": "Developed the macadam method of road construction using compacted layers of small angular stones, dispensing with heavy foundations; first applied at Marsh Road, Ashton Gate, Bristol, after being elected surveyor general on 15 January 1816",
+      "country": "Scotland / United Kingdom",
+      "year": 1816,
+      "recognition_status": "headline",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "On 15 January 1816, he was elected surveyor general of roads for the Bristol turnpike trust … the first 'macadamised' stretch of road being Marsh Road at Ashton Gate, Bristol.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "name": "Thomas Telford",
+      "role": "Road engineer who advanced drainage and stone-foundation techniques",
+      "contribution": "Extended Trésaguet's theories with high-quality shaped stone foundations ('Telford pitching') and reintroduced systematic road drainage in Britain",
+      "country": "Scotland / United Kingdom",
+      "year": 1801,
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "Thomas Telford … applied Tresaguet's road building theories … Telford's rediscovery of drainage principles was a major contribution to road construction.",
+          "confidence": 0.97,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1775,
+      "event": "Trésaguet presents his three-layer road construction method to France as engineer-general, which becomes standard practice",
+      "event_type": "invention",
+      "significance": "Established the first scientifically layered, drained road construction system in post-Roman Europe",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "In 1775, Tresaguet became engineer-general and presented his answer for road improvement in France, which soon became standard practice there.",
+          "confidence": 0.97,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1816,
+      "event": "McAdam elected surveyor general of Bristol turnpike trust on 15 January; first macadamised road laid at Marsh Road, Ashton Gate, Bristol",
+      "event_type": "invention",
+      "significance": "Marked the practical debut of the macadam road surface, the foundation of modern paved streets",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "On 15 January 1816, he was elected surveyor general of roads for the Bristol turnpike trust … the first 'macadamised' stretch of road being Marsh Road at Ashton Gate, Bristol.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1823,
+      "event": "First macadam road in the United States completed between Hagerstown and Boonsboro, Maryland (Boonsborough Turnpike Road)",
+      "event_type": "adoption",
+      "significance": "Demonstrated international scaling of the macadam method; used a cast iron roller for compaction rather than traffic alone",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "The first macadam road built in the United States was constructed between Hagerstown and Boonsboro, Maryland … This road was completed in 1823, using McAdam's road techniques, except that the finished road was compacted with a cast iron roller instead of relying on road traffic for compaction.",
+          "confidence": 0.98,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1902,
+      "event": "Ernest Guglielminetti proposes using tar from Monaco's gasworks to bind macadam road surfaces, addressing the dust problem caused by motor vehicles",
+      "event_type": "invention",
+      "significance": "Led directly to tar-bound macadam (tarmac), a key precursor to modern asphalt paving",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "In 1902 a Swiss doctor, Ernest Guglielminetti, came upon the idea of using tar from Monaco's gasworks for binding the dust.",
+          "confidence": 0.98,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1920,
+      "event": "Modern mixed asphalt pavement ('blacktop') introduced, in which aggregates are pre-mixed with binding material before laying",
+      "event_type": "invention",
+      "significance": "Superseded macadam and tar-bound surfaces to become the dominant urban street paving material worldwide",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Macadam@2026-05-12T16:30:45Z",
+          "url": "https://en.wikipedia.org/wiki/Macadam",
+          "quoted_text": "A more durable road surface (modern mixed asphalt pavement), sometimes referred to in the U.S. as blacktop, was introduced in the 1920s. Instead of laying the stone and sand aggregates on the road and then spraying the top surface with binding material, in the asphalt paving method the aggregates are thoroughly mixed with the binding material and the mixture is laid all together.",
+          "confidence": 0.96,
+          "fetched_at": "2026-05-12T16:30:45Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "predecessors": [],
+  "enabling_components": [],
+  "failed_alternatives": [],
+  "funders": [],
+  "regulatory_moments": [],
+  "geographic_diffusion": []
+}

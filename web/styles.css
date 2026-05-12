@@ -214,10 +214,9 @@ p { margin: 0 0 1rem 0; }
 .badge.etype-topic { background: var(--crimson); color: var(--parchment); border-color: var(--crimson); }
 .badge.etype-stub { background: var(--parchment-dark); color: var(--sepia); }
 
-.badge.recog-headline { background: var(--brass); color: var(--parchment); border-color: var(--brass-dark); }
-.badge.recog-well_known { color: var(--brass-dark); }
-.badge.recog-underrecognized { color: var(--crimson); border-color: var(--crimson); }
-.badge.recog-obscure { color: var(--sepia-soft); border-color: var(--sepia-soft); border-style: dashed; }
+.badge.importance-critical { background: var(--brass); color: var(--parchment); border-color: var(--brass-dark); }
+.badge.importance-important { color: var(--brass-dark); border-color: var(--brass-dark); }
+.badge.importance-incidental { color: var(--sepia-soft); border-color: var(--sepia-soft); border-style: dashed; }
 
 .badge.rel-evolved_from { color: var(--copper); border-color: var(--copper); }
 .badge.rel-competing_predecessor { color: var(--crimson); border-color: var(--crimson); }

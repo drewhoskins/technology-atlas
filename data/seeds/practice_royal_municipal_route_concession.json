@@ -1,0 +1,101 @@
+{
+  "id": "practice:royal_municipal_route_concession",
+  "name": "Royal/municipal route concession",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "A royal or municipal route concession is a formal grant of rights by a government or local authority to a private entity, conferring the exclusive right to operate, maintain, and invest in a public utility or infrastructure corridor for a defined period. As described in the general framework, \"a private company enters into an agreement with the government to have the exclusive right to operate, maintain and carry out investment in a public utility... for a given number of years.\" The concessionaire typically pays either a fixed sum or a percentage of revenue to the granting authority in exchange for these operating rights.\n\nThe concession model is distinguished from related instruments such as lease contracts and management contracts. Under a lease, \"a company [has] the right to operate and maintain a public utility, but investment remains the responsibility of the public,\" while under a management contract \"the operator will collect the revenue only on behalf of the government and will in turn be paid an agreed fee.\" A route concession, by contrast, bundles operational rights with investment obligations and revenue entitlement in the concessionaire.\n\nOne of the earliest documented uses of the concession mechanism for infrastructure came from Muhammad Ali of Egypt, who \"used contracts called concessions to build cheap infrastructure - dams and railroads - whereby foreign European companies would raise capital, build projects, and collect most of the operating revenue but would provide Ali's government with a portion of that revenue.\" This model established a template for state-sponsored infrastructure development financed through private capital in exchange for operating revenue rights.\n\nOwnership and reversion of assets are central features of the concession structure. Assets built prior to the handover \"are predetermined as owned by the authority and to be operated and maintained by the concessionaire,\" while assets built by the concessionaire \"will be transferred to the authority once its concession duration is ended,\" ensuring that infrastructure ultimately returns to public ownership.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+      "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+      "quoted_text": "a private company enters into an agreement with the government to have the exclusive right to operate, maintain and carry out investment in a public utility (such as a water privatisation) for a given number of years.",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T16:31:35Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+      "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+      "quoted_text": "A lease gives a company the right to operate and maintain a public utility, but investment remains the responsibility of the public. Under a management contract the operator will collect the revenue only on behalf of the government and will in turn be paid an agreed fee.",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T16:31:35Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+      "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+      "quoted_text": "Muhammad Ali of Egypt used contracts called concessions to build cheap infrastructure - dams and railroads - whereby foreign European companies would raise capital, build projects, and collect most of the operating revenue but would provide Ali's government with a portion of that revenue.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:31:35Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+      "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+      "quoted_text": "Those that were built, acquired and designated by the concessionaire may initially be owned and controlled by the concessionaire and these will be transferred to the authority once its concession duration is ended.",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T16:31:35Z",
+      "ai_or_human": "ai"
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Muhammad Ali of Egypt",
+      "role": "Early state adopter of infrastructure concessions",
+      "contribution": "Used concession contracts to build dams and railroads, having foreign European companies raise capital and build projects in exchange for operating revenue, with a portion returned to his government.",
+      "country": "Egypt",
+      "recognition_status": "well_known",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+          "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+          "quoted_text": "Muhammad Ali of Egypt used contracts called concessions to build cheap infrastructure - dams and railroads - whereby foreign European companies would raise capital, build projects, and collect most of the operating revenue but would provide Ali's government with a portion of that revenue.",
+          "confidence": 0.98,
+          "fetched_at": "2026-05-12T16:31:35Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 2014,
+      "event": "EU Directive 2014/23/EU on the award of concession contracts issued on 26 February 2014, requiring member states to introduce national legislation covering concession contracts above EUR 5,186,000 awarded on or after 18 April 2016.",
+      "event_type": "regulatory",
+      "significance": "Established the first comprehensive EU-wide regulatory framework specifically governing the award of concession contracts, including route and service concessions.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+          "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+          "quoted_text": "the European Parliament and the Council issued a further Directive 2014/23/EU on the award of concession contracts on 26 February 2014, which required EU member states to introduce national legislation covering the award of concession contracts in excess of EUR 5,186,000 awarded on or after 18 April 2016.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T16:31:35Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "event": "UK Procurement Act 2023 formally classified concession contracts granted by public bodies as 'covered procurement'.",
+      "event_type": "regulatory",
+      "significance": "Brought UK concession contracts under a unified statutory procurement regime following Brexit divergence from EU rules.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Concession__contract_@2026-05-12T16:31:35Z",
+          "url": "https://en.wikipedia.org/wiki/Concession_(contract)",
+          "quoted_text": "Concession contracts granted by public bodies fall within the term 'covered procurement' in the Procurement Act 2023.",
+          "confidence": 0.98,
+          "fetched_at": "2026-05-12T16:31:35Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "predecessors": [],
+  "enabling_components": [],
+  "failed_alternatives": [],
+  "funders": [],
+  "regulatory_moments": [],
+  "geographic_diffusion": []
+}

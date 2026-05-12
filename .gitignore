@@ -37,3 +37,6 @@ tmp/
 
 # Wrangler local state — miniflare caches, simulated KV/D1/DO storage
 .wrangler/
+
+# LLM response cache — large, regenerated on demand
+data/cache/

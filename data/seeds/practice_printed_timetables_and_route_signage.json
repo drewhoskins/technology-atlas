@@ -1,0 +1,110 @@
+{
+  "id": "practice:printed_timetables_and_route_signage",
+  "name": "Printed timetables and route signage",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "Printed timetables and route signage emerged as a practical necessity alongside the world's first scheduled public transit systems. The carrosses à cinq sols (five-sol coaches) of Paris, approved by the King's Counsel on 19 January 1662 and signed by Louis XIV, required passengers to know fixed departure times and routes in advance—the service operated \"at scheduled times, without waiting to be filled up, even empty,\" making the communication of schedules and routes an operational imperative from the outset.\n\nThe Paris system launched its first route on 18 March 1662, running from the Porte Saint-Antoine to Luxembourg Palace via the Pont au Change, the Pont Neuf, and Rue Dauphine, with subsequent lines opening through July 1662. The regularity of departures—7½ minutes on the first line—and the introduction of distance-based fares on the fourth route (dividing a circular route into six sections) created the need for riders to consult fixed route information. Each vehicle and its employees wore a blue jersey with the coat of arms of the king and of the city of Paris, providing a form of visual identification tied to the service's branding.\n\nThe enterprise was conceived on the initiative of Blaise Pascal in a corporation founded in November 1661, with the Duke of Roannez, the Marquis de Sourches, and the Marquis de Crenan as co-founders. The letters patent granted them the exclusive right to operate such a service, establishing a formal institutional framework that would have required the publication of route and schedule information to attract and retain passengers. The service ran until at least 1677 according to Marc Gaillard, before public demand declined following fare increases and restrictive social policies.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "quoted_text": "The system of public coaches was approved and instituted by a judgement of the King's Counsel on 19 January 1662, and signed by Louis XIV.",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T16:29:36Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "quoted_text": "carriages which would always make the same journeys...and would always leave at scheduled times, without waiting to be filled up, even empty, without the people that enjoy that commodity having to pay for the empty seats",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T16:29:36Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "quoted_text": "It had consistent routes, fixed schedules with regular departures (7½ minutes on the first line), and fares that varied based on distance.",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T16:29:36Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "quoted_text": "The fourth route, beginning service on 24 June, contained two new innovations: a circular route and distance-based fares, which were implemented by dividing the circular route into six sections; riders paid five sols when they passed two sections.",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T16:29:36Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+      "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+      "quoted_text": "According to Marc Gaillard, the service ran until 1677.",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T16:29:36Z",
+      "ai_or_human": "ai"
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Blaise Pascal",
+      "role": "Initiator and co-founder of the carrosses à cinq sols, the first scheduled public transit system requiring fixed route and timetable information",
+      "contribution": "Conceived and organized the corporation in November 1661 that established fixed routes and scheduled departures, creating the first operational need for published timetable and route information in public transit",
+      "country": "France",
+      "year": 1661,
+      "importance": "critical",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "quoted_text": "In a corporation founded in November 1661 on the initiative of Blaise Pascal, with the participation of the Duke of Roannez...the entrepreneurs presented a request to establish an operation for 'carriages which would always make the same journeys...and would always leave at scheduled times'",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T16:29:36Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1662,
+      "event": "King's Counsel approves and institutes the carrosses à cinq sols on 19 January 1662, signed by Louis XIV, establishing the first scheduled public transit system with fixed routes and departure times",
+      "event_type": "regulatory",
+      "significance": "Created the institutional and operational framework demanding published route and schedule information for public transit riders",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "quoted_text": "The system of public coaches was approved and instituted by a judgement of the King's Counsel on 19 January 1662, and signed by Louis XIV. The letters patent granted them the exclusive right of operating such a service.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T16:29:36Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1662,
+      "event": "Five routes progressively launched from 18 March 1662, with the fourth route on 24 June introducing distance-based fares across six route sections",
+      "event_type": "invention",
+      "significance": "Distance-based fares and multiple distinct routes intensified the need for riders to consult printed route maps and fare schedules",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carrosses___cinq_sols@2026-05-12T16:29:36Z",
+          "url": "https://en.wikipedia.org/wiki/Carrosses_%C3%A0_cinq_sols",
+          "quoted_text": "five routes were progressively started from 18 March 1662, linking multiple historical quarters of Paris...The fourth route, beginning service on 24 June, contained two new innovations: a circular route and distance-based fares",
+          "confidence": 0.98,
+          "fetched_at": "2026-05-12T16:29:36Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "predecessors": [],
+  "enabling_components": [],
+  "failed_alternatives": [],
+  "funders": [],
+  "regulatory_moments": [],
+  "geographic_diffusion": []
+}

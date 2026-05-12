@@ -1,0 +1,134 @@
+{
+  "id": "technology:multi_horse_passenger_coach",
+  "name": "Multi-horse passenger coach",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "The multi-horse passenger coach is a four-wheeled, fixed-roof horse-drawn vehicle designed to carry multiple passengers over roads, drawn by teams of two to four horses. As the source notes, \"Coaches are a special category within carriages. They are carriages with four corner posts and a fixed roof.\" By the late medieval period, \"technical improvements such as the pivoting front axle and suspension on chains made four-wheeled vehicles more maneuverable and more comfortable,\" and coaches became \"associated with royalty and aristocrats, often elaborately decorated and drawn by teams of two to four horses.\"\n\nThe coach's defining form emerged in the 15th and 16th centuries, most famously linked to the Hungarian town of Kocs: \"The development of the coach in the 15th and 16th centuries introduced a lighter, faster form of carriage, most famously associated with the Hungarian town of Kocs. By the late 16th century the coach had spread across Europe and became a standard vehicle for aristocratic and long-distance travel.\" Over the following two centuries, further refinements transformed the vehicle: \"From the 17th to the 19th centuries, carriage design incorporated major innovations including steel springs, glazing, and improved steering systems such as the fifth wheel and the principles later formalized as Ackermann steering. These changes made coaches more comfortable, safer, and better suited to long-distance travel.\"\n\nCoaches were generally the preserve of the wealthy, though they also entered public life: \"They were generally owned by the wealthy, but second-hand private carriages became common public transport, the equivalent of modern cars used as taxis.\" The coachman drove from a raised seat at the front, while footmen stood or sat at the rear, and passengers rode inside using vis-à-vis seating — \"crosswise seats arranged for passengers in the forward seat to face those in the rear seat.\" Decline came swiftly in the 19th century: \"Carriage use declined rapidly in the 19th century with the spread of railways and later motor vehicles, which displaced horse-drawn transport on both urban and long-distance routes.\"",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+      "url": "https://en.wikipedia.org/wiki/Carriage",
+      "quoted_text": "Coaches are a special category within carriages. They are carriages with four corner posts and a fixed roof.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:46:44Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+      "url": "https://en.wikipedia.org/wiki/Carriage",
+      "quoted_text": "technical improvements such as the pivoting front axle and suspension on chains made four-wheeled vehicles more maneuverable and more comfortable. Carriages became associated with royalty and aristocrats, often elaborately decorated and drawn by teams of two to four horses.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:46:44Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+      "url": "https://en.wikipedia.org/wiki/Carriage",
+      "quoted_text": "The development of the coach in the 15th and 16th centuries introduced a lighter, faster form of carriage, most famously associated with the Hungarian town of Kocs. By the late 16th century the coach had spread across Europe and became a standard vehicle for aristocratic and long-distance travel.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:46:44Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+      "url": "https://en.wikipedia.org/wiki/Carriage",
+      "quoted_text": "From the 17th to the 19th centuries, carriage design incorporated major innovations including steel springs, glazing, and improved steering systems such as the fifth wheel and the principles later formalized as Ackermann steering. These changes made coaches more comfortable, safer, and better suited to long-distance travel.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:46:44Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+      "url": "https://en.wikipedia.org/wiki/Carriage",
+      "quoted_text": "They were generally owned by the wealthy, but second-hand private carriages became common public transport, the equivalent of modern cars used as taxis.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:46:44Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+      "url": "https://en.wikipedia.org/wiki/Carriage",
+      "quoted_text": "Carriage use declined rapidly in the 19th century with the spread of railways and later motor vehicles, which displaced horse-drawn transport on both urban and long-distance routes.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:46:44Z",
+      "ai_or_human": "ai"
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Hungarian coachmakers of Kocs",
+      "role": "Originators of the lighter, faster coach form associated with the town of Kocs",
+      "contribution": "Developed the defining coach form in the 15th–16th centuries that spread across Europe as the standard vehicle for multi-passenger travel",
+      "country": "Hungary",
+      "year": 1500,
+      "importance": "critical",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+          "url": "https://en.wikipedia.org/wiki/Carriage",
+          "quoted_text": "The development of the coach in the 15th and 16th centuries introduced a lighter, faster form of carriage, most famously associated with the Hungarian town of Kocs. By the late 16th century the coach had spread across Europe and became a standard vehicle for aristocratic and long-distance travel.",
+          "confidence": 0.9,
+          "fetched_at": "2026-05-12T17:46:44Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1500,
+      "event": "Development of the coach form associated with the Hungarian town of Kocs, introducing a lighter, faster four-wheeled passenger vehicle drawn by multiple horses",
+      "event_type": "invention",
+      "significance": "Established the multi-horse passenger coach as a distinct vehicle type that would spread across Europe",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+          "url": "https://en.wikipedia.org/wiki/Carriage",
+          "quoted_text": "The development of the coach in the 15th and 16th centuries introduced a lighter, faster form of carriage, most famously associated with the Hungarian town of Kocs.",
+          "confidence": 0.85,
+          "fetched_at": "2026-05-12T17:46:44Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1600,
+      "event": "Coach becomes a standard vehicle across Europe for aristocratic and long-distance travel, entering widespread use among the wealthy",
+      "event_type": "adoption",
+      "significance": "Marked the pan-European scaling of the multi-horse coach as the dominant passenger transport for elites",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+          "url": "https://en.wikipedia.org/wiki/Carriage",
+          "quoted_text": "By the late 16th century the coach had spread across Europe and became a standard vehicle for aristocratic and long-distance travel. In Europe they were a common mode of transport for the wealthy during the Roman Empire, and then again from around 1600 until they were replaced by the motor car around 1900.",
+          "confidence": 0.95,
+          "fetched_at": "2026-05-12T17:46:44Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1900,
+      "event": "Multi-horse passenger coaches displaced by motor cars and railways, ending their dominant role in passenger transport",
+      "event_type": "adoption",
+      "significance": "Close of the coach era as a primary transport technology, with horse-drawn vehicles relegated to ceremonial and tourist use",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Carriage@2026-05-12T17:46:44Z",
+          "url": "https://en.wikipedia.org/wiki/Carriage",
+          "quoted_text": "Carriage use declined rapidly in the 19th century with the spread of railways and later motor vehicles, which displaced horse-drawn transport on both urban and long-distance routes.",
+          "confidence": 1.0,
+          "fetched_at": "2026-05-12T17:46:44Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "predecessors": [],
+  "enabling_components": [],
+  "failed_alternatives": [],
+  "funders": [],
+  "regulatory_moments": [],
+  "geographic_diffusion": []
+}

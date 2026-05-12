@@ -50,9 +50,9 @@ Array dimensions (each element carries inline `sources[]` for provenance):
 
 | Field | Element shape | Used for |
 |---|---|---|
-| `innovators[]` | `{name, role, country, year, contribution, recognition_status, sources}` | People queries; surfacing under-credited engineers |
+| `innovators[]` | `{name, role, country, year, contribution, importance, sources}` | People queries; weighting contributions by criticality |
 | `predecessors[]` | `{name, relationship, year, brief, linked_entry_id, sources}` | Lineage; "what came before" |
-| `enabling_components[]` | `{name, type, role, brief, linked_entry_id, sources}` | Value-chain; "what made it work / scale" |
+| `enabling_components[]` | `{name, type, role, brief, importance, linked_entry_id, sources}` | Value-chain; "what made it work / scale" |
 | `failed_alternatives[]` | `{name, why_failed, period, sources}` | Counterfactuals; "what almost won" |
 | `funders[]` | `{entity, type, period, brief, sources}` | Money trail |
 | `regulatory_moments[]` | `{year, jurisdiction, description, effect, sources}` | Policy and law shaping the trajectory |
@@ -68,7 +68,7 @@ Array dimensions (each element carries inline `sources[]` for provenance):
 * `RegulatoryMoment.effect`: `enabling | restricting | neutral | mixed`
 * `GeographicDiffusion.milestone`: `first | 1pct | 10pct | saturation`
 * `KeyDate.event_type`: `invention | patent | scaling | regulatory | adoption`
-* `Innovator.recognition_status`: `headline | well_known | underrecognized | obscure`
+* `Importance` (used by `Innovator` and `EnablingComponent`): `critical | important | incidental` — how load-bearing this contribution/edge is to the parent's existence or scaling. Edge-level weight; the same component can be `critical` to one parent and `incidental` to another.
 
 ## Source object
 

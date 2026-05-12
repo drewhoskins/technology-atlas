@@ -1,0 +1,126 @@
+{
+  "id": "standard:distance_based_and_flat_fare_structures",
+  "name": "Distance-based and flat fare structures",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "Distance-based and flat fare structures are two foundational approaches to pricing public transit. A flat fare is described as \"the simplest fare structure,\" charging \"a fixed price for a given service.\" A prominent modern example is the Los Angeles Metro, which \"charges $1.75 for a standard single ride on its buses or rail services.\" A flat fee may cover a single ride or \"an unlimited number of rides within a single time period such as 90 minutes, a day or a week.\"\n\nDistance-based fares, by contrast, charge passengers according to \"the distance traveled between the origin and destination stations or stops of a service.\" To accurately bill customers, such systems often employ an exit fare mechanism at the destination station \"in order to correctly charge the customer based on the distance traveled.\" Cited examples of distance-based systems include the Beijing Subway and San Francisco Bay Area's BART system.\n\nBoth structures exist within a broader ecosystem of fare types. Transit fares generally serve as \"a contribution to the operational costs of the transport system involved, either partial... or total,\" with farebox recovery ratios \"typically vary[ing] from 30%–60% in North America and Europe, with some rail systems in Asia over 100%.\" Other fare structures—including zone-based, transfer, subscription, and variable fares—complement flat and distance-based models in modern public transport networks.",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+      "url": "https://en.wikipedia.org/wiki/Fare",
+      "quoted_text": "The simplest fare structure is a flat fee with a fixed price for a given service.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:48:21Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+      "url": "https://en.wikipedia.org/wiki/Fare",
+      "quoted_text": "the Los Angeles Metro charges $1.75 for a standard single ride on its buses or rail services",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:48:21Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+      "url": "https://en.wikipedia.org/wiki/Fare",
+      "quoted_text": "A flat fee may be charged for a single ride, or for an unlimited number of rides within a single time period such as 90 minutes, a day or a week.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:48:21Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+      "url": "https://en.wikipedia.org/wiki/Fare",
+      "quoted_text": "Some transportation systems charge a fare based on the distance traveled between the origin and destination stations or stops of a service. Such a system may use an exit fare at the destination station in order to correctly charge the customer based on the distance traveled. Examples include the Beijing Subway and the San Francisco Bay Area's BART system.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:48:21Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+      "url": "https://en.wikipedia.org/wiki/Fare",
+      "quoted_text": "The fare paid is a contribution to the operational costs of the transport system involved, either partial (as is frequently the case with publicly supported systems) or total. The portion of operating costs covered by fares - the farebox recovery ratio - typically varies from 30%-60% in North America and Europe, with some rail systems in Asia over 100%.",
+      "confidence": 1.0,
+      "fetched_at": "2026-05-12T17:48:21Z",
+      "ai_or_human": "ai"
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1880,
+      "event": "First farebox invented by Tom Loftin Johnson, used on streetcars built by the St. Louis Car Company",
+      "event_type": "invention",
+      "significance": "Mechanized fare collection, replacing the need for a separate conductor on streetcars",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+          "url": "https://en.wikipedia.org/wiki/Fare",
+          "quoted_text": "The first farebox was invented by Tom Loftin Johnson in 1880 and was used on streetcars built by the St. Louis Car Company.",
+          "confidence": 1.0,
+          "fetched_at": "2026-05-12T17:48:21Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1984,
+      "event": "First dollar-bill-accepting farebox put into service as fares in many larger cities reached $1.00",
+      "event_type": "invention",
+      "significance": "Enabled fareboxes to handle paper currency, keeping pace with rising flat fare levels",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+          "url": "https://en.wikipedia.org/wiki/Fare",
+          "quoted_text": "Fareboxes did not change again until around 1984, when fares in many larger cities reached $1.00 and the first dollar-bill-accepting farebox was put into service.",
+          "confidence": 1.0,
+          "fetched_at": "2026-05-12T17:48:21Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 2006,
+      "event": "New fareboxes introduced with capability to accept cash, credit, or smartcard transactions and issue day passes and transfers",
+      "event_type": "adoption",
+      "significance": "Modernized flat and distance-based fare collection by integrating multi-payment methods and pass issuance",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+          "url": "https://en.wikipedia.org/wiki/Fare",
+          "quoted_text": "In 2006, new fareboxes had the capability of accepting cash, credit, or smartcard transactions, and issuing day passes and transfers for riders.",
+          "confidence": 1.0,
+          "fetched_at": "2026-05-12T17:48:21Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "innovators": [
+    {
+      "name": "Tom Loftin Johnson",
+      "role": "Inventor of the farebox",
+      "contribution": "Invented the first farebox in 1880, enabling mechanized collection of flat fares on streetcars and replacing the need for a separate conductor",
+      "year": 1880,
+      "country": "United States",
+      "importance": "critical",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Fare@2026-05-12T17:48:21Z",
+          "url": "https://en.wikipedia.org/wiki/Fare",
+          "quoted_text": "The first farebox was invented by Tom Loftin Johnson in 1880 and was used on streetcars built by the St. Louis Car Company.",
+          "confidence": 1.0,
+          "fetched_at": "2026-05-12T17:48:21Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "predecessors": [],
+  "enabling_components": [],
+  "failed_alternatives": [],
+  "funders": [],
+  "regulatory_moments": [],
+  "geographic_diffusion": []
+}

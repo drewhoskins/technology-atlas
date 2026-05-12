@@ -301,6 +301,24 @@ def render_backlinks(entry: dict, backlinks: dict, by_id: dict) -> str:
 </section>"""
 
 
+_IMPORTANCE_GLYPH = {
+    "critical": "●",     # ●
+    "important": "○",    # ○
+    "incidental": "·",   # ·
+}
+
+
+def render_importance_badge(importance: str | None) -> str:
+    """Small inline badge for edge-importance. Empty string if unset."""
+    if not importance or importance not in _IMPORTANCE_GLYPH:
+        return ""
+    glyph = _IMPORTANCE_GLYPH[importance]
+    return (
+        f'<span class="badge importance importance-{esc(importance)}" '
+        f'title="{esc(importance)}">{glyph}&nbsp;{esc(importance)}</span>'
+    )
+
+
 def render_innovators(entry: dict, collector: SourceCollector, all_ids: set[str]) -> str:
     items = entry.get("innovators", []) or []
     if not items:
@@ -309,11 +327,7 @@ def render_innovators(entry: dict, collector: SourceCollector, all_ids: set[str]
     for i, person in enumerate(items):
         anchor = f"innov-{i}"
         cites = render_citations(person.get("sources", []) or [], collector, anchor)
-        recog = person.get("recognition_status") or ""
-        recog_html = (
-            f'<span class="badge recog recog-{esc(recog)}">{esc(recog.replace("_", " "))}</span>'
-            if recog else ""
-        )
+        imp_html = render_importance_badge(person.get("importance"))
         year = person.get("year")
         country = person.get("country") or ""
         contribution = person.get("contribution") or ""
@@ -324,7 +338,7 @@ def render_innovators(entry: dict, collector: SourceCollector, all_ids: set[str]
         <div class="innovator-meta">
           {f'<span class="mono year">{esc(year)}</span>' if year else ''}
           {f'<span class="country">{esc(country)}</span>' if country else ''}
-          {recog_html}
+          {imp_html}
         </div>
       </header>
       <p class="innovator-role"><strong>Role.</strong> {esc(person.get("role", ""))}</p>
@@ -386,11 +400,13 @@ def render_enabling_components(entry: dict, collector: SourceCollector, all_ids:
         type_ = c.get("type") or ""
         role = c.get("role") or ""
         brief = c.get("brief") or ""
+        imp_html = render_importance_badge(c.get("importance"))
         li.append(f"""
     <li id="{anchor}">
       <div class="comp-head">
         <span class="comp-name">{name_html}</span>
         <span class="badge type type-{esc(type_)}">{esc(type_)}</span>
+        {imp_html}
         {cites}
       </div>
       {f'<p class="role"><strong>Role.</strong> {esc(role)}</p>' if role else ''}
@@ -1224,10 +1240,9 @@ p { margin: 0 0 1rem 0; }
 .badge.etype-topic { background: var(--crimson); color: var(--parchment); border-color: var(--crimson); }
 .badge.etype-stub { background: var(--parchment-dark); color: var(--sepia); }
 
-.badge.recog-headline { background: var(--brass); color: var(--parchment); border-color: var(--brass-dark); }
-.badge.recog-well_known { color: var(--brass-dark); }
-.badge.recog-underrecognized { color: var(--crimson); border-color: var(--crimson); }
-.badge.recog-obscure { color: var(--sepia-soft); border-color: var(--sepia-soft); border-style: dashed; }
+.badge.importance-critical { background: var(--brass); color: var(--parchment); border-color: var(--brass-dark); }
+.badge.importance-important { color: var(--brass-dark); border-color: var(--brass-dark); }
+.badge.importance-incidental { color: var(--sepia-soft); border-color: var(--sepia-soft); border-style: dashed; }
 
 .badge.rel-evolved_from { color: var(--copper); border-color: var(--copper); }
 .badge.rel-competing_predecessor { color: var(--crimson); border-color: var(--crimson); }

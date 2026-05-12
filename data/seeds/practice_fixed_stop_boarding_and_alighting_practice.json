@@ -1,0 +1,160 @@
+{
+  "id": "practice:fixed_stop_boarding_and_alighting_practice",
+  "name": "Fixed-stop boarding and alighting practice",
+  "domain": "transit",
+  "entry_type": "stub",
+  "parent_id": null,
+  "description": "Fixed-stop boarding and alighting practice is the convention by which buses stop only at designated, marked locations along a route to pick up and drop off passengers, rather than halting anywhere on demand. The practice traces its origins to the horse-drawn coaching inn system of 17th-to-19th-century Europe, where stage coaches \"ran regular services between many European towns, starting and stopping at designated coaching inns where the horses could be changed and passengers board or alight, in effect constituting the earliest form of bus stop.\" These inns served as the precursors to the modern fixed stop.\n\nThe transition to urban fixed-stop practice began with the first scheduled bus services in the early 19th century. John Greenwood opened the first bus line in Britain in Manchester in 1824, \"running a fixed route and allowing passengers to board on request along the way without a reservation,\" with \"landmarks such as public houses, rail stations and road junctions\" becoming \"customary stopping points.\" George Shillibeer formalized the practice further when he started his London horse Omnibus service in 1829, \"running between stops at Paddington (at the Yorkshire Stingo pub) and the Bank of England to a designated route and timetable.\" Regular horse-drawn buses had also started in Paris in 1828.\n\nBy the mid-19th century the practice was sufficiently established that \"guides were available to London bus routes, including maps with routes and the main stops.\" Fixed stops became a safety and operational standard: they \"prevent passengers from trying to board or alight in hazardous situations such as at intersections,\" ensure that \"a bus driver only needs to look for intending passengers at the approach to each bus stop,\" and mean that \"having bus stops requires passengers to group themselves prior to boarding, which reduces time spent at boarding.\" Over time, jurisdictions also introduced legal frameworks—such as Victoria, Australia's Bus Safety Act—imposing duties of care on those responsible for bus stop design and placement, recognizing that \"the most serious hazard associated with bus travel occurs when passengers, especially children, are crossing the road after alighting from the bus.\"",
+  "description_sources": [
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "ran regular services between many European towns, starting and stopping at designated coaching inns where the horses could be changed and passengers board or alight, in effect constituting the earliest form of bus stop",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "running a fixed route and allowing passengers to board on request along the way without a reservation",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "landmarks such as public houses, rail stations and road junctions became customary stopping points",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "running between stops at Paddington (at the Yorkshire Stingo pub) and the Bank of England to a designated route and timetable",
+      "confidence": 0.99,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "guides were available to London bus routes, including maps with routes and the main stops",
+      "confidence": 0.97,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "Bus stops prevent passengers from trying to board or alight in hazardous situations such as at intersections or where a bus is turning and is not using the curb lane.",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    },
+    {
+      "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+      "url": "https://en.wikipedia.org/wiki/Bus_stop",
+      "quoted_text": "the most serious hazard associated with bus travel occurs when passengers, especially children, are crossing the road after alighting from the bus",
+      "confidence": 0.98,
+      "fetched_at": "2026-05-12T17:47:48Z",
+      "ai_or_human": "ai"
+    }
+  ],
+  "innovators": [
+    {
+      "name": "John Greenwood",
+      "role": "Operator of the first fixed-route bus line in Britain",
+      "contribution": "Opened the first bus line in Britain in Manchester in 1824, running a fixed route with customary stopping points at landmarks, establishing the prototype for fixed-stop boarding practice.",
+      "country": "United Kingdom",
+      "year": 1824,
+      "importance": "critical",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_stop",
+          "quoted_text": "John Greenwood opened the first bus line in Britain in Manchester in 1824, running a fixed route and allowing passengers to board on request along the way without a reservation. Landmarks such as public houses, rail stations and road junctions became customary stopping points.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T17:47:48Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "name": "George Shillibeer",
+      "role": "Founder of the London horse Omnibus service",
+      "contribution": "Started his London horse Omnibus service in 1829, running between fixed, named stops on a designated route and timetable, consolidating the fixed-stop model in urban bus operations.",
+      "country": "United Kingdom",
+      "year": 1829,
+      "importance": "critical",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_stop",
+          "quoted_text": "George Shillibeer started his London horse Omnibus service in 1829, running between stops at Paddington (at the Yorkshire Stingo pub) and the Bank of England to a designated route and timetable.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T17:47:48Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "key_dates": [
+    {
+      "year": 1824,
+      "event": "John Greenwood opens first fixed-route bus line in Britain in Manchester",
+      "event_type": "invention",
+      "significance": "Established the practice of fixed-route bus operation with customary stopping points, the direct precursor to the formal bus stop.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_stop",
+          "quoted_text": "John Greenwood opened the first bus line in Britain in Manchester in 1824, running a fixed route and allowing passengers to board on request along the way without a reservation.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T17:47:48Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1828,
+      "event": "Regular horse-drawn buses with fixed stops start in Paris",
+      "event_type": "adoption",
+      "significance": "Marked the adoption of fixed-stop bus service on the European continent.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_stop",
+          "quoted_text": "Regular horse-drawn buses started in Paris in 1828.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T17:47:48Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    },
+    {
+      "year": 1829,
+      "event": "George Shillibeer launches London horse Omnibus between named fixed stops",
+      "event_type": "invention",
+      "significance": "Formalized the fixed-stop boarding and alighting model in London, running between specific, publicly identified stops on a timetable.",
+      "sources": [
+        {
+          "raw_id": "wikipedia:Bus_stop@2026-05-12T17:47:48Z",
+          "url": "https://en.wikipedia.org/wiki/Bus_stop",
+          "quoted_text": "George Shillibeer started his London horse Omnibus service in 1829, running between stops at Paddington (at the Yorkshire Stingo pub) and the Bank of England to a designated route and timetable.",
+          "confidence": 0.99,
+          "fetched_at": "2026-05-12T17:47:48Z",
+          "ai_or_human": "ai"
+        }
+      ]
+    }
+  ],
+  "predecessors": [],
+  "enabling_components": [],
+  "failed_alternatives": [],
+  "funders": [],
+  "regulatory_moments": [],
+  "geographic_diffusion": []
+}

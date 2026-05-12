@@ -146,7 +146,8 @@
       "type": "infrastructure",
       "role": "Allowed multi-passenger coaches to maintain a tolerable speed and avoid axle damage. The expanding macadam-and-cobble road network of early-19th-century European cities is what made fixed-route service feasible at a profit.",
       "brief": "Pre-Telford and Macadam, the cost of horseflesh and coach repair on muddy streets made omnibus fares uneconomic.",
-      "linked_entry_id": null,
+      "importance": "critical",
+      "linked_entry_id": "infrastructure:paved_urban_streets",
       "sources": []
     },
     {
@@ -154,7 +155,8 @@
       "type": "practice",
       "role": "Both Pascal and Baudry needed prior government permission to run a scheduled route in a public street. Baudry obtained municipal permission on 10 August 1826 before opening on 30 September.",
       "brief": "The bus business is a regulated business from day one; route licensing is a recurring theme across the variants.",
-      "linked_entry_id": null,
+      "importance": "important",
+      "linked_entry_id": "practice:royal_municipal_route_concession",
       "sources": [
         {
           "raw_id": "wikipedia:Stanislas_Baudry_and_Omnibus@2026-04-25T22:00:00Z",
@@ -171,7 +173,8 @@
       "type": "practice",
       "role": "A scheduled, fixed-route service requires riders to know where the coach goes and when. Pascal's 1662 lines published 7½-minute headways on the first route — a level of operational discipline new to European cities.",
       "brief": null,
-      "linked_entry_id": null,
+      "importance": "important",
+      "linked_entry_id": "practice:printed_timetables_and_route_signage",
       "sources": [
         {
           "raw_id": "wikipedia:Carrosses_a_cinq_sols@2026-04-25T22:00:00Z",
@@ -182,6 +185,51 @@
           "confidence": 0.9
         }
       ]
+    },
+    {
+      "name": "Multi-horse passenger coach",
+      "type": "technology",
+      "role": "The physical vehicle — a four-horse coach carrying eight passengers, staffed by a coachman and footman — was the core technological unit that made a scheduled, multi-passenger, flat-fare service operationally possible. Its defined seating capacity set the revenue ceiling per trip and determined headway economics; its enclosure and springing made it acceptable to the bourgeois ridership being targeted. Without a standardised, purpose-built passenger vehicle distinct from a private hire carriage or a stagecoach, the 'bus model' (departing on schedule even when not full) could not function.",
+      "brief": "A purpose-built, enclosed, sprung coach drawn by multiple horses, designed to carry a fixed number of fare-paying passengers on a repeated route.",
+      "importance": "critical",
+      "linked_entry_id": "technology:multi_horse_passenger_coach",
+      "sources": []
+    },
+    {
+      "name": "Fixed-stop boarding and alighting practice",
+      "type": "practice",
+      "role": "The carrosses à cinq sols introduced the operational convention of stopping only on request at designated points along the route rather than waiting to fill seats or departing at the driver's discretion. This practice — 'only stopped on their routes when passengers requested to board or alight at stops' — is the procedural heart of the walk-up bus model and distinguished the omnibus from a hired coach or a stage-coach.",
+      "importance": "critical",
+      "brief": null,
+      "linked_entry_id": "practice:fixed_stop_boarding_and_alighting_practice",
+      "sources": []
+    },
+    {
+      "name": "Distance-based and flat fare structures",
+      "type": "standard",
+      "role": "The omnibus required a clearly defined, pre-published fare system to enable walk-up boarding by strangers. Pascal's fourth route even pioneered a distance-based variant (five sols per two sections of a circular route), while the standard lines used a flat five-sol fare. A codified fare structure eliminated negotiation between driver and passenger and was essential for scaling the model to an anonymous urban ridership.",
+      "importance": "important",
+      "brief": null,
+      "linked_entry_id": "standard:distance_based_and_flat_fare_structures",
+      "sources": []
+    },
+    {
+      "name": "Departure-regardless-of-occupancy operating rule",
+      "type": "practice",
+      "role": "A defining operational rule of the omnibus was that coaches departed on schedule whether full or empty, rather than waiting for a full complement of paying passengers (as stage-coaches did). This commitment was explicitly written into Pascal's founding petition and is what made the service reliable enough for urban commuters to plan around — without it the 'scheduled service' promise collapses.",
+      "importance": "critical",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
+    },
+    {
+      "name": "Uniformed crew identification",
+      "type": "practice",
+      "role": "For an anonymous public to trust and identify a regulated public-transit vehicle amid the general street traffic, the operating staff needed to be visibly distinguishable from private coachmen or other vehicles. Pascal's service dressed its coachman and footman in a blue jersey bearing the royal and city coats of arms, establishing a livery standard that signalled official sanction and allowed passengers to identify the correct vehicle.",
+      "importance": "incidental",
+      "brief": null,
+      "linked_entry_id": null,
+      "sources": []
     }
   ],
   "failed_alternatives": [

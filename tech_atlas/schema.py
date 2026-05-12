@@ -30,13 +30,16 @@ class Source(BaseModel):
     confidence: float = Field(ge=0.0, le=1.0)
 
 
+Importance = Literal["critical", "important", "incidental"]
+
+
 class Innovator(BaseModel):
     name: str
     role: str
     country: str | None = None
     year: int | None = None
     contribution: str | None = None
-    recognition_status: Literal["headline", "well_known", "underrecognized", "obscure"] | None = None
+    importance: Importance | None = None
     sources: list[Source] = Field(default_factory=list)
 
 
@@ -58,6 +61,7 @@ class EnablingComponent(BaseModel):
     type: Literal["technology", "infrastructure", "practice", "process", "standard"]
     role: str
     brief: str | None = None
+    importance: Importance | None = None
     linked_entry_id: str | None = None
     sources: list[Source] = Field(default_factory=list)
 
