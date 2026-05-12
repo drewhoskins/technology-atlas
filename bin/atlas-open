@@ -1,51 +1,101 @@
 #!/usr/bin/env bash
-# atlas-open <entry-id>
-# Opens the human-readable atlas page for the given entry id in the default browser.
+# atlas-open <entry-id> [--live]
+# Opens an atlas entry in the default browser.
+#
+# Server selection (in order):
+#   1. http://localhost:8787 if `wrangler dev` is running (run scripts/dev.sh)
+#   2. https://technologyatlas.org otherwise, or always with --live
+#
+# `file://` is NOT used: internal links use extensionless URLs and rely on
+# server-side html_handling, which file:// can't do.
 #
 # Examples:
 #   bin/atlas-open bus
 #   bin/atlas-open bus:horse_omnibus
-#   bin/atlas-open component:internal_combustion_engine
-#
-# macOS uses `open`. On Linux replace with `xdg-open`; on Windows WSL with `wslview`.
+#   bin/atlas-open bus:horse_omnibus --live
 
 set -e
 
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <entry-id>" >&2
-    echo "Examples:" >&2
-    echo "  $0 bus" >&2
-    echo "  $0 bus:horse_omnibus" >&2
-    echo "  $0 component:internal_combustion_engine" >&2
-    exit 1
-fi
-
-ID="$1"
-SLUG="${ID//:/__}"
 REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-PAGE="$REPO_ROOT/web/entries/$SLUG.html"
 
-if [ ! -f "$PAGE" ]; then
-    echo "Error: no atlas page for id '$ID'" >&2
-    echo "Looked for: $PAGE" >&2
-    echo "" >&2
-    echo "Available entries:" >&2
+list_entries() {
     for f in "$REPO_ROOT"/web/entries/*.html; do
         name="$(basename "$f" .html)"
-        # Reverse the slug: __ -> :
-        echo "  ${name//__/:}" >&2
+        echo "  ${name//__/:}"
     done
+}
+
+show_help() {
+    cat <<EOF
+Usage: $0 <entry-id> [--live]
+
+Opens an atlas entry in the default browser.
+
+Server selection (in order):
+  1. http://localhost:8787 if \`wrangler dev\` is running (run scripts/dev.sh)
+  2. https://technologyatlas.org otherwise, or always with --live
+
+\`file://\` is NOT used: internal links use extensionless URLs and rely on
+server-side html_handling, which file:// can't do.
+
+Examples:
+  $0 bus
+  $0 bus:horse_omnibus
+  $0 bus:horse_omnibus --live
+EOF
+}
+
+USE_LIVE=0
+ID=""
+SHOW_HELP=0
+for arg in "$@"; do
+    case "$arg" in
+        --live) USE_LIVE=1 ;;
+        -h|--help|-\?) SHOW_HELP=1 ;;
+        *) ID="$arg" ;;
+    esac
+done
+
+if [ "$SHOW_HELP" -eq 1 ] || [ -z "$ID" ]; then
+    show_help
+    exit 0
+fi
+
+SLUG="${ID//:/__}"
+PAGE_FILE="$REPO_ROOT/web/entries/$SLUG.html"
+
+if [ ! -f "$PAGE_FILE" ]; then
+    echo "Error: no atlas page for id '$ID'" >&2
+    echo "Looked for: $PAGE_FILE" >&2
+    echo "" >&2
+    echo "Available entries:" >&2
+    list_entries >&2
     exit 1
 fi
 
-# macOS
+LOCAL="http://localhost:8787"
+LIVE="https://technologyatlas.org"
+
+# Pick a base URL.
+if [ "$USE_LIVE" -eq 1 ]; then
+    BASE="$LIVE"
+elif curl -fsS -m 1 -o /dev/null "$LOCAL/" 2>/dev/null; then
+    BASE="$LOCAL"
+else
+    echo "note: local dev server not detected at $LOCAL — falling back to $LIVE" >&2
+    echo "      (run scripts/dev.sh in another terminal to use the local build)" >&2
+    BASE="$LIVE"
+fi
+
+# Workers Assets serves extensionless URLs for .html files.
+URL="$BASE/entries/$SLUG"
+
 if command -v open >/dev/null 2>&1; then
-    open "$PAGE"
-# Linux fallback
+    open "$URL"
 elif command -v xdg-open >/dev/null 2>&1; then
-    xdg-open "$PAGE"
+    xdg-open "$URL"
 else
     echo "Error: no 'open' or 'xdg-open' command available" >&2
-    echo "Open this file manually: $PAGE" >&2
+    echo "Open this URL manually: $URL" >&2
     exit 1
 fi
